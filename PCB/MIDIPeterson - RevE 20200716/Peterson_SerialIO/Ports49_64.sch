@@ -1,0 +1,1170 @@
+EESchema Schematic File Version 4
+LIBS:SerialIOProc-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SerialIOProc-rescue:74HC595-SerialIOProc-rescue U3
+U 1 1 5CFFCB65
+P 5700 4300
+AR Path="/5CFC7757/5CFFCB65" Ref="U3"  Part="1" 
+AR Path="/5CFEE74D/5CFFCB65" Ref="U?"  Part="1" 
+AR Path="/5CE982AE/5CFFCB65" Ref="U9"  Part="1" 
+AR Path="/5CFFCB65" Ref="U9"  Part="1" 
+F 0 "U9" H 5850 4900 50  0000 C CNN
+F 1 "74HC597" H 5700 3700 50  0000 C CNN
+F 2 "SMD_Packages:SO-16-N" H 5700 4300 50  0001 C CNN
+F 3 "" H 5700 4300 50  0001 C CNN
+	1    5700 4300
+	1    0    0    -1  
+$EndComp
+Text Label 4350 4350 0    60   ~ 0
+InRegLoad
+Text Label 4350 4150 0    60   ~ 0
+nRST
+Text Label 4350 4050 0    60   ~ 0
+SerialCLK
+Text Label 8350 4750 0    60   ~ 0
+SEROut3
+$Comp
+L SerialIOProc-rescue:74HC595-SerialIOProc-rescue U2
+U 1 1 5AFDF196
+P 3200 4300
+AR Path="/5CFC7757/5AFDF196" Ref="U2"  Part="1" 
+AR Path="/5CFEE74D/5AFDF196" Ref="U?"  Part="1" 
+AR Path="/5CE982AE/5AFDF196" Ref="U8"  Part="1" 
+AR Path="/5AFDF196" Ref="U8"  Part="1" 
+F 0 "U8" H 3350 4900 50  0000 C CNN
+F 1 "74HC597" H 3200 3700 50  0000 C CNN
+F 2 "SMD_Packages:SO-16-N" H 3200 4300 50  0001 C CNN
+F 3 "" H 3200 4300 50  0001 C CNN
+	1    3200 4300
+	1    0    0    -1  
+$EndComp
+Text Label 1850 4150 0    60   ~ 0
+nRST
+Text Label 1850 4050 0    60   ~ 0
+SerialCLK
+$Comp
+L Device:R_Pack04 RN1
+U 1 1 5CEA010F
+P 2400 1200
+AR Path="/5CFC7757/5CEA010F" Ref="RN1"  Part="1" 
+AR Path="/5CFEE74D/5CEA010F" Ref="RN?"  Part="1" 
+AR Path="/5CE982AE/5CEA010F" Ref="RN25"  Part="1" 
+F 0 "RN25" V 2100 1200 50  0000 C CNN
+F 1 "R_Pack04" V 2600 1200 50  0000 C CNN
+F 2 "CLRConnector:2012-8" V 2675 1200 50  0001 C CNN
+F 3 "" H 2400 1200 50  0001 C CNN
+	1    2400 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Pack04 RN2
+U 1 1 5CFFCB69
+P 2800 1200
+AR Path="/5CFC7757/5CFFCB69" Ref="RN2"  Part="1" 
+AR Path="/5CFEE74D/5CFFCB69" Ref="RN?"  Part="1" 
+AR Path="/5CE982AE/5CFFCB69" Ref="RN26"  Part="1" 
+F 0 "RN26" V 2500 1200 50  0000 C CNN
+F 1 "R_Pack04" V 3000 1200 50  0000 C CNN
+F 2 "CLRConnector:2012-8" V 3075 1200 50  0001 C CNN
+F 3 "" H 2800 1200 50  0001 C CNN
+	1    2800 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Pack04 RN3
+U 1 1 5CEA012D
+P 3200 1200
+AR Path="/5CFC7757/5CEA012D" Ref="RN3"  Part="1" 
+AR Path="/5CFEE74D/5CEA012D" Ref="RN?"  Part="1" 
+AR Path="/5CE982AE/5CEA012D" Ref="RN27"  Part="1" 
+F 0 "RN27" V 2900 1200 50  0000 C CNN
+F 1 "R_Pack04" V 3400 1200 50  0000 C CNN
+F 2 "CLRConnector:2012-8" V 3475 1200 50  0001 C CNN
+F 3 "" H 3200 1200 50  0001 C CNN
+	1    3200 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR010
+U 1 1 5AFDF521
+P 3750 900
+AR Path="/5CFC7757/5AFDF521" Ref="#PWR010"  Part="1" 
+AR Path="/5CFEE74D/5AFDF521" Ref="#PWR?"  Part="1" 
+AR Path="/5CE982AE/5AFDF521" Ref="#PWR0111"  Part="1" 
+F 0 "#PWR0111" H 3750 750 50  0001 C CNN
+F 1 "VDD" H 3750 1050 50  0000 C CNN
+F 2 "" H 3750 900 50  0001 C CNN
+F 3 "" H 3750 900 50  0001 C CNN
+	1    3750 900 
+	1    0    0    -1  
+$EndComp
+Connection ~ 2200 2700
+Connection ~ 2600 2300
+Connection ~ 2700 2200
+Connection ~ 2800 2100
+Connection ~ 2900 2000
+Connection ~ 3000 1900
+Connection ~ 3100 1800
+Connection ~ 3200 1700
+Connection ~ 3300 1600
+Wire Wire Line
+	6400 4250 7150 4250
+Wire Wire Line
+	6400 4350 7050 4350
+Wire Wire Line
+	6400 4550 6850 4550
+Wire Wire Line
+	9250 4750 7700 4750
+Wire Wire Line
+	2200 1400 2200 2700
+Wire Wire Line
+	2300 2600 2300 1400
+Wire Wire Line
+	2400 1400 2400 2500
+Wire Wire Line
+	2500 2400 2500 1400
+Wire Wire Line
+	2600 2300 2600 1400
+Wire Wire Line
+	2700 1400 2700 2200
+Wire Wire Line
+	2800 2100 2800 1400
+Wire Wire Line
+	2900 1400 2900 2000
+Wire Wire Line
+	3000 1900 3000 1400
+Wire Wire Line
+	3100 1400 3100 1800
+Wire Wire Line
+	3200 1700 3200 1400
+Wire Wire Line
+	3300 1400 3300 1600
+Wire Wire Line
+	3750 1000 3750 900 
+Connection ~ 2300 1000
+Connection ~ 2400 1000
+Connection ~ 2500 1000
+Connection ~ 2600 1000
+Connection ~ 2700 1000
+Connection ~ 2800 1000
+Connection ~ 2900 1000
+Connection ~ 3000 1000
+Connection ~ 3100 1000
+Connection ~ 3200 1000
+Wire Wire Line
+	3900 3850 3900 1600
+Connection ~ 3900 1600
+Wire Wire Line
+	3950 1700 3950 3950
+Wire Wire Line
+	3950 3950 3900 3950
+Connection ~ 3950 1700
+Wire Wire Line
+	3900 4050 4000 4050
+Wire Wire Line
+	4000 4050 4000 1800
+Connection ~ 4000 1800
+Wire Wire Line
+	4050 1900 4050 4150
+Wire Wire Line
+	4050 4150 3900 4150
+Connection ~ 4050 1900
+Wire Wire Line
+	3900 4250 4100 4250
+Wire Wire Line
+	4100 4250 4100 2000
+Connection ~ 4100 2000
+Wire Wire Line
+	4150 2100 4150 4350
+Wire Wire Line
+	4150 4350 3900 4350
+Connection ~ 4150 2100
+Wire Wire Line
+	4200 2200 4200 4450
+Wire Wire Line
+	4200 4450 3900 4450
+Connection ~ 4200 2200
+Wire Wire Line
+	3900 4550 4250 4550
+Wire Wire Line
+	4250 4550 4250 2300
+Connection ~ 4250 2300
+Wire Wire Line
+	6450 3950 6400 3950
+Wire Wire Line
+	6400 4050 6500 4050
+Wire Wire Line
+	6550 4150 6400 4150
+Wire Wire Line
+	3900 4750 4750 4750
+Wire Wire Line
+	4750 4750 4750 3850
+Wire Wire Line
+	4750 3850 5000 3850
+Wire Wire Line
+	4350 4150 5000 4150
+Wire Wire Line
+	2500 4150 1850 4150
+Wire Wire Line
+	1850 4050 2500 4050
+Wire Wire Line
+	4350 4050 5000 4050
+Wire Wire Line
+	5000 4350 4350 4350
+Wire Wire Line
+	4350 4350 4350 4450
+Wire Wire Line
+	2500 4350 2400 4350
+Wire Wire Line
+	2400 4350 2400 4450
+Wire Wire Line
+	2400 4450 2500 4450
+$Comp
+L Device:C C13
+U 1 1 5CEA0130
+P 3600 1200
+AR Path="/5CFC7757/5CEA0130" Ref="C13"  Part="1" 
+AR Path="/5CFEE74D/5CEA0130" Ref="C?"  Part="1" 
+AR Path="/5CE982AE/5CEA0130" Ref="C73"  Part="1" 
+F 0 "C73" H 3625 1300 50  0000 L CNN
+F 1 "C" H 3625 1100 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 3638 1050 50  0001 C CNN
+F 3 "" H 3600 1200 50  0001 C CNN
+	1    3600 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C15
+U 1 1 5CEA0134
+P 4000 1200
+AR Path="/5CFC7757/5CEA0134" Ref="C15"  Part="1" 
+AR Path="/5CFEE74D/5CEA0134" Ref="C?"  Part="1" 
+AR Path="/5CE982AE/5CEA0134" Ref="C75"  Part="1" 
+F 0 "C75" H 4025 1300 50  0000 L CNN
+F 1 "C" H 4025 1100 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 4038 1050 50  0001 C CNN
+F 3 "" H 4000 1200 50  0001 C CNN
+	1    4000 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1050 3600 1000
+Wire Wire Line
+	3800 1000 3800 1050
+Connection ~ 3750 1000
+Wire Wire Line
+	4000 1000 4000 1050
+Connection ~ 3800 1000
+Wire Wire Line
+	3600 1350 3600 1400
+Wire Wire Line
+	3800 1350 3800 1400
+Connection ~ 3800 1400
+Wire Wire Line
+	4000 1350 4000 1400
+Connection ~ 4000 1400
+Wire Wire Line
+	4200 1400 4200 1350
+Connection ~ 4200 1400
+Wire Wire Line
+	4200 1000 4200 1050
+Connection ~ 4000 1000
+Connection ~ 4200 1000
+$Comp
+L power:VCC #PWR011
+U 1 1 5CFFCB6F
+P 4400 900
+AR Path="/5CFC7757/5CFFCB6F" Ref="#PWR011"  Part="1" 
+AR Path="/5CFEE74D/5CFFCB6F" Ref="#PWR?"  Part="1" 
+AR Path="/5CE982AE/5CFFCB6F" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H 4400 750 50  0001 C CNN
+F 1 "VCC" H 4400 1050 50  0000 C CNN
+F 2 "" H 4400 900 50  0001 C CNN
+F 3 "" H 4400 900 50  0001 C CNN
+	1    4400 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 900  4400 1000
+$Comp
+L Device:R_Pack04 RN7
+U 1 1 5B132E35
+P 7050 3650
+AR Path="/5CFC7757/5B132E35" Ref="RN7"  Part="1" 
+AR Path="/5CFEE74D/5B132E35" Ref="RN?"  Part="1" 
+AR Path="/5CE982AE/5B132E35" Ref="RN31"  Part="1" 
+F 0 "RN31" V 6750 3650 50  0000 C CNN
+F 1 "R_Pack04" V 7250 3650 50  0000 C CNN
+F 2 "CLRConnector:2012-8" V 7325 3650 50  0001 C CNN
+F 3 "" H 7050 3650 50  0001 C CNN
+	1    7050 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 3300 6950 3300
+Wire Wire Line
+	7150 3300 7150 3450
+Wire Wire Line
+	6850 3300 6850 3450
+Connection ~ 7100 3300
+Wire Wire Line
+	6950 3450 6950 3300
+Connection ~ 6950 3300
+Wire Wire Line
+	7050 3450 7050 3300
+Connection ~ 7050 3300
+Wire Wire Line
+	6850 3850 6850 4550
+Connection ~ 6850 4550
+Wire Wire Line
+	6950 3850 6950 4450
+Connection ~ 6950 4450
+Wire Wire Line
+	7150 3850 7150 4250
+Connection ~ 7150 4250
+Wire Wire Line
+	7050 3850 7050 4350
+Connection ~ 7050 4350
+Wire Wire Line
+	4400 1000 4200 1000
+$Comp
+L power:GND #PWR012
+U 1 1 5CEA0138
+P 4450 1400
+AR Path="/5CFC7757/5CEA0138" Ref="#PWR012"  Part="1" 
+AR Path="/5CFEE74D/5CEA0138" Ref="#PWR?"  Part="1" 
+AR Path="/5CE982AE/5CEA0138" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H 4450 1150 50  0001 C CNN
+F 1 "GND" H 4450 1250 50  0000 C CNN
+F 2 "" H 4450 1400 50  0001 C CNN
+F 3 "" H 4450 1400 50  0001 C CNN
+	1    4450 1400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3600 1400 3800 1400
+Wire Wire Line
+	1800 2300 2600 2300
+Wire Wire Line
+	1800 2200 2700 2200
+Wire Wire Line
+	1800 2100 2800 2100
+Wire Wire Line
+	1800 2000 2900 2000
+Wire Wire Line
+	1800 1900 3000 1900
+Wire Wire Line
+	5800 1800 4000 1800
+Wire Wire Line
+	5900 1700 3950 1700
+Wire Wire Line
+	1800 1600 3300 1600
+$Comp
+L Device:R_Pack04 RN4
+U 1 1 5CEA013B
+P 5000 1250
+AR Path="/5CFC7757/5CEA013B" Ref="RN4"  Part="1" 
+AR Path="/5CFEE74D/5CEA013B" Ref="RN?"  Part="1" 
+AR Path="/5CE982AE/5CEA013B" Ref="RN28"  Part="1" 
+F 0 "RN28" V 4700 1250 50  0000 C CNN
+F 1 "R_Pack04" V 5200 1250 50  0000 C CNN
+F 2 "CLRConnector:2012-8" V 5275 1250 50  0001 C CNN
+F 3 "" H 5000 1250 50  0001 C CNN
+	1    5000 1250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2700 4900 1450
+Wire Wire Line
+	5000 1050 5000 1000
+Wire Wire Line
+	5100 1000 5100 1050
+Wire Wire Line
+	5200 1050 5200 1000
+Wire Wire Line
+	5000 1450 5000 2600
+Wire Wire Line
+	5100 2500 5100 1450
+Wire Wire Line
+	5200 1450 5200 2400
+$Comp
+L Device:R_Pack04 RN5
+U 1 1 5CEA013D
+P 5400 1250
+AR Path="/5CFC7757/5CEA013D" Ref="RN5"  Part="1" 
+AR Path="/5CFEE74D/5CEA013D" Ref="RN?"  Part="1" 
+AR Path="/5CE982AE/5CEA013D" Ref="RN29"  Part="1" 
+F 0 "RN29" V 5100 1250 50  0000 C CNN
+F 1 "R_Pack04" V 5600 1250 50  0000 C CNN
+F 2 "CLRConnector:2012-8" V 5675 1250 50  0001 C CNN
+F 3 "" H 5400 1250 50  0001 C CNN
+	1    5400 1250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Pack04 RN6
+U 1 1 5CFFCB74
+P 5800 1250
+AR Path="/5CFC7757/5CFFCB74" Ref="RN6"  Part="1" 
+AR Path="/5CFEE74D/5CFFCB74" Ref="RN?"  Part="1" 
+AR Path="/5CE982AE/5CFFCB74" Ref="RN30"  Part="1" 
+F 0 "RN30" V 5500 1250 50  0000 C CNN
+F 1 "R_Pack04" V 6000 1250 50  0000 C CNN
+F 2 "CLRConnector:2012-8" V 6075 1250 50  0001 C CNN
+F 3 "" H 5800 1250 50  0001 C CNN
+	1    5800 1250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 1050 5300 1000
+Wire Wire Line
+	5400 1000 5400 1050
+Wire Wire Line
+	5500 1000 5500 1050
+Wire Wire Line
+	5600 1050 5600 1000
+Wire Wire Line
+	5700 1000 5700 1050
+Wire Wire Line
+	5800 1050 5800 1000
+Wire Wire Line
+	5900 1050 5900 1000
+Wire Wire Line
+	6000 1000 6000 1050
+Wire Wire Line
+	6000 1600 6000 1450
+Wire Wire Line
+	5900 1450 5900 1700
+Wire Wire Line
+	5800 1450 5800 1800
+Wire Wire Line
+	5700 1900 5700 1450
+Wire Wire Line
+	5600 2000 5600 1450
+Wire Wire Line
+	5500 2100 5500 1450
+Wire Wire Line
+	5400 2200 5400 1450
+Wire Wire Line
+	5300 2300 5300 1450
+$Comp
+L Device:R_Pack04 RN8
+U 1 1 5CEA0141
+P 9850 4450
+AR Path="/5CFC7757/5CEA0141" Ref="RN8"  Part="1" 
+AR Path="/5CFEE74D/5CEA0141" Ref="RN?"  Part="1" 
+AR Path="/5CE982AE/5CEA0141" Ref="RN32"  Part="1" 
+F 0 "RN32" V 9550 4450 50  0000 C CNN
+F 1 "R_Pack04" V 10050 4450 50  0000 C CNN
+F 2 "CLRConnector:2012-8" V 10125 4450 50  0001 C CNN
+F 3 "" H 9850 4450 50  0001 C CNN
+	1    9850 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 1050 4900 1000
+Text Label 6000 1000 1    60   ~ 0
+OUT0
+Text Label 5900 1000 1    60   ~ 0
+OUT1
+Text Label 5800 1000 1    60   ~ 0
+OUT2
+Text Label 5700 1000 1    60   ~ 0
+OUT3
+Text Label 5600 1000 1    60   ~ 0
+OUT4
+Text Label 5500 1000 1    60   ~ 0
+OUT5
+Text Label 5400 1000 1    60   ~ 0
+OUT6
+Text Label 5300 1000 1    60   ~ 0
+OUT7
+Text Label 5200 1000 1    60   ~ 0
+OUT8
+Text Label 5100 1000 1    60   ~ 0
+OUT9
+Text Label 5000 1000 1    60   ~ 0
+OUT10
+Text Label 4900 1000 1    60   ~ 0
+OUT11
+Text Label 10100 4250 0    60   ~ 0
+OUT12
+Text Label 10100 4350 0    60   ~ 0
+OUT13
+Text Label 10100 4450 0    60   ~ 0
+OUT14
+Text Label 10100 4550 0    60   ~ 0
+OUT15
+Wire Wire Line
+	10050 4250 10100 4250
+Wire Wire Line
+	10100 4350 10050 4350
+Wire Wire Line
+	10050 4450 10100 4450
+Wire Wire Line
+	10100 4550 10050 4550
+Text Label 8500 900  2    60   ~ 0
+OUT0
+Text Label 8500 1000 2    60   ~ 0
+OUT2
+Text Label 8500 1100 2    60   ~ 0
+OUT4
+Text Label 8500 1200 2    60   ~ 0
+OUT6
+Text Label 8500 1300 2    60   ~ 0
+OUT8
+Text Label 8500 1400 2    60   ~ 0
+OUT10
+Text Label 8500 1500 2    60   ~ 0
+OUT12
+Text Label 8500 1600 2    60   ~ 0
+OUT14
+Text Label 9650 1550 0    60   ~ 0
+OUT1
+Text Label 9650 1450 0    60   ~ 0
+OUT3
+Text Label 9650 1350 0    60   ~ 0
+OUT5
+Text Label 9650 1250 0    60   ~ 0
+OUT7
+Text Label 9650 1150 0    60   ~ 0
+OUT9
+Text Label 9650 1050 0    60   ~ 0
+OUT11
+Text Label 9650 950  0    60   ~ 0
+OUT13
+Text Label 9650 850  0    60   ~ 0
+OUT15
+Wire Wire Line
+	1800 2700 2200 2700
+Wire Wire Line
+	6400 4450 6950 4450
+Connection ~ 5200 2400
+Connection ~ 5100 2500
+Connection ~ 5000 2600
+Wire Wire Line
+	6400 3850 6400 2400
+Wire Wire Line
+	6400 2400 5200 2400
+Wire Wire Line
+	6450 3950 6450 2500
+Wire Wire Line
+	6450 2500 5100 2500
+Wire Wire Line
+	6500 4050 6500 2600
+Wire Wire Line
+	6500 2600 5000 2600
+Wire Wire Line
+	6550 2700 6550 4150
+Connection ~ 4900 2700
+Wire Wire Line
+	2200 2700 4900 2700
+Wire Wire Line
+	2600 2300 4250 2300
+Wire Wire Line
+	2700 2200 4200 2200
+Wire Wire Line
+	2800 2100 4150 2100
+Wire Wire Line
+	2900 2000 4100 2000
+Wire Wire Line
+	3000 1900 4050 1900
+Wire Wire Line
+	3100 1800 1800 1800
+Wire Wire Line
+	3200 1700 1800 1700
+Wire Wire Line
+	3300 1600 3900 1600
+Wire Wire Line
+	2300 1000 2200 1000
+Wire Wire Line
+	2400 1000 2300 1000
+Wire Wire Line
+	2500 1000 2400 1000
+Wire Wire Line
+	2600 1000 2500 1000
+Wire Wire Line
+	2700 1000 2600 1000
+Wire Wire Line
+	2800 1000 2700 1000
+Wire Wire Line
+	2900 1000 2800 1000
+Wire Wire Line
+	3000 1000 2900 1000
+Wire Wire Line
+	3100 1000 3000 1000
+Wire Wire Line
+	3200 1000 3100 1000
+Wire Wire Line
+	3300 1000 3200 1000
+Wire Wire Line
+	3900 1600 6000 1600
+Wire Wire Line
+	3950 1700 3200 1700
+Wire Wire Line
+	4000 1800 3100 1800
+Wire Wire Line
+	4050 1900 5700 1900
+Wire Wire Line
+	4100 2000 5600 2000
+Wire Wire Line
+	4150 2100 5500 2100
+Wire Wire Line
+	4200 2200 5400 2200
+Wire Wire Line
+	4250 2300 5300 2300
+Wire Wire Line
+	3750 1000 3600 1000
+Wire Wire Line
+	3800 1000 3750 1000
+Wire Wire Line
+	3800 1400 4000 1400
+Wire Wire Line
+	4000 1400 4200 1400
+Wire Wire Line
+	4200 1400 4450 1400
+Wire Wire Line
+	4000 1000 3800 1000
+Wire Wire Line
+	4200 1000 4000 1000
+Wire Wire Line
+	7100 3300 7150 3300
+Wire Wire Line
+	6950 3300 7050 3300
+Wire Wire Line
+	7050 3300 7100 3300
+Wire Wire Line
+	5200 2400 2500 2400
+Wire Wire Line
+	5100 2500 2400 2500
+Wire Wire Line
+	5000 2600 2300 2600
+Wire Wire Line
+	4900 2700 6550 2700
+Wire Wire Line
+	6850 4550 8550 4550
+Wire Wire Line
+	6950 4450 8650 4450
+Wire Wire Line
+	7150 4250 8850 4250
+Wire Wire Line
+	7050 4350 8750 4350
+Wire Wire Line
+	4350 4450 5000 4450
+Wire Wire Line
+	1300 3850 2500 3850
+Text HLabel 9250 4750 2    50   Input ~ 0
+SEROut3
+Text HLabel 1300 3850 0    50   Input ~ 0
+SERIn3
+Text HLabel 10100 2650 2    50   Input ~ 0
+OUT[48..63]
+Wire Bus Line
+	10100 2650 7750 2650
+Entry Wire Line
+	7750 1000 7850 1100
+Entry Wire Line
+	7750 1100 7850 1200
+Entry Wire Line
+	7750 1200 7850 1300
+Entry Wire Line
+	7750 1300 7850 1400
+Entry Wire Line
+	7750 1400 7850 1500
+Entry Wire Line
+	7750 1500 7850 1600
+Entry Wire Line
+	7750 900  7850 1000
+Entry Wire Line
+	7750 800  7850 900 
+Wire Bus Line
+	7750 600  9550 600 
+Entry Wire Line
+	9550 750  9650 850 
+Entry Wire Line
+	9550 850  9650 950 
+Entry Wire Line
+	9550 950  9650 1050
+Entry Wire Line
+	9550 1050 9650 1150
+Entry Wire Line
+	9550 1150 9650 1250
+Entry Wire Line
+	9550 1250 9650 1350
+Entry Wire Line
+	9550 1350 9650 1450
+Entry Wire Line
+	9550 1450 9650 1550
+$Comp
+L Device:C C1
+U 1 1 5CEA0116
+P 1650 1600
+AR Path="/5CFC7757/5CEA0116" Ref="C1"  Part="1" 
+AR Path="/5CFEE74D/5CEA0116" Ref="C?"  Part="1" 
+AR Path="/5CE982AE/5CEA0116" Ref="C61"  Part="1" 
+F 0 "C61" V 1650 1250 50  0000 L CNN
+F 1 "1nF or ESD" V 1650 750 50  0000 L CNN
+F 2 "SeeedOPL-Capacitor-2016:C0603" H 1688 1450 50  0001 C CNN
+F 3 "" H 1650 1600 50  0001 C CNN
+	1    1650 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5CEBB9AD
+P 1650 1700
+AR Path="/5CFC7757/5CEBB9AD" Ref="C2"  Part="1" 
+AR Path="/5CFEE74D/5CEBB9AD" Ref="C?"  Part="1" 
+AR Path="/5CE982AE/5CEBB9AD" Ref="C62"  Part="1" 
+F 0 "C62" V 1650 1350 50  0000 L CNN
+F 1 "1nF or ESD" V 1650 850 50  0000 L CNN
+F 2 "SeeedOPL-Capacitor-2016:C0603" H 1688 1550 50  0001 C CNN
+F 3 "" H 1650 1700 50  0001 C CNN
+	1    1650 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5CEBB9DD
+P 1650 1800
+AR Path="/5CFC7757/5CEBB9DD" Ref="C3"  Part="1" 
+AR Path="/5CFEE74D/5CEBB9DD" Ref="C?"  Part="1" 
+AR Path="/5CE982AE/5CEBB9DD" Ref="C63"  Part="1" 
+F 0 "C63" V 1650 1450 50  0000 L CNN
+F 1 "1nF or ESD" V 1650 950 50  0000 L CNN
+F 2 "SeeedOPL-Capacitor-2016:C0603" H 1688 1650 50  0001 C CNN
+F 3 "" H 1650 1800 50  0001 C CNN
+	1    1650 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5CEA0143
+P 1650 1900
+AR Path="/5CFC7757/5CEA0143" Ref="C4"  Part="1" 
+AR Path="/5CFEE74D/5CEA0143" Ref="C?"  Part="1" 
+AR Path="/5CE982AE/5CEA0143" Ref="C64"  Part="1" 
+F 0 "C64" V 1650 1550 50  0000 L CNN
+F 1 "1nF or ESD" V 1650 1050 50  0000 L CNN
+F 2 "SeeedOPL-Capacitor-2016:C0603" H 1688 1750 50  0001 C CNN
+F 3 "" H 1650 1900 50  0001 C CNN
+	1    1650 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5CEA011C
+P 1650 2000
+AR Path="/5CFC7757/5CEA011C" Ref="C5"  Part="1" 
+AR Path="/5CFEE74D/5CEA011C" Ref="C?"  Part="1" 
+AR Path="/5CE982AE/5CEA011C" Ref="C65"  Part="1" 
+F 0 "C65" V 1650 1650 50  0000 L CNN
+F 1 "1nF or ESD" V 1650 1150 50  0000 L CNN
+F 2 "SeeedOPL-Capacitor-2016:C0603" H 1688 1850 50  0001 C CNN
+F 3 "" H 1650 2000 50  0001 C CNN
+	1    1650 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5CEA011E
+P 1650 2100
+AR Path="/5CFC7757/5CEA011E" Ref="C6"  Part="1" 
+AR Path="/5CFEE74D/5CEA011E" Ref="C?"  Part="1" 
+AR Path="/5CE982AE/5CEA011E" Ref="C66"  Part="1" 
+F 0 "C66" V 1650 1750 50  0000 L CNN
+F 1 "1nF or ESD" V 1650 1250 50  0000 L CNN
+F 2 "SeeedOPL-Capacitor-2016:C0603" H 1688 1950 50  0001 C CNN
+F 3 "" H 1650 2100 50  0001 C CNN
+	1    1650 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5CFFCB7C
+P 1650 2200
+AR Path="/5CFC7757/5CFFCB7C" Ref="C7"  Part="1" 
+AR Path="/5CFEE74D/5CFFCB7C" Ref="C?"  Part="1" 
+AR Path="/5CE982AE/5CFFCB7C" Ref="C67"  Part="1" 
+F 0 "C67" V 1650 1850 50  0000 L CNN
+F 1 "1nF or ESD" V 1650 1350 50  0000 L CNN
+F 2 "SeeedOPL-Capacitor-2016:C0603" H 1688 2050 50  0001 C CNN
+F 3 "" H 1650 2200 50  0001 C CNN
+	1    1650 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5CEA0121
+P 1650 2300
+AR Path="/5CFC7757/5CEA0121" Ref="C8"  Part="1" 
+AR Path="/5CFEE74D/5CEA0121" Ref="C?"  Part="1" 
+AR Path="/5CE982AE/5CEA0121" Ref="C68"  Part="1" 
+F 0 "C68" V 1650 1950 50  0000 L CNN
+F 1 "1nF or ESD" V 1650 1450 50  0000 L CNN
+F 2 "SeeedOPL-Capacitor-2016:C0603" H 1688 2150 50  0001 C CNN
+F 3 "" H 1650 2300 50  0001 C CNN
+	1    1650 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 5CEBBE51
+P 1650 2400
+AR Path="/5CFC7757/5CEBBE51" Ref="C9"  Part="1" 
+AR Path="/5CFEE74D/5CEBBE51" Ref="C?"  Part="1" 
+AR Path="/5CE982AE/5CEBBE51" Ref="C69"  Part="1" 
+F 0 "C69" V 1650 2050 50  0000 L CNN
+F 1 "1nF or ESD" V 1650 1550 50  0000 L CNN
+F 2 "SeeedOPL-Capacitor-2016:C0603" H 1688 2250 50  0001 C CNN
+F 3 "" H 1650 2400 50  0001 C CNN
+	1    1650 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 5CEBBE58
+P 1650 2500
+AR Path="/5CFC7757/5CEBBE58" Ref="C10"  Part="1" 
+AR Path="/5CFEE74D/5CEBBE58" Ref="C?"  Part="1" 
+AR Path="/5CE982AE/5CEBBE58" Ref="C70"  Part="1" 
+F 0 "C70" V 1650 2150 50  0000 L CNN
+F 1 "1nF or ESD" V 1650 1650 50  0000 L CNN
+F 2 "SeeedOPL-Capacitor-2016:C0603" H 1688 2350 50  0001 C CNN
+F 3 "" H 1650 2500 50  0001 C CNN
+	1    1650 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 5CEBBE5F
+P 1650 2600
+AR Path="/5CFC7757/5CEBBE5F" Ref="C11"  Part="1" 
+AR Path="/5CFEE74D/5CEBBE5F" Ref="C?"  Part="1" 
+AR Path="/5CE982AE/5CEBBE5F" Ref="C71"  Part="1" 
+F 0 "C71" V 1650 2250 50  0000 L CNN
+F 1 "1nF or ESD" V 1650 1750 50  0000 L CNN
+F 2 "SeeedOPL-Capacitor-2016:C0603" H 1688 2450 50  0001 C CNN
+F 3 "" H 1650 2600 50  0001 C CNN
+	1    1650 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 5CEA0146
+P 1650 2700
+AR Path="/5CFC7757/5CEA0146" Ref="C12"  Part="1" 
+AR Path="/5CFEE74D/5CEA0146" Ref="C?"  Part="1" 
+AR Path="/5CE982AE/5CEA0146" Ref="C72"  Part="1" 
+F 0 "C72" V 1650 2350 50  0000 L CNN
+F 1 "1nF or ESD" V 1650 1850 50  0000 L CNN
+F 2 "SeeedOPL-Capacitor-2016:C0603" H 1688 2550 50  0001 C CNN
+F 3 "" H 1650 2700 50  0001 C CNN
+	1    1650 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 2400 1800 2400
+Connection ~ 2500 2400
+Wire Wire Line
+	2400 2500 1800 2500
+Connection ~ 2400 2500
+Wire Wire Line
+	2300 2600 1800 2600
+Connection ~ 2300 2600
+Wire Wire Line
+	2200 1000 2050 1000
+Connection ~ 2200 1000
+Text HLabel 1400 1000 0    50   Input ~ 0
+PULLTERM
+$Comp
+L power:GND #PWR09
+U 1 1 5CEA0148
+P 1500 2900
+AR Path="/5CFC7757/5CEA0148" Ref="#PWR09"  Part="1" 
+AR Path="/5CFEE74D/5CEA0148" Ref="#PWR?"  Part="1" 
+AR Path="/5CE982AE/5CEA0148" Ref="#PWR0114"  Part="1" 
+F 0 "#PWR0114" H 1500 2650 50  0001 C CNN
+F 1 "GND" H 1500 2750 50  0000 C CNN
+F 2 "" H 1500 2900 50  0001 C CNN
+F 3 "" H 1500 2900 50  0001 C CNN
+	1    1500 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 2900 1500 2700
+Connection ~ 1500 1700
+Wire Wire Line
+	1500 1700 1500 1600
+Connection ~ 1500 1800
+Wire Wire Line
+	1500 1800 1500 1700
+Connection ~ 1500 1900
+Wire Wire Line
+	1500 1900 1500 1800
+Connection ~ 1500 2000
+Wire Wire Line
+	1500 2000 1500 1900
+Connection ~ 1500 2100
+Wire Wire Line
+	1500 2100 1500 2000
+Connection ~ 1500 2200
+Wire Wire Line
+	1500 2200 1500 2100
+Connection ~ 1500 2300
+Wire Wire Line
+	1500 2300 1500 2200
+Connection ~ 1500 2400
+Wire Wire Line
+	1500 2400 1500 2300
+Connection ~ 1500 2500
+Wire Wire Line
+	1500 2500 1500 2400
+Connection ~ 1500 2600
+Wire Wire Line
+	1500 2600 1500 2500
+Connection ~ 1500 2700
+Wire Wire Line
+	1500 2700 1500 2600
+Wire Wire Line
+	7100 650  2050 650 
+Wire Wire Line
+	2050 650  2050 1000
+Wire Wire Line
+	7100 650  7100 3300
+Connection ~ 2050 1000
+Wire Wire Line
+	2050 1000 1400 1000
+$Comp
+L Device:C C20
+U 1 1 5CEA014A
+P 8850 3900
+AR Path="/5CFC7757/5CEA014A" Ref="C20"  Part="1" 
+AR Path="/5CFEE74D/5CEA014A" Ref="C?"  Part="1" 
+AR Path="/5CE982AE/5CEA014A" Ref="C80"  Part="1" 
+F 0 "C80" V 8850 3550 50  0000 L CNN
+F 1 "1nF or ESD" V 8850 3050 50  0000 L CNN
+F 2 "SeeedOPL-Capacitor-2016:C0603" H 8888 3750 50  0001 C CNN
+F 3 "" H 8850 3900 50  0001 C CNN
+	1    8850 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C19
+U 1 1 5CEA014D
+P 8750 3900
+AR Path="/5CFC7757/5CEA014D" Ref="C19"  Part="1" 
+AR Path="/5CFEE74D/5CEA014D" Ref="C?"  Part="1" 
+AR Path="/5CE982AE/5CEA014D" Ref="C79"  Part="1" 
+F 0 "C79" V 8750 3550 50  0000 L CNN
+F 1 "1nF or ESD" V 8750 3050 50  0000 L CNN
+F 2 "SeeedOPL-Capacitor-2016:C0603" H 8788 3750 50  0001 C CNN
+F 3 "" H 8750 3900 50  0001 C CNN
+	1    8750 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C18
+U 1 1 5CEFB944
+P 8650 3900
+AR Path="/5CFC7757/5CEFB944" Ref="C18"  Part="1" 
+AR Path="/5CFEE74D/5CEFB944" Ref="C?"  Part="1" 
+AR Path="/5CE982AE/5CEFB944" Ref="C78"  Part="1" 
+F 0 "C78" V 8650 3550 50  0000 L CNN
+F 1 "1nF or ESD" V 8650 3050 50  0000 L CNN
+F 2 "SeeedOPL-Capacitor-2016:C0603" H 8688 3750 50  0001 C CNN
+F 3 "" H 8650 3900 50  0001 C CNN
+	1    8650 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C17
+U 1 1 5CEA014E
+P 8550 3900
+AR Path="/5CFC7757/5CEA014E" Ref="C17"  Part="1" 
+AR Path="/5CFEE74D/5CEA014E" Ref="C?"  Part="1" 
+AR Path="/5CE982AE/5CEA014E" Ref="C77"  Part="1" 
+F 0 "C77" V 8550 3550 50  0000 L CNN
+F 1 "1nF or ESD" V 8550 3050 50  0000 L CNN
+F 2 "SeeedOPL-Capacitor-2016:C0603" H 8588 3750 50  0001 C CNN
+F 3 "" H 8550 3900 50  0001 C CNN
+	1    8550 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 5CFFCB87
+P 8250 3750
+AR Path="/5CFC7757/5CFFCB87" Ref="#PWR013"  Part="1" 
+AR Path="/5CFEE74D/5CFFCB87" Ref="#PWR?"  Part="1" 
+AR Path="/5CE982AE/5CFFCB87" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 8250 3500 50  0001 C CNN
+F 1 "GND" H 8250 3600 50  0000 C CNN
+F 2 "" H 8250 3750 50  0001 C CNN
+F 3 "" H 8250 3750 50  0001 C CNN
+	1    8250 3750
+	0    1    1    0   
+$EndComp
+Connection ~ 8750 3750
+Wire Wire Line
+	8750 3750 8850 3750
+Connection ~ 8650 3750
+Wire Wire Line
+	8650 3750 8750 3750
+Connection ~ 8550 3750
+Wire Wire Line
+	8550 3750 8650 3750
+Wire Wire Line
+	8850 4050 8850 4250
+Connection ~ 8850 4250
+Wire Wire Line
+	8850 4250 9650 4250
+Wire Wire Line
+	8750 4050 8750 4350
+Connection ~ 8750 4350
+Wire Wire Line
+	8750 4350 9650 4350
+Wire Wire Line
+	8650 4050 8650 4450
+Connection ~ 8650 4450
+Wire Wire Line
+	8650 4450 9650 4450
+Wire Wire Line
+	8550 4050 8550 4550
+Connection ~ 8550 4550
+Wire Wire Line
+	8550 4550 9650 4550
+Wire Wire Line
+	8250 3750 8550 3750
+Text HLabel 1850 4050 0    50   Input ~ 0
+SerialCLK
+Text HLabel 1850 4150 0    50   Input ~ 0
+nRST
+Text HLabel 1850 4350 0    50   Input ~ 0
+InRegLoad
+Wire Wire Line
+	1850 4350 2400 4350
+Connection ~ 2400 4350
+Wire Wire Line
+	2400 4450 2400 5100
+Wire Wire Line
+	2400 5100 4350 5100
+Wire Wire Line
+	4350 5100 4350 4450
+Connection ~ 2400 4450
+Connection ~ 4350 4450
+Text Label 8900 900  2    60   ~ 0
+OUT48
+Text Label 8900 1000 2    60   ~ 0
+OUT50
+Text Label 8900 1100 2    60   ~ 0
+OUT52
+Text Label 8900 1200 2    60   ~ 0
+OUT54
+Text Label 8900 1300 2    60   ~ 0
+OUT56
+Text Label 8900 1400 2    60   ~ 0
+OUT58
+Text Label 8900 1500 2    60   ~ 0
+OUT60
+Text Label 8900 1600 2    60   ~ 0
+OUT62
+Text Label 9950 1550 0    60   ~ 0
+OUT49
+Text Label 9950 1450 0    60   ~ 0
+OUT51
+Text Label 9950 1350 0    60   ~ 0
+OUT53
+Text Label 9950 1250 0    60   ~ 0
+OUT55
+Text Label 9950 1150 0    60   ~ 0
+OUT57
+Text Label 9950 1050 0    60   ~ 0
+OUT59
+Text Label 9950 950  0    60   ~ 0
+OUT61
+Text Label 9950 850  0    60   ~ 0
+OUT63
+Wire Wire Line
+	9650 1550 10250 1550
+Wire Wire Line
+	9650 1450 10250 1450
+Wire Wire Line
+	9650 1350 10250 1350
+Wire Wire Line
+	9650 1250 10250 1250
+Wire Wire Line
+	9650 1150 10250 1150
+Wire Wire Line
+	9650 1050 10250 1050
+Wire Wire Line
+	9650 950  10250 950 
+Wire Wire Line
+	9650 850  10250 850 
+Wire Wire Line
+	7850 900  9000 900 
+Wire Wire Line
+	7850 1000 9000 1000
+Wire Wire Line
+	7850 1100 9000 1100
+Wire Wire Line
+	7850 1200 9000 1200
+Wire Wire Line
+	7850 1300 9000 1300
+Wire Wire Line
+	7850 1400 9000 1400
+Wire Wire Line
+	7850 1500 9000 1500
+Wire Wire Line
+	7850 1600 9000 1600
+Text Label 1600 3850 0    50   ~ 0
+SERIn3
+$Comp
+L Device:R R12
+U 1 1 5D11710C
+P 4750 3600
+F 0 "R12" H 4820 3646 50  0000 L CNN
+F 1 "DNP" H 4820 3555 50  0000 L CNN
+F 2 "SeeedOPL-Resistor-2016:R0603" V 4680 3600 50  0001 C CNN
+F 3 "~" H 4750 3600 50  0001 C CNN
+	1    4750 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3850 4750 3750
+Connection ~ 4750 3850
+Wire Wire Line
+	4750 3450 4750 3100
+Wire Wire Line
+	4750 3100 7700 3100
+Wire Wire Line
+	7700 3350 7700 3100
+Connection ~ 7700 3100
+Wire Wire Line
+	7700 3100 9800 3100
+Wire Wire Line
+	7700 3650 7700 4750
+Connection ~ 7700 4750
+Wire Wire Line
+	7700 4750 6400 4750
+Text GLabel 9800 3100 2    50   Input ~ 0
+CHAINOUT
+Wire Bus Line
+	7750 600  7750 2650
+Wire Bus Line
+	9550 600  9550 1550
+$EndSCHEMATC

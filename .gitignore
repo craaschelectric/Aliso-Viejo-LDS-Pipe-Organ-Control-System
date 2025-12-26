@@ -1,0 +1,62 @@
+# MPLAB X IDE
+nbproject/private/
+nbproject/Package-*.bash
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+.dep.inc
+*.d
+*.pre
+*.p1
+*.lst
+*.sym
+*.obj
+*.o
+*.sdb
+*.obj.dmp
+html/
+*.map
+*.rlf
+*.cof
+*.hxl
+*.cod
+*.mcp
+*.mcs
+*.mcw
+*.dbg
+
+# Build outputs
+*.hex
+*.elf
+*.bin
+
+# Arduino/Teensy IDE files
+.vscode/
+.idea/
+.generated_files/
+
+# KiCad
+*.bak
+*.bck
+*-bak
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups/
+fp-info-cache
+*.kicad_prl
+*.lck
+~*.kicad_pcb
+~*.kicad_sch
+_autosave-*
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Backup files
+*.orig

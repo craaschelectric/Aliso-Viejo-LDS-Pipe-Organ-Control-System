@@ -1,0 +1,1042 @@
+EESchema Schematic File Version 4
+LIBS:ManualPistonArray-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SerialIOProc-rescue:74HC595 U5
+U 1 1 5AFD6235
+P 5700 4300
+F 0 "U5" H 5850 4900 50  0000 C CNN
+F 1 "74HC597" H 5700 3700 50  0000 C CNN
+F 2 "SMD_Packages:SO-16-N" H 5700 4300 50  0001 C CNN
+F 3 "" H 5700 4300 50  0001 C CNN
+	1    5700 4300
+	1    0    0    -1  
+$EndComp
+Text Label 4350 4350 0    60   ~ 0
+InRegLoad
+Text Label 4350 4150 0    60   ~ 0
+nRST
+Text Label 4350 4050 0    60   ~ 0
+SerialCLK
+$Comp
+L SerialIOProc-rescue:74HC595 U4
+U 1 1 5CFFCB67
+P 3200 4300
+F 0 "U4" H 3350 4900 50  0000 C CNN
+F 1 "74HC597" H 3200 3700 50  0000 C CNN
+F 2 "SMD_Packages:SO-16-N" H 3200 4300 50  0001 C CNN
+F 3 "" H 3200 4300 50  0001 C CNN
+	1    3200 4300
+	1    0    0    -1  
+$EndComp
+Text Label 1850 4150 0    60   ~ 0
+nRST
+Text Label 1850 4050 0    60   ~ 0
+SerialCLK
+$Comp
+L Device:R_Pack04 RN9
+U 1 1 5CFFCB68
+P 3200 1200
+F 0 "RN9" V 2900 1200 50  0000 C CNN
+F 1 "R_Pack04" V 3400 1200 50  0000 C CNN
+F 2 "CLRConnector:2012-8" V 3475 1200 50  0001 C CNN
+F 3 "" H 3200 1200 50  0001 C CNN
+	1    3200 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Pack04 RN10
+U 1 1 5AFDF198
+P 2800 1200
+F 0 "RN10" V 2500 1200 50  0000 C CNN
+F 1 "R_Pack04" V 3000 1200 50  0000 C CNN
+F 2 "CLRConnector:2012-8" V 3075 1200 50  0001 C CNN
+F 3 "" H 2800 1200 50  0001 C CNN
+	1    2800 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Pack04 RN11
+U 1 1 5AFD68D9
+P 2400 1200
+F 0 "RN11" V 2100 1200 50  0000 C CNN
+F 1 "R_Pack04" V 2600 1200 50  0000 C CNN
+F 2 "CLRConnector:2012-8" V 2675 1200 50  0001 C CNN
+F 3 "" H 2400 1200 50  0001 C CNN
+	1    2400 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR033
+U 1 1 5CFFCB6A
+P 3750 900
+F 0 "#PWR033" H 3750 750 50  0001 C CNN
+F 1 "VDD" H 3750 1050 50  0000 C CNN
+F 2 "" H 3750 900 50  0001 C CNN
+F 3 "" H 3750 900 50  0001 C CNN
+	1    3750 900 
+	1    0    0    -1  
+$EndComp
+Connection ~ 2200 2700
+Connection ~ 2600 2300
+Connection ~ 2700 2200
+Connection ~ 2800 2100
+Connection ~ 2900 2000
+Connection ~ 3000 1900
+Connection ~ 3100 1800
+Connection ~ 3200 1700
+Connection ~ 3300 1600
+Wire Wire Line
+	6400 4250 7150 4250
+Wire Wire Line
+	6400 4350 7050 4350
+Wire Wire Line
+	6400 4550 6850 4550
+Wire Wire Line
+	9250 4750 6750 4750
+Wire Wire Line
+	2200 1400 2200 2700
+Wire Wire Line
+	2300 2600 2300 1400
+Wire Wire Line
+	2400 1400 2400 2500
+Wire Wire Line
+	2500 2400 2500 1400
+Wire Wire Line
+	2600 2300 2600 1400
+Wire Wire Line
+	2700 1400 2700 2200
+Wire Wire Line
+	2800 2100 2800 1400
+Wire Wire Line
+	2900 1400 2900 2000
+Wire Wire Line
+	3000 1900 3000 1400
+Wire Wire Line
+	3100 1400 3100 1800
+Wire Wire Line
+	3200 1700 3200 1400
+Wire Wire Line
+	3300 1400 3300 1600
+Wire Wire Line
+	3750 1000 3750 900 
+Connection ~ 2400 1000
+Connection ~ 2500 1000
+Connection ~ 2800 1000
+Connection ~ 2900 1000
+Connection ~ 3200 1000
+Wire Wire Line
+	3900 3850 3900 1600
+Connection ~ 3900 1600
+Wire Wire Line
+	3950 1700 3950 3950
+Wire Wire Line
+	3950 3950 3900 3950
+Connection ~ 3950 1700
+Wire Wire Line
+	3900 4050 4000 4050
+Wire Wire Line
+	4000 4050 4000 1800
+Connection ~ 4000 1800
+Wire Wire Line
+	4050 1900 4050 4150
+Wire Wire Line
+	4050 4150 3900 4150
+Connection ~ 4050 1900
+Wire Wire Line
+	3900 4250 4100 4250
+Wire Wire Line
+	4100 4250 4100 2000
+Connection ~ 4100 2000
+Wire Wire Line
+	4150 2100 4150 4350
+Wire Wire Line
+	4150 4350 3900 4350
+Connection ~ 4150 2100
+Wire Wire Line
+	4200 2200 4200 4450
+Wire Wire Line
+	4200 4450 3900 4450
+Connection ~ 4200 2200
+Wire Wire Line
+	3900 4550 4250 4550
+Wire Wire Line
+	4250 4550 4250 2300
+Connection ~ 4250 2300
+Wire Wire Line
+	6450 3950 6400 3950
+Wire Wire Line
+	6400 4050 6500 4050
+Wire Wire Line
+	6550 4150 6400 4150
+Wire Wire Line
+	3900 4750 4750 4750
+Wire Wire Line
+	4750 4750 4750 3850
+Wire Wire Line
+	4750 3850 5000 3850
+Wire Wire Line
+	4350 4150 5000 4150
+Wire Wire Line
+	2500 4150 1850 4150
+Wire Wire Line
+	1850 4050 2500 4050
+Wire Wire Line
+	4350 4050 5000 4050
+Wire Wire Line
+	5000 4350 4350 4350
+Wire Wire Line
+	4350 4350 4350 4450
+Wire Wire Line
+	2500 4350 2400 4350
+Wire Wire Line
+	2400 4350 2400 4450
+Wire Wire Line
+	2400 4450 2500 4450
+$Comp
+L Device:C C32
+U 1 1 5AFE1229
+P 4000 1200
+F 0 "C32" H 4025 1300 50  0000 L CNN
+F 1 "302010138" H 4025 1100 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 4038 1050 50  0001 C CNN
+F 3 "" H 4000 1200 50  0001 C CNN
+	1    4000 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1050 3600 1000
+Wire Wire Line
+	3800 1000 3800 1050
+Connection ~ 3750 1000
+Wire Wire Line
+	4000 1000 4000 1050
+Connection ~ 3800 1000
+Wire Wire Line
+	3600 1350 3600 1400
+Wire Wire Line
+	3800 1350 3800 1400
+Connection ~ 3800 1400
+Wire Wire Line
+	4000 1350 4000 1400
+Connection ~ 4000 1400
+$Comp
+L Device:C C33
+U 1 1 5CFFCB6E
+P 4200 1200
+F 0 "C33" H 4225 1300 50  0000 L CNN
+F 1 "302010138" H 4225 1100 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 4238 1050 50  0001 C CNN
+F 3 "" H 4200 1200 50  0001 C CNN
+	1    4200 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 1400 4200 1350
+Connection ~ 4200 1400
+Wire Wire Line
+	4200 1000 4200 1050
+Connection ~ 4000 1000
+Connection ~ 4200 1000
+$Comp
+L power:VCC #PWR034
+U 1 1 5AFE1E88
+P 4400 900
+F 0 "#PWR034" H 4400 750 50  0001 C CNN
+F 1 "VCC" H 4400 1050 50  0000 C CNN
+F 2 "" H 4400 900 50  0001 C CNN
+F 3 "" H 4400 900 50  0001 C CNN
+	1    4400 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 900  4400 1000
+$Comp
+L Device:R_Pack04 RN15
+U 1 1 5CFFCB70
+P 7050 3650
+F 0 "RN15" V 6750 3650 50  0000 C CNN
+F 1 "R_Pack04" V 7250 3650 50  0000 C CNN
+F 2 "CLRConnector:2012-8" V 7325 3650 50  0001 C CNN
+F 3 "" H 7050 3650 50  0001 C CNN
+	1    7050 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 3300 6950 3300
+Wire Wire Line
+	7150 3300 7150 3450
+Wire Wire Line
+	6850 3300 6850 3450
+Connection ~ 7100 3300
+Wire Wire Line
+	6950 3450 6950 3300
+Connection ~ 6950 3300
+Wire Wire Line
+	7050 3450 7050 3300
+Connection ~ 7050 3300
+Wire Wire Line
+	6850 3850 6850 4550
+Connection ~ 6850 4550
+Wire Wire Line
+	6950 3850 6950 4450
+Connection ~ 6950 4450
+Wire Wire Line
+	7150 3850 7150 4250
+Connection ~ 7150 4250
+Wire Wire Line
+	7050 3850 7050 4350
+Connection ~ 7050 4350
+Wire Wire Line
+	4400 1000 4200 1000
+$Comp
+L power:GND #PWR035
+U 1 1 5B156528
+P 4450 1400
+F 0 "#PWR035" H 4450 1150 50  0001 C CNN
+F 1 "GND" H 4450 1250 50  0000 C CNN
+F 2 "" H 4450 1400 50  0001 C CNN
+F 3 "" H 4450 1400 50  0001 C CNN
+	1    4450 1400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3600 1400 3800 1400
+Wire Wire Line
+	1800 2300 2600 2300
+Wire Wire Line
+	1800 2200 2700 2200
+Wire Wire Line
+	1800 2100 2800 2100
+Wire Wire Line
+	1800 2000 2900 2000
+Wire Wire Line
+	1800 1900 3000 1900
+Wire Wire Line
+	5800 1800 4000 1800
+Wire Wire Line
+	5900 1700 3950 1700
+Wire Wire Line
+	1800 1600 3300 1600
+$Comp
+L Device:R_Pack04 RN12
+U 1 1 5B157691
+P 5800 1250
+F 0 "RN12" V 5500 1250 50  0000 C CNN
+F 1 "R_Pack04" V 6000 1250 50  0000 C CNN
+F 2 "CLRConnector:2012-8" V 6075 1250 50  0001 C CNN
+F 3 "" H 5800 1250 50  0001 C CNN
+	1    5800 1250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2700 4900 1450
+Wire Wire Line
+	5000 1050 5000 1000
+Wire Wire Line
+	5100 1000 5100 1050
+Wire Wire Line
+	5200 1050 5200 1000
+Wire Wire Line
+	5000 1450 5000 2600
+Wire Wire Line
+	5100 2500 5100 1450
+Wire Wire Line
+	5200 1450 5200 2400
+$Comp
+L Device:R_Pack04 RN13
+U 1 1 5B157E06
+P 5400 1250
+F 0 "RN13" V 5100 1250 50  0000 C CNN
+F 1 "R_Pack04" V 5600 1250 50  0000 C CNN
+F 2 "CLRConnector:2012-8" V 5675 1250 50  0001 C CNN
+F 3 "" H 5400 1250 50  0001 C CNN
+	1    5400 1250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Pack04 RN14
+U 1 1 5B157E5A
+P 5000 1250
+F 0 "RN14" V 4700 1250 50  0000 C CNN
+F 1 "R_Pack04" V 5200 1250 50  0000 C CNN
+F 2 "CLRConnector:2012-8" V 5275 1250 50  0001 C CNN
+F 3 "" H 5000 1250 50  0001 C CNN
+	1    5000 1250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 1050 5300 1000
+Wire Wire Line
+	5400 1000 5400 1050
+Wire Wire Line
+	5500 1000 5500 1050
+Wire Wire Line
+	5600 1050 5600 1000
+Wire Wire Line
+	5700 1000 5700 1050
+Wire Wire Line
+	5800 1050 5800 1000
+Wire Wire Line
+	5900 1050 5900 1000
+Wire Wire Line
+	6000 1000 6000 1050
+Wire Wire Line
+	6000 1600 6000 1450
+Wire Wire Line
+	5900 1450 5900 1700
+Wire Wire Line
+	5800 1450 5800 1800
+Wire Wire Line
+	5700 1900 5700 1450
+Wire Wire Line
+	5600 2000 5600 1450
+Wire Wire Line
+	5500 2100 5500 1450
+Wire Wire Line
+	5400 2200 5400 1450
+Wire Wire Line
+	5300 2300 5300 1450
+$Comp
+L Device:R_Pack04 RN16
+U 1 1 5B1E8B28
+P 9850 4450
+F 0 "RN16" V 9550 4450 50  0000 C CNN
+F 1 "R_Pack04" V 10050 4450 50  0000 C CNN
+F 2 "CLRConnector:2012-8" V 10125 4450 50  0001 C CNN
+F 3 "" H 9850 4450 50  0001 C CNN
+	1    9850 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 1050 4900 1000
+Text Label 6000 1000 1    60   ~ 0
+OUT0
+Text Label 5900 1000 1    60   ~ 0
+OUT1
+Text Label 5800 1000 1    60   ~ 0
+OUT2
+Text Label 5700 1000 1    60   ~ 0
+OUT3
+Text Label 5600 1000 1    60   ~ 0
+OUT4
+Text Label 5500 1000 1    60   ~ 0
+OUT5
+Text Label 5400 1000 1    60   ~ 0
+OUT6
+Text Label 5300 1000 1    60   ~ 0
+OUT7
+Text Label 5200 1000 1    60   ~ 0
+OUT8
+Text Label 5100 1000 1    60   ~ 0
+OUT9
+Text Label 5000 1000 1    60   ~ 0
+OUT10
+Text Label 4900 1000 1    60   ~ 0
+OUT11
+Text Label 10100 4250 0    60   ~ 0
+OUT12
+Text Label 10100 4350 0    60   ~ 0
+OUT13
+Text Label 10100 4450 0    60   ~ 0
+OUT14
+Text Label 10100 4550 0    60   ~ 0
+OUT15
+Wire Wire Line
+	10050 4250 10100 4250
+Wire Wire Line
+	10100 4350 10050 4350
+Wire Wire Line
+	10050 4450 10100 4450
+Wire Wire Line
+	10100 4550 10050 4550
+Text Label 8500 900  2    60   ~ 0
+OUT0
+Text Label 8500 1000 2    60   ~ 0
+OUT2
+Text Label 8500 1100 2    60   ~ 0
+OUT4
+Text Label 8500 1200 2    60   ~ 0
+OUT6
+Text Label 8500 1300 2    60   ~ 0
+OUT8
+Text Label 8500 1400 2    60   ~ 0
+OUT10
+Text Label 8500 1500 2    60   ~ 0
+OUT12
+Text Label 8500 1600 2    60   ~ 0
+OUT14
+Text Label 9650 1550 0    60   ~ 0
+OUT1
+Text Label 9650 1450 0    60   ~ 0
+OUT3
+Text Label 9650 1350 0    60   ~ 0
+OUT5
+Text Label 9650 1250 0    60   ~ 0
+OUT7
+Text Label 9650 1150 0    60   ~ 0
+OUT9
+Text Label 9650 1050 0    60   ~ 0
+OUT11
+Text Label 9650 950  0    60   ~ 0
+OUT13
+Text Label 9650 850  0    60   ~ 0
+OUT15
+Wire Wire Line
+	9950 1550 9650 1550
+Wire Wire Line
+	9950 1450 9650 1450
+Wire Wire Line
+	9950 1350 9650 1350
+Wire Wire Line
+	9950 1250 9650 1250
+Wire Wire Line
+	9950 1150 9650 1150
+Wire Wire Line
+	9950 1050 9650 1050
+Wire Wire Line
+	9950 950  9650 950 
+Wire Wire Line
+	9950 850  9650 850 
+Wire Wire Line
+	1800 2700 2200 2700
+Wire Wire Line
+	6400 4450 6950 4450
+Connection ~ 5200 2400
+Connection ~ 5100 2500
+Connection ~ 5000 2600
+Wire Wire Line
+	6400 3850 6400 2400
+Wire Wire Line
+	6400 2400 5200 2400
+Wire Wire Line
+	6450 3950 6450 2500
+Wire Wire Line
+	6450 2500 5100 2500
+Wire Wire Line
+	6500 4050 6500 2600
+Wire Wire Line
+	6500 2600 5000 2600
+Wire Wire Line
+	6550 2700 6550 4150
+Connection ~ 4900 2700
+Wire Wire Line
+	2200 2700 4900 2700
+Wire Wire Line
+	2600 2300 4250 2300
+Wire Wire Line
+	2700 2200 4200 2200
+Wire Wire Line
+	2800 2100 4150 2100
+Wire Wire Line
+	2900 2000 4100 2000
+Wire Wire Line
+	3000 1900 4050 1900
+Wire Wire Line
+	3100 1800 1800 1800
+Wire Wire Line
+	3200 1700 1800 1700
+Wire Wire Line
+	3300 1600 3900 1600
+Wire Wire Line
+	2400 1000 2300 1000
+Wire Wire Line
+	2500 1000 2400 1000
+Wire Wire Line
+	2800 1000 2700 1000
+Wire Wire Line
+	2900 1000 2800 1000
+Wire Wire Line
+	3200 1000 3100 1000
+Wire Wire Line
+	3300 1000 3200 1000
+Wire Wire Line
+	3900 1600 6000 1600
+Wire Wire Line
+	3950 1700 3200 1700
+Wire Wire Line
+	4000 1800 3100 1800
+Wire Wire Line
+	4050 1900 5700 1900
+Wire Wire Line
+	4100 2000 5600 2000
+Wire Wire Line
+	4150 2100 5500 2100
+Wire Wire Line
+	4200 2200 5400 2200
+Wire Wire Line
+	4250 2300 5300 2300
+Wire Wire Line
+	3750 1000 3600 1000
+Wire Wire Line
+	3800 1000 3750 1000
+Wire Wire Line
+	3800 1400 4000 1400
+Wire Wire Line
+	4000 1400 4200 1400
+Wire Wire Line
+	4200 1400 4450 1400
+Wire Wire Line
+	4000 1000 3800 1000
+Wire Wire Line
+	4200 1000 4000 1000
+Wire Wire Line
+	7100 3300 7150 3300
+Wire Wire Line
+	6950 3300 7050 3300
+Wire Wire Line
+	7050 3300 7100 3300
+Wire Wire Line
+	5200 2400 2500 2400
+Wire Wire Line
+	5100 2500 2400 2500
+Wire Wire Line
+	5000 2600 2300 2600
+Wire Wire Line
+	4900 2700 6550 2700
+Wire Wire Line
+	6850 4550 8550 4550
+Wire Wire Line
+	6950 4450 8650 4450
+Wire Wire Line
+	7150 4250 8850 4250
+Wire Wire Line
+	7050 4350 8750 4350
+Wire Wire Line
+	4350 4450 5000 4450
+Wire Wire Line
+	1300 3850 2500 3850
+Text HLabel 9250 4750 2    50   Input ~ 0
+SEROut0
+Text HLabel 1300 3850 0    50   Input ~ 0
+SERIn0
+Text HLabel 10100 2650 2    50   Input ~ 0
+OUT[0..15]
+Wire Bus Line
+	10100 2650 7750 2650
+Entry Wire Line
+	7750 1000 7850 1100
+Entry Wire Line
+	7750 1100 7850 1200
+Entry Wire Line
+	7750 1200 7850 1300
+Entry Wire Line
+	7750 1300 7850 1400
+Entry Wire Line
+	7750 1400 7850 1500
+Entry Wire Line
+	7750 1500 7850 1600
+Entry Wire Line
+	7750 900  7850 1000
+Wire Wire Line
+	7850 1600 8600 1600
+Wire Wire Line
+	7850 1500 8600 1500
+Wire Wire Line
+	7850 1400 8600 1400
+Wire Wire Line
+	7850 1300 8600 1300
+Wire Wire Line
+	7850 1200 8600 1200
+Wire Wire Line
+	7850 1100 8600 1100
+Entry Wire Line
+	7750 800  7850 900 
+Wire Wire Line
+	7850 900  8600 900 
+Wire Wire Line
+	7850 1000 8600 1000
+Wire Bus Line
+	7750 600  9550 600 
+Entry Wire Line
+	9550 750  9650 850 
+Entry Wire Line
+	9550 850  9650 950 
+Entry Wire Line
+	9550 950  9650 1050
+Entry Wire Line
+	9550 1050 9650 1150
+Entry Wire Line
+	9550 1150 9650 1250
+Entry Wire Line
+	9550 1250 9650 1350
+Entry Wire Line
+	9550 1350 9650 1450
+Entry Wire Line
+	9550 1450 9650 1550
+$Comp
+L Device:C C20
+U 1 1 5CFFCB76
+P 1650 1600
+F 0 "C20" V 1650 1250 50  0000 L CNN
+F 1 "1nf 302010138 or ESD" V 1600 750 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 1688 1450 50  0001 C CNN
+F 3 "" H 1650 1600 50  0001 C CNN
+	1    1650 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C21
+U 1 1 5CFFCB77
+P 1650 1700
+F 0 "C21" V 1650 1350 50  0000 L CNN
+F 1 "1nf 302010138 or ESD" V 1600 850 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 1688 1550 50  0001 C CNN
+F 3 "" H 1650 1700 50  0001 C CNN
+	1    1650 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C22
+U 1 1 5CFFCB78
+P 1650 1800
+F 0 "C22" V 1650 1450 50  0000 L CNN
+F 1 "1nf 302010138 or ESD" V 1600 950 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 1688 1650 50  0001 C CNN
+F 3 "" H 1650 1800 50  0001 C CNN
+	1    1650 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C23
+U 1 1 5CEBBA0F
+P 1650 1900
+F 0 "C23" V 1650 1550 50  0000 L CNN
+F 1 "1nf 302010138 or ESD" V 1600 1050 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 1688 1750 50  0001 C CNN
+F 3 "" H 1650 1900 50  0001 C CNN
+	1    1650 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C24
+U 1 1 5CFFCB7A
+P 1650 2000
+F 0 "C24" V 1650 1650 50  0000 L CNN
+F 1 "1nf 302010138 or ESD" V 1600 1150 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 1688 1850 50  0001 C CNN
+F 3 "" H 1650 2000 50  0001 C CNN
+	1    1650 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C25
+U 1 1 5CFFCB7B
+P 1650 2100
+F 0 "C25" V 1650 1750 50  0000 L CNN
+F 1 "1nf 302010138 or ESD" V 1600 1250 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 1688 1950 50  0001 C CNN
+F 3 "" H 1650 2100 50  0001 C CNN
+	1    1650 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C26
+U 1 1 5CEBBB5F
+P 1650 2200
+F 0 "C26" V 1650 1850 50  0000 L CNN
+F 1 "1nf 302010138 or ESD" V 1600 1350 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 1688 2050 50  0001 C CNN
+F 3 "" H 1650 2200 50  0001 C CNN
+	1    1650 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C27
+U 1 1 5CFFCB7D
+P 1650 2300
+F 0 "C27" V 1650 1950 50  0000 L CNN
+F 1 "1nf 302010138 or ESD" V 1600 1450 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 1688 2150 50  0001 C CNN
+F 3 "" H 1650 2300 50  0001 C CNN
+	1    1650 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C28
+U 1 1 5CFFCB7E
+P 1650 2400
+F 0 "C28" V 1650 2050 50  0000 L CNN
+F 1 "1nf 302010138 or ESD" V 1600 1550 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 1688 2250 50  0001 C CNN
+F 3 "" H 1650 2400 50  0001 C CNN
+	1    1650 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C29
+U 1 1 5CFFCB7F
+P 1650 2500
+F 0 "C29" V 1650 2150 50  0000 L CNN
+F 1 "1nf 302010138 or ESD" V 1600 1650 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 1688 2350 50  0001 C CNN
+F 3 "" H 1650 2500 50  0001 C CNN
+	1    1650 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C30
+U 1 1 5CFFCB80
+P 1650 2600
+F 0 "C30" V 1650 2250 50  0000 L CNN
+F 1 "1nf 302010138 or ESD" V 1600 2700 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 1688 2450 50  0001 C CNN
+F 3 "" H 1650 2600 50  0001 C CNN
+	1    1650 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C31
+U 1 1 5CEBBE66
+P 1650 2700
+F 0 "C31" V 1650 2350 50  0000 L CNN
+F 1 "1nf 302010138 or ESD" V 1600 2800 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 1688 2550 50  0001 C CNN
+F 3 "" H 1650 2700 50  0001 C CNN
+	1    1650 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 2400 1800 2400
+Connection ~ 2500 2400
+Wire Wire Line
+	2400 2500 1800 2500
+Connection ~ 2400 2500
+Wire Wire Line
+	2300 2600 1800 2600
+Connection ~ 2300 2600
+Text HLabel 1400 1000 0    50   Input ~ 0
+PULLTERM
+$Comp
+L power:GND #PWR032
+U 1 1 5CEE7B63
+P 1500 2900
+F 0 "#PWR032" H 1500 2650 50  0001 C CNN
+F 1 "GND" H 1500 2750 50  0000 C CNN
+F 2 "" H 1500 2900 50  0001 C CNN
+F 3 "" H 1500 2900 50  0001 C CNN
+	1    1500 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 2900 1500 2700
+Connection ~ 1500 1700
+Wire Wire Line
+	1500 1700 1500 1600
+Connection ~ 1500 1800
+Wire Wire Line
+	1500 1800 1500 1700
+Connection ~ 1500 1900
+Wire Wire Line
+	1500 1900 1500 1800
+Connection ~ 1500 2000
+Wire Wire Line
+	1500 2000 1500 1900
+Connection ~ 1500 2100
+Wire Wire Line
+	1500 2100 1500 2000
+Connection ~ 1500 2200
+Wire Wire Line
+	1500 2200 1500 2100
+Connection ~ 1500 2300
+Wire Wire Line
+	1500 2300 1500 2200
+Connection ~ 1500 2400
+Wire Wire Line
+	1500 2400 1500 2300
+Connection ~ 1500 2500
+Wire Wire Line
+	1500 2500 1500 2400
+Connection ~ 1500 2600
+Wire Wire Line
+	1500 2600 1500 2500
+Connection ~ 1500 2700
+Wire Wire Line
+	1500 2700 1500 2600
+Wire Wire Line
+	7100 650  2050 650 
+Wire Wire Line
+	2050 650  2050 1000
+Wire Wire Line
+	7100 650  7100 3300
+Connection ~ 2050 1000
+Wire Wire Line
+	2050 1000 1400 1000
+$Comp
+L Device:C C37
+U 1 1 5CEFB936
+P 8850 3900
+F 0 "C37" V 8850 3550 50  0000 L CNN
+F 1 "1nf 302010138 or ESD" V 8850 3050 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 8888 3750 50  0001 C CNN
+F 3 "" H 8850 3900 50  0001 C CNN
+	1    8850 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C36
+U 1 1 5CEFB93D
+P 8750 3900
+F 0 "C36" V 8750 3550 50  0000 L CNN
+F 1 "1nf 302010138 or ESD" V 8750 3050 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 8788 3750 50  0001 C CNN
+F 3 "" H 8750 3900 50  0001 C CNN
+	1    8750 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C35
+U 1 1 5CFFCB85
+P 8650 3900
+F 0 "C35" V 8650 3550 50  0000 L CNN
+F 1 "1nf 302010138 or ESD" V 8650 3050 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 8688 3750 50  0001 C CNN
+F 3 "" H 8650 3900 50  0001 C CNN
+	1    8650 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C34
+U 1 1 5CEFB94B
+P 8550 3900
+F 0 "C34" V 8550 3550 50  0000 L CNN
+F 1 "1nf 302010138 or ESD" V 8550 3050 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 8588 3750 50  0001 C CNN
+F 3 "" H 8550 3900 50  0001 C CNN
+	1    8550 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR036
+U 1 1 5CEFB959
+P 8250 3750
+F 0 "#PWR036" H 8250 3500 50  0001 C CNN
+F 1 "GND" H 8250 3600 50  0000 C CNN
+F 2 "" H 8250 3750 50  0001 C CNN
+F 3 "" H 8250 3750 50  0001 C CNN
+	1    8250 3750
+	0    1    1    0   
+$EndComp
+Connection ~ 8750 3750
+Wire Wire Line
+	8750 3750 8850 3750
+Connection ~ 8650 3750
+Wire Wire Line
+	8650 3750 8750 3750
+Connection ~ 8550 3750
+Wire Wire Line
+	8550 3750 8650 3750
+Wire Wire Line
+	8850 4050 8850 4250
+Connection ~ 8850 4250
+Wire Wire Line
+	8850 4250 9650 4250
+Wire Wire Line
+	8750 4050 8750 4350
+Connection ~ 8750 4350
+Wire Wire Line
+	8750 4350 9650 4350
+Wire Wire Line
+	8650 4050 8650 4450
+Connection ~ 8650 4450
+Wire Wire Line
+	8650 4450 9650 4450
+Wire Wire Line
+	8550 4050 8550 4550
+Connection ~ 8550 4550
+Wire Wire Line
+	8550 4550 9650 4550
+Wire Wire Line
+	8250 3750 8550 3750
+Text HLabel 1850 4050 0    50   Input ~ 0
+SerialCLK
+Text HLabel 1850 4150 0    50   Input ~ 0
+nRST
+Text HLabel 1850 4350 0    50   Input ~ 0
+InRegLoad
+Wire Wire Line
+	1850 4350 2400 4350
+Connection ~ 2400 4350
+Wire Wire Line
+	2400 4450 2400 5100
+Wire Wire Line
+	2400 5100 4350 5100
+Wire Wire Line
+	4350 5100 4350 4450
+Connection ~ 2400 4450
+Connection ~ 4350 4450
+Text Label 7800 4750 0    50   ~ 0
+SEROut0
+Text Label 1500 3850 0    50   ~ 0
+SERin0
+$Comp
+L Device:R R10
+U 1 1 5D09BDA3
+P 5650 5150
+F 0 "R10" V 5443 5150 50  0000 C CNN
+F 1 "R" V 5534 5150 50  0000 C CNN
+F 2 "SeeedOPL-Resistor-2016:R0603" V 5580 5150 50  0001 C CNN
+F 3 "~" H 5650 5150 50  0001 C CNN
+	1    5650 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 4750 4750 5150
+Wire Wire Line
+	4750 5150 5500 5150
+Connection ~ 4750 4750
+Wire Wire Line
+	5800 5150 6750 5150
+Wire Wire Line
+	6750 5150 6750 4750
+Connection ~ 6750 4750
+Wire Wire Line
+	6750 4750 6400 4750
+Wire Wire Line
+	2050 1000 2200 1000
+Wire Wire Line
+	2500 1000 2600 1000
+Wire Wire Line
+	2900 1000 3000 1000
+Text GLabel 7750 2650 0    50   Input ~ 0
+OUT[0..63]
+Wire Wire Line
+	2200 1000 2300 1000
+Wire Wire Line
+	2500 1000 2600 1000
+Wire Wire Line
+	2900 1000 3000 1000
+Wire Bus Line
+	7750 600  7750 2650
+Wire Bus Line
+	9550 600  9550 1550
+Connection ~ 2200 1000
+Connection ~ 2300 1000
+Wire Wire Line
+	2300 1000 2400 1000
+Connection ~ 2600 1000
+Wire Wire Line
+	2600 1000 2700 1000
+Connection ~ 2700 1000
+Wire Wire Line
+	2700 1000 2800 1000
+Connection ~ 3000 1000
+Wire Wire Line
+	3000 1000 3100 1000
+Connection ~ 3100 1000
+Wire Wire Line
+	3100 1000 3200 1000
+$EndSCHEMATC

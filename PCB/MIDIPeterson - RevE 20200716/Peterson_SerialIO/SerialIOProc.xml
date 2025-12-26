@@ -1,0 +1,2672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Users\CharlesRaasch\Dropbox\Electronic Projects\CRControlSystems\MIDIPeterson\Peterson_SerialIO\SerialIOProc.sch</source>
+    <date>8/27/2019 8:02:22 AM</date>
+    <tool>Eeschema (5.0.2)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>SerialIOProc.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Mounting/" tstamps="/5BA655A7/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Mounting.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/Ports16_32/" tstamps="/5CFC7757/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Ports16_32.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/Ports0_15/" tstamps="/5CFEE74D/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Ports0_15.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/Ports33_48/" tstamps="/5CE81FF5/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Ports33_48.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/Ports49_64/" tstamps="/5CE982AE/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Ports49_64.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="INPUT1">
+      <value>Conn_02x04_Counter_Clockwise</value>
+      <footprint>SeeedOPL-Connector-2016:H2X4-2.54</footprint>
+      <libsource lib="SerialIOProc-rescue" part="Conn_02x04_Counter_Clockwise-conn-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BA660E8</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>Teensy3.2</value>
+      <footprint>CLRConnector:Teensy3.x_LC</footprint>
+      <libsource lib="SerialIOProc-rescue" part="Teensy3.2-teensy-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BA668CA</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_02x04_Counter_Clockwise</value>
+      <footprint>SeeedOPL-Connector-2016:H2X4-2.54</footprint>
+      <libsource lib="SerialIOProc-rescue" part="Conn_02x04_Counter_Clockwise-conn-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BA66EC6</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_02x04_Counter_Clockwise</value>
+      <footprint>SeeedOPL-Connector-2016:H2X4-2.54</footprint>
+      <libsource lib="SerialIOProc-rescue" part="Conn_02x04_Counter_Clockwise-conn-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BA67BF7</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Conn_02x04_Counter_Clockwise</value>
+      <footprint>SeeedOPL-Connector-2016:H2X4-2.54</footprint>
+      <libsource lib="SerialIOProc-rescue" part="Conn_02x04_Counter_Clockwise-conn-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BA68FA9</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>Conn_01x12</value>
+      <footprint>CLRConnector:KK156-12</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="SerialIOProc-rescue" part="Conn_01x12-conn-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CF32C9D</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>Conn_01x12</value>
+      <footprint>CLRConnector:KK156-12</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="SerialIOProc-rescue" part="Conn_01x12-conn-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CFD621D</tstamp>
+    </comp>
+    <comp ref="J9">
+      <value>Conn_01x12</value>
+      <footprint>CLRConnector:KK156-12</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="SerialIOProc-rescue" part="Conn_01x12-conn-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CE68163</tstamp>
+    </comp>
+    <comp ref="J10">
+      <value>Conn_01x12</value>
+      <footprint>CLRConnector:KK156-12</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="SerialIOProc-rescue" part="Conn_01x12-conn-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CE68181</tstamp>
+    </comp>
+    <comp ref="J8">
+      <value>Conn_01x12</value>
+      <footprint>CLRConnector:KK156-12</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="SerialIOProc-rescue" part="Conn_01x12-conn-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CE6D790</tstamp>
+    </comp>
+    <comp ref="J11">
+      <value>Conn_01x01</value>
+      <footprint>CLRConnector:KK156-1</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="SerialIOProc-rescue" part="Conn_01x01-conn-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CF05741</tstamp>
+    </comp>
+    <comp ref="J12">
+      <value>Conn_01x03</value>
+      <footprint>CLRConnector:H3-2.54</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="SerialIOProc-rescue" part="Conn_01x03-conn-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CE78439</tstamp>
+    </comp>
+    <comp ref="J13">
+      <value>Conn_01x01</value>
+      <footprint>CLRConnector:KK156-1</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="SerialIOProc-rescue" part="Conn_01x01-conn-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CE82AE5</tstamp>
+    </comp>
+    <comp ref="J14">
+      <value>Conn_01x01</value>
+      <footprint>CLRConnector:KK156-1</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="SerialIOProc-rescue" part="Conn_01x01-conn-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CE82B4F</tstamp>
+    </comp>
+    <comp ref="J15">
+      <value>Conn_01x01</value>
+      <footprint>CLRConnector:KK156-1</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="SerialIOProc-rescue" part="Conn_01x01-conn-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CE82B83</tstamp>
+    </comp>
+    <comp ref="J16">
+      <value>Conn_01x01</value>
+      <footprint>CLRConnector:KK156-1</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="SerialIOProc-rescue" part="Conn_01x01-conn-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CE82BB5</tstamp>
+    </comp>
+    <comp ref="J17">
+      <value>Conn_01x01</value>
+      <footprint>CLRConnector:KK156-1</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="SerialIOProc-rescue" part="Conn_01x01-conn-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CE82BF3</tstamp>
+    </comp>
+    <comp ref="J18">
+      <value>Conn_01x03</value>
+      <footprint>CLRConnector:H3-2.54</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="SerialIOProc-rescue" part="Conn_01x03-conn-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CE3AE91</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>DNP</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CF97015</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>DNP</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CF97411</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>DNP</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CFA7D75</tstamp>
+    </comp>
+    <comp ref="OUTPUT1">
+      <value>Conn_02x04_Counter_Clockwise</value>
+      <footprint>SeeedOPL-Connector-2016:H2X4-2.54</footprint>
+      <libsource lib="SerialIOProc-rescue" part="Conn_02x04_Counter_Clockwise-conn-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CFB8ABB</tstamp>
+    </comp>
+    <comp ref="J20">
+      <value>Conn_01x03_Male</value>
+      <footprint>SeeedOPL-Connector-2016:H3-2.54</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x03_Male" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CFB6DD6</tstamp>
+    </comp>
+    <comp ref="JP1">
+      <value>DIP-USB-B-TYPE-FMAL_4+2P-2.0-90D_</value>
+      <footprint>SeeedOPL-Connector-2016:USB4+2-2.5-90D-15.8X12MM</footprint>
+      <fields>
+        <field name="SKU">320010018</field>
+      </fields>
+      <libsource lib="SeeedOPL-Connector-2016" part="DIP-USB-B-TYPE-FMAL_4+2P-2.0-90D_" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CFF0455</tstamp>
+    </comp>
+    <comp ref="RN34">
+      <value>R_Pack04</value>
+      <footprint>CLRLibrary:RA2012-8</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D2EBCE3</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>SMD-LED-CLEAR-GREEN_0805_</value>
+      <footprint>SeeedOPL-LED-2016:LED-0805</footprint>
+      <fields>
+        <field name="MPN">17-215SYGC_S530-E2_TR8</field>
+        <field name="SKU">304090057</field>
+      </fields>
+      <libsource lib="SerialIOProc-rescue" part="SMD-LED-CLEAR-GREEN_0805_-SeeedOPL-LED-2016" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D340189</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>1K</value>
+      <footprint>SeeedOPL-Resistor-2016:R0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D340355</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>Conn_02x04_Counter_Clockwise</value>
+      <footprint>SeeedOPL-Connector-2016:H2X4-2.54</footprint>
+      <libsource lib="SerialIOProc-rescue" part="Conn_02x04_Counter_Clockwise-conn-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BA65ECC</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>Conn_01x03</value>
+      <footprint>CLRConnector:H3-2.54</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="SerialIOProc-rescue" part="Conn_01x03-conn-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D6B12D8</tstamp>
+    </comp>
+    <comp ref="M1">
+      <value>Conn_01x01</value>
+      <footprint>CLRConnector:Mounting#4</footprint>
+      <libsource lib="SerialIOProc-rescue" part="Conn_01x01-conn-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/Mounting/" tstamps="/5BA655A7/"/>
+      <tstamp>5AC0BC23</tstamp>
+    </comp>
+    <comp ref="M2">
+      <value>Conn_01x01</value>
+      <footprint>CLRConnector:Mounting#4</footprint>
+      <libsource lib="SerialIOProc-rescue" part="Conn_01x01-conn-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/Mounting/" tstamps="/5BA655A7/"/>
+      <tstamp>5AC0BCD6</tstamp>
+    </comp>
+    <comp ref="M4">
+      <value>Conn_01x01</value>
+      <footprint>CLRConnector:Mounting#4</footprint>
+      <libsource lib="SerialIOProc-rescue" part="Conn_01x01-conn-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/Mounting/" tstamps="/5BA655A7/"/>
+      <tstamp>5CF04EB7</tstamp>
+    </comp>
+    <comp ref="M5">
+      <value>Conn_01x01</value>
+      <footprint>CLRConnector:Mounting#4</footprint>
+      <libsource lib="SerialIOProc-rescue" part="Conn_01x01-conn-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/Mounting/" tstamps="/5BA655A7/"/>
+      <tstamp>5CF04F11</tstamp>
+    </comp>
+    <comp ref="M6">
+      <value>Conn_01x01</value>
+      <footprint>CLRConnector:Mounting#4</footprint>
+      <libsource lib="SerialIOProc-rescue" part="Conn_01x01-conn-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/Mounting/" tstamps="/5BA655A7/"/>
+      <tstamp>5CF04F17</tstamp>
+    </comp>
+    <comp ref="M7">
+      <value>Conn_01x01</value>
+      <footprint>CLRConnector:Mounting#4</footprint>
+      <libsource lib="SerialIOProc-rescue" part="Conn_01x01-conn-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/Mounting/" tstamps="/5BA655A7/"/>
+      <tstamp>5CF04F1D</tstamp>
+    </comp>
+    <comp ref="M8">
+      <value>Conn_01x01</value>
+      <footprint>CLRConnector:Mounting#4</footprint>
+      <libsource lib="SerialIOProc-rescue" part="Conn_01x01-conn-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/Mounting/" tstamps="/5BA655A7/"/>
+      <tstamp>5CF04F23</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>74HC597</value>
+      <footprint>SMD_Packages:SO-16-N</footprint>
+      <libsource lib="SerialIOProc-rescue" part="74HC595-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CEA012A</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>74HC597</value>
+      <footprint>SMD_Packages:SO-16-N</footprint>
+      <libsource lib="SerialIOProc-rescue" part="74HC595-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CEA010C</tstamp>
+    </comp>
+    <comp ref="RN1">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CEA010E</tstamp>
+    </comp>
+    <comp ref="RN2">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CEA012E</tstamp>
+    </comp>
+    <comp ref="RN3">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CFFCB66</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>C</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CEA0135</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>C</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CEA0113</tstamp>
+    </comp>
+    <comp ref="RN7">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CEA0115</tstamp>
+    </comp>
+    <comp ref="RN4">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CEA013A</tstamp>
+    </comp>
+    <comp ref="RN5">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CEA013C</tstamp>
+    </comp>
+    <comp ref="RN6">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CEA013E</tstamp>
+    </comp>
+    <comp ref="RN8">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CEA0140</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CEBB6C6</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CEA0119</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CEA011A</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CEA0142</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CEA011D</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CEBBA79</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CEA0145</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CEA0120</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CEA0122</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CEA0124</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CEA0126</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CEA0147</tstamp>
+    </comp>
+    <comp ref="C20">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CEA014B</tstamp>
+    </comp>
+    <comp ref="C19">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CEA014C</tstamp>
+    </comp>
+    <comp ref="C18">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CEA0129</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CFFCB86</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>C</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5CE4B454</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>DNP</value>
+      <footprint>SeeedOPL-Resistor-2016:R0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5D11710B</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>DNP</value>
+      <footprint>SeeedOPL-Resistor-2016:R0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Ports16_32/" tstamps="/5CFC7757/"/>
+      <tstamp>5D23FF01</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>74HC597</value>
+      <footprint>SMD_Packages:SO-16-N</footprint>
+      <libsource lib="SerialIOProc-rescue" part="74HC595-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5AFD6235</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>74HC597</value>
+      <footprint>SMD_Packages:SO-16-N</footprint>
+      <libsource lib="SerialIOProc-rescue" part="74HC595-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5CFFCB67</tstamp>
+    </comp>
+    <comp ref="RN9">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5CFFCB68</tstamp>
+    </comp>
+    <comp ref="RN10">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5AFDF198</tstamp>
+    </comp>
+    <comp ref="RN11">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5AFD68D9</tstamp>
+    </comp>
+    <comp ref="C35">
+      <value>C</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5AFE1229</tstamp>
+    </comp>
+    <comp ref="C36">
+      <value>C</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5CFFCB6E</tstamp>
+    </comp>
+    <comp ref="RN15">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5CFFCB70</tstamp>
+    </comp>
+    <comp ref="RN12">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5B157691</tstamp>
+    </comp>
+    <comp ref="RN13">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5B157E06</tstamp>
+    </comp>
+    <comp ref="RN14">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5B157E5A</tstamp>
+    </comp>
+    <comp ref="RN16">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5B1E8B28</tstamp>
+    </comp>
+    <comp ref="C21">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5CFFCB76</tstamp>
+    </comp>
+    <comp ref="C22">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5CFFCB77</tstamp>
+    </comp>
+    <comp ref="C23">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5CFFCB78</tstamp>
+    </comp>
+    <comp ref="C24">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5CEBBA0F</tstamp>
+    </comp>
+    <comp ref="C25">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5CFFCB7A</tstamp>
+    </comp>
+    <comp ref="C26">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5CFFCB7B</tstamp>
+    </comp>
+    <comp ref="C27">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5CEBBB5F</tstamp>
+    </comp>
+    <comp ref="C28">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5CFFCB7D</tstamp>
+    </comp>
+    <comp ref="C29">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5CFFCB7E</tstamp>
+    </comp>
+    <comp ref="C30">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5CFFCB7F</tstamp>
+    </comp>
+    <comp ref="C31">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5CFFCB80</tstamp>
+    </comp>
+    <comp ref="C32">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5CEBBE66</tstamp>
+    </comp>
+    <comp ref="C40">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5CEFB936</tstamp>
+    </comp>
+    <comp ref="C39">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5CEFB93D</tstamp>
+    </comp>
+    <comp ref="C38">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5CFFCB85</tstamp>
+    </comp>
+    <comp ref="C37">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5CEFB94B</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>DNP</value>
+      <footprint>SeeedOPL-Resistor-2016:R0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5D23FD3D</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>DNP</value>
+      <footprint>SeeedOPL-Resistor-2016:R0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Ports0_15/" tstamps="/5CFEE74D/"/>
+      <tstamp>5D11710E</tstamp>
+    </comp>
+    <comp ref="U7">
+      <value>74HC597</value>
+      <footprint>SMD_Packages:SO-16-N</footprint>
+      <libsource lib="SerialIOProc-rescue" part="74HC595-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5CEA012B</tstamp>
+    </comp>
+    <comp ref="U6">
+      <value>74HC597</value>
+      <footprint>SMD_Packages:SO-16-N</footprint>
+      <libsource lib="SerialIOProc-rescue" part="74HC595-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5CEA010D</tstamp>
+    </comp>
+    <comp ref="RN17">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5AFDF197</tstamp>
+    </comp>
+    <comp ref="RN18">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5CEA012F</tstamp>
+    </comp>
+    <comp ref="RN19">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5CEA012C</tstamp>
+    </comp>
+    <comp ref="C53">
+      <value>C</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5CEA0131</tstamp>
+    </comp>
+    <comp ref="C56">
+      <value>C</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5CEA0112</tstamp>
+    </comp>
+    <comp ref="RN23">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5CEA0114</tstamp>
+    </comp>
+    <comp ref="RN20">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5CFFCB72</tstamp>
+    </comp>
+    <comp ref="RN21">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5CFFCB73</tstamp>
+    </comp>
+    <comp ref="RN22">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5CEA013F</tstamp>
+    </comp>
+    <comp ref="RN24">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5CFFCB75</tstamp>
+    </comp>
+    <comp ref="C41">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5CEA0117</tstamp>
+    </comp>
+    <comp ref="C42">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5CEA0118</tstamp>
+    </comp>
+    <comp ref="C43">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5CEA011B</tstamp>
+    </comp>
+    <comp ref="C44">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5CFFCB79</tstamp>
+    </comp>
+    <comp ref="C45">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5CEBBA43</tstamp>
+    </comp>
+    <comp ref="C46">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5CEA011F</tstamp>
+    </comp>
+    <comp ref="C47">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5CEA0144</tstamp>
+    </comp>
+    <comp ref="C48">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5CEBBB99</tstamp>
+    </comp>
+    <comp ref="C49">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5CEA0123</tstamp>
+    </comp>
+    <comp ref="C50">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5CEA0125</tstamp>
+    </comp>
+    <comp ref="C51">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5CEA0127</tstamp>
+    </comp>
+    <comp ref="C52">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5CFFCB81</tstamp>
+    </comp>
+    <comp ref="C60">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5CFFCB83</tstamp>
+    </comp>
+    <comp ref="C59">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5CFFCB84</tstamp>
+    </comp>
+    <comp ref="C58">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5CEA0128</tstamp>
+    </comp>
+    <comp ref="C57">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5CEA014F</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>DNP</value>
+      <footprint>SeeedOPL-Resistor-2016:R0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5D117109</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>DNP</value>
+      <footprint>SeeedOPL-Resistor-2016:R0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Ports33_48/" tstamps="/5CE81FF5/"/>
+      <tstamp>5D11710D</tstamp>
+    </comp>
+    <comp ref="U9">
+      <value>74HC597</value>
+      <footprint>SMD_Packages:SO-16-N</footprint>
+      <libsource lib="SerialIOProc-rescue" part="74HC595-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5CFFCB65</tstamp>
+    </comp>
+    <comp ref="U8">
+      <value>74HC597</value>
+      <footprint>SMD_Packages:SO-16-N</footprint>
+      <libsource lib="SerialIOProc-rescue" part="74HC595-SerialIOProc-rescue" description=""/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5AFDF196</tstamp>
+    </comp>
+    <comp ref="RN25">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5CEA010F</tstamp>
+    </comp>
+    <comp ref="RN26">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5CFFCB69</tstamp>
+    </comp>
+    <comp ref="RN27">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5CEA012D</tstamp>
+    </comp>
+    <comp ref="C73">
+      <value>C</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5CEA0130</tstamp>
+    </comp>
+    <comp ref="C75">
+      <value>C</value>
+      <footprint>Resistors_SMD:R_0603_HandSoldering</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5CEA0134</tstamp>
+    </comp>
+    <comp ref="RN31">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5B132E35</tstamp>
+    </comp>
+    <comp ref="RN28">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5CEA013B</tstamp>
+    </comp>
+    <comp ref="RN29">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5CEA013D</tstamp>
+    </comp>
+    <comp ref="RN30">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5CFFCB74</tstamp>
+    </comp>
+    <comp ref="RN32">
+      <value>R_Pack04</value>
+      <footprint>CLRConnector:2012-8</footprint>
+      <libsource lib="Device" part="R_Pack04" description="4 resistor network, parallel topology, DIP package"/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5CEA0141</tstamp>
+    </comp>
+    <comp ref="C61">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5CEA0116</tstamp>
+    </comp>
+    <comp ref="C62">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5CEBB9AD</tstamp>
+    </comp>
+    <comp ref="C63">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5CEBB9DD</tstamp>
+    </comp>
+    <comp ref="C64">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5CEA0143</tstamp>
+    </comp>
+    <comp ref="C65">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5CEA011C</tstamp>
+    </comp>
+    <comp ref="C66">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5CEA011E</tstamp>
+    </comp>
+    <comp ref="C67">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5CFFCB7C</tstamp>
+    </comp>
+    <comp ref="C68">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5CEA0121</tstamp>
+    </comp>
+    <comp ref="C69">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5CEBBE51</tstamp>
+    </comp>
+    <comp ref="C70">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5CEBBE58</tstamp>
+    </comp>
+    <comp ref="C71">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5CEBBE5F</tstamp>
+    </comp>
+    <comp ref="C72">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5CEA0146</tstamp>
+    </comp>
+    <comp ref="C80">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5CEA014A</tstamp>
+    </comp>
+    <comp ref="C79">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5CEA014D</tstamp>
+    </comp>
+    <comp ref="C78">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5CEFB944</tstamp>
+    </comp>
+    <comp ref="C77">
+      <value>1nF or ESD</value>
+      <footprint>SeeedOPL-Capacitor-2016:C0603</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5CEA014E</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>DNP</value>
+      <footprint>SeeedOPL-Resistor-2016:R0603</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Ports49_64/" tstamps="/5CE982AE/"/>
+      <tstamp>5D11710C</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Conn_01x03_Male">
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Pack04">
+      <description>4 resistor network, parallel topology, DIP package</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>DIP*</fp>
+        <fp>SOIC*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RN</field>
+        <field name="Value">R_Pack04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="R1.1" type="passive"/>
+        <pin num="2" name="R2.1" type="passive"/>
+        <pin num="3" name="R3.1" type="passive"/>
+        <pin num="4" name="R4.1" type="passive"/>
+        <pin num="5" name="R4.2" type="passive"/>
+        <pin num="6" name="R3.2" type="passive"/>
+        <pin num="7" name="R2.2" type="passive"/>
+        <pin num="8" name="R1.2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SeeedOPL-Connector-2016" part="DIP-USB-B-TYPE-FMAL_4+2P-2.0-90D_">
+      <footprints>
+        <fp>*USB4+2-2.5-90D-15.8X12MM*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">DIP-USB-B-TYPE-FMAL_4+2P-2.0-90D_</field>
+        <field name="SKU">320010018</field>
+      </fields>
+      <pins>
+        <pin num="D+" name="D+" type="BiDi"/>
+        <pin num="D-" name="D-" type="BiDi"/>
+        <pin num="GND" name="GND" type="BiDi"/>
+        <pin num="S1" name="GND" type="BiDi"/>
+        <pin num="S2" name="GND" type="BiDi"/>
+        <pin num="VBUS" name="VBUS" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="SerialIOProc-rescue" part="74HC595-SerialIOProc-rescue">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74HC595-SerialIOProc-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="QB" type="3state"/>
+        <pin num="2" name="QC" type="3state"/>
+        <pin num="3" name="QD" type="3state"/>
+        <pin num="4" name="QE" type="3state"/>
+        <pin num="5" name="QF" type="3state"/>
+        <pin num="6" name="QG" type="3state"/>
+        <pin num="7" name="QH" type="3state"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="~QH" type="output"/>
+        <pin num="10" name="SRCLR" type="input"/>
+        <pin num="11" name="SRCLK" type="input"/>
+        <pin num="12" name="RCLK" type="input"/>
+        <pin num="13" name="G" type="input"/>
+        <pin num="14" name="SER" type="input"/>
+        <pin num="15" name="QA" type="3state"/>
+        <pin num="16" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="SerialIOProc-rescue" part="Conn_01x01-conn-SerialIOProc-rescue">
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x01-conn-SerialIOProc-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SerialIOProc-rescue" part="Conn_01x03-conn-SerialIOProc-rescue">
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03-conn-SerialIOProc-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SerialIOProc-rescue" part="Conn_01x12-conn-SerialIOProc-rescue">
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x12-conn-SerialIOProc-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SerialIOProc-rescue" part="Conn_02x04_Counter_Clockwise-conn-SerialIOProc-rescue">
+      <footprints>
+        <fp>Connector*:*2x??x*mm*</fp>
+        <fp>Connector*:*2x???Pitch*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x04_Counter_Clockwise-conn-SerialIOProc-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SerialIOProc-rescue" part="SMD-LED-CLEAR-GREEN_0805_-SeeedOPL-LED-2016">
+      <footprints>
+        <fp>*LED-0805*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">SMD-LED-CLEAR-GREEN_0805_-SeeedOPL-LED-2016</field>
+        <field name="MPN">17-215SYGC_S530-E2_TR8</field>
+        <field name="SKU">304090057</field>
+      </fields>
+      <pins>
+        <pin num="+" name="+" type="passive"/>
+        <pin num="-" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SerialIOProc-rescue" part="Teensy3.2-teensy-SerialIOProc-rescue">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Teensy3.2-teensy-SerialIOProc-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="0_RX1_Touch" type="BiDi"/>
+        <pin num="3" name="1_TX1_Touch" type="BiDi"/>
+        <pin num="4" name="2" type="BiDi"/>
+        <pin num="5" name="3_TX_PWM" type="BiDi"/>
+        <pin num="6" name="4_RX_PWM" type="BiDi"/>
+        <pin num="7" name="5_TX1_PWM" type="BiDi"/>
+        <pin num="8" name="6_PWM" type="BiDi"/>
+        <pin num="9" name="7_RX3_DOUT" type="BiDi"/>
+        <pin num="10" name="8_TX3_DIN" type="BiDi"/>
+        <pin num="11" name="9_RX2_CS_PWM" type="BiDi"/>
+        <pin num="12" name="10_TX2_CS_PWM" type="BiDi"/>
+        <pin num="13" name="11_DOUT" type="BiDi"/>
+        <pin num="14" name="12_DIN" type="BiDi"/>
+        <pin num="15" name="VBat" type="power_in"/>
+        <pin num="16" name="3.3V" type="power_in"/>
+        <pin num="17" name="GND" type="power_in"/>
+        <pin num="18" name="Program" type="input"/>
+        <pin num="19" name="A14/DAC" type="BiDi"/>
+        <pin num="20" name="13_LED_SCK" type="BiDi"/>
+        <pin num="21" name="14_A0_SCK" type="BiDi"/>
+        <pin num="22" name="15_A1_CS_Touch" type="BiDi"/>
+        <pin num="23" name="16_A2_SCL0_Touch" type="BiDi"/>
+        <pin num="24" name="17_A3_SDA0_Touch" type="BiDi"/>
+        <pin num="25" name="18_A4_SDA0_Touch" type="BiDi"/>
+        <pin num="26" name="19_A5_SCL0_Touch" type="BiDi"/>
+        <pin num="27" name="20_A6_CS_PWM" type="BiDi"/>
+        <pin num="28" name="21_A7_RX1_CS_PWM" type="BiDi"/>
+        <pin num="29" name="22_A8_Touch_PWM" type="BiDi"/>
+        <pin num="30" name="23_A9_Touch_PWM" type="BiDi"/>
+        <pin num="31" name="3.3V_max100mA" type="power_out"/>
+        <pin num="32" name="AGND" type="power_out"/>
+        <pin num="33" name="Vin" type="power_in"/>
+        <pin num="34" name="VUSB" type="power_in"/>
+        <pin num="35" name="AREF" type="input"/>
+        <pin num="36" name="A10" type="BiDi"/>
+        <pin num="37" name="A11" type="BiDi"/>
+        <pin num="38" name="A12" type="BiDi"/>
+        <pin num="39" name="GND" type="power_in"/>
+        <pin num="40" name="24" type="BiDi"/>
+        <pin num="41" name="25_Touch_PWM" type="BiDi"/>
+        <pin num="42" name="26_A15_RX2" type="BiDi"/>
+        <pin num="43" name="27_A16" type="BiDi"/>
+        <pin num="44" name="28_A17" type="BiDi"/>
+        <pin num="45" name="29_A18_SCL1" type="BiDi"/>
+        <pin num="46" name="30_A19_SDA1" type="BiDi"/>
+        <pin num="47" name="31_A20_TX2" type="BiDi"/>
+        <pin num="48" name="32_Touch_PWM" type="BiDi"/>
+        <pin num="49" name="33_Touch" type="BiDi"/>
+        <pin num="50" name="3.3V" type="power_in"/>
+        <pin num="51" name="A13" type="BiDi"/>
+        <pin num="52" name="Reset" type="input"/>
+        <pin num="53" name="D+" type="BiDi"/>
+        <pin num="54" name="D-" type="BiDi"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="SeeedOPL-Connector-2016">
+      <uri>C:/Users/CharlesRaasch/Dropbox/Electronic Projects/SPProdFixture/SeeedOPL for Kicad-alpha-2017-01-02/SeeedOPL-Connector-2016.lib</uri>
+    </library>
+    <library logical="SerialIOProc-rescue">
+      <uri>C:\Users\CharlesRaasch\Dropbox\Electronic Projects\CRControlSystems\MIDIPeterson\Peterson_SerialIO/SerialIOProc-rescue.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/Ports49_64/SERIn3">
+      <node ref="U7" pin="9"/>
+      <node ref="R3" pin="1"/>
+      <node ref="U8" pin="14"/>
+      <node ref="R11" pin="2"/>
+    </net>
+    <net code="2" name="/PULLTERM">
+      <node ref="RN11" pin="8"/>
+      <node ref="RN27" pin="8"/>
+      <node ref="RN27" pin="7"/>
+      <node ref="RN3" pin="8"/>
+      <node ref="RN31" pin="5"/>
+      <node ref="RN31" pin="6"/>
+      <node ref="RN31" pin="7"/>
+      <node ref="RN31" pin="8"/>
+      <node ref="RN26" pin="7"/>
+      <node ref="RN26" pin="8"/>
+      <node ref="RN27" pin="5"/>
+      <node ref="RN27" pin="6"/>
+      <node ref="RN25" pin="7"/>
+      <node ref="RN7" pin="8"/>
+      <node ref="RN7" pin="7"/>
+      <node ref="RN7" pin="6"/>
+      <node ref="RN7" pin="5"/>
+      <node ref="RN1" pin="7"/>
+      <node ref="RN1" pin="8"/>
+      <node ref="RN3" pin="7"/>
+      <node ref="RN3" pin="6"/>
+      <node ref="RN3" pin="5"/>
+      <node ref="RN2" pin="8"/>
+      <node ref="RN2" pin="7"/>
+      <node ref="RN2" pin="6"/>
+      <node ref="RN2" pin="5"/>
+      <node ref="RN1" pin="6"/>
+      <node ref="RN1" pin="5"/>
+      <node ref="RN25" pin="5"/>
+      <node ref="RN25" pin="6"/>
+      <node ref="RN25" pin="8"/>
+      <node ref="RN26" pin="5"/>
+      <node ref="RN26" pin="6"/>
+      <node ref="RN17" pin="5"/>
+      <node ref="RN18" pin="5"/>
+      <node ref="RN17" pin="8"/>
+      <node ref="RN17" pin="6"/>
+      <node ref="RN19" pin="7"/>
+      <node ref="RN23" pin="5"/>
+      <node ref="RN23" pin="6"/>
+      <node ref="RN18" pin="6"/>
+      <node ref="RN18" pin="7"/>
+      <node ref="RN15" pin="8"/>
+      <node ref="RN15" pin="7"/>
+      <node ref="RN23" pin="8"/>
+      <node ref="RN23" pin="7"/>
+      <node ref="RN19" pin="8"/>
+      <node ref="RN9" pin="5"/>
+      <node ref="RN9" pin="7"/>
+      <node ref="RN9" pin="8"/>
+      <node ref="RN10" pin="5"/>
+      <node ref="RN10" pin="6"/>
+      <node ref="RN10" pin="7"/>
+      <node ref="RN10" pin="8"/>
+      <node ref="RN11" pin="5"/>
+      <node ref="RN9" pin="6"/>
+      <node ref="J12" pin="2"/>
+      <node ref="RN15" pin="6"/>
+      <node ref="RN19" pin="5"/>
+      <node ref="RN18" pin="8"/>
+      <node ref="RN11" pin="6"/>
+      <node ref="RN17" pin="7"/>
+      <node ref="RN19" pin="6"/>
+      <node ref="RN15" pin="5"/>
+      <node ref="RN11" pin="7"/>
+    </net>
+    <net code="3" name="/OUT60">
+      <node ref="RN32" pin="8"/>
+      <node ref="J11" pin="1"/>
+    </net>
+    <net code="4" name="Net-(J3-Pad8)">
+      <node ref="J3" pin="8"/>
+      <node ref="U1" pin="16"/>
+    </net>
+    <net code="5" name="GND">
+      <node ref="C49" pin="2"/>
+      <node ref="C48" pin="2"/>
+      <node ref="U9" pin="8"/>
+      <node ref="C47" pin="2"/>
+      <node ref="INPUT1" pin="3"/>
+      <node ref="C42" pin="2"/>
+      <node ref="C43" pin="2"/>
+      <node ref="C44" pin="2"/>
+      <node ref="C45" pin="2"/>
+      <node ref="C15" pin="2"/>
+      <node ref="C46" pin="2"/>
+      <node ref="C16" pin="2"/>
+      <node ref="J17" pin="1"/>
+      <node ref="U1" pin="17"/>
+      <node ref="U1" pin="1"/>
+      <node ref="INPUT1" pin="5"/>
+      <node ref="C53" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C41" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="U1" pin="32"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C50" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="U8" pin="8"/>
+      <node ref="J12" pin="3"/>
+      <node ref="U7" pin="8"/>
+      <node ref="J2" pin="8"/>
+      <node ref="C12" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="C20" pin="2"/>
+      <node ref="U3" pin="8"/>
+      <node ref="C17" pin="2"/>
+      <node ref="C18" pin="2"/>
+      <node ref="C19" pin="2"/>
+      <node ref="J1" pin="8"/>
+      <node ref="U2" pin="8"/>
+      <node ref="J13" pin="1"/>
+      <node ref="J14" pin="1"/>
+      <node ref="J15" pin="1"/>
+      <node ref="J16" pin="1"/>
+      <node ref="U6" pin="8"/>
+      <node ref="C56" pin="2"/>
+      <node ref="C73" pin="2"/>
+      <node ref="C75" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="R1" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="C59" pin="2"/>
+      <node ref="C58" pin="2"/>
+      <node ref="C57" pin="2"/>
+      <node ref="J5" pin="5"/>
+      <node ref="R3" pin="2"/>
+      <node ref="C66" pin="2"/>
+      <node ref="C62" pin="2"/>
+      <node ref="R4" pin="2"/>
+      <node ref="C51" pin="2"/>
+      <node ref="J5" pin="3"/>
+      <node ref="U5" pin="8"/>
+      <node ref="C52" pin="2"/>
+      <node ref="C61" pin="2"/>
+      <node ref="C70" pin="2"/>
+      <node ref="C69" pin="2"/>
+      <node ref="C68" pin="2"/>
+      <node ref="C67" pin="2"/>
+      <node ref="C65" pin="2"/>
+      <node ref="C64" pin="2"/>
+      <node ref="C63" pin="2"/>
+      <node ref="C25" pin="2"/>
+      <node ref="C77" pin="2"/>
+      <node ref="C32" pin="2"/>
+      <node ref="C31" pin="2"/>
+      <node ref="C30" pin="2"/>
+      <node ref="C29" pin="2"/>
+      <node ref="C28" pin="2"/>
+      <node ref="C27" pin="2"/>
+      <node ref="C26" pin="2"/>
+      <node ref="C37" pin="2"/>
+      <node ref="C38" pin="2"/>
+      <node ref="C39" pin="2"/>
+      <node ref="C40" pin="2"/>
+      <node ref="OUTPUT1" pin="5"/>
+      <node ref="C80" pin="2"/>
+      <node ref="C79" pin="2"/>
+      <node ref="U4" pin="8"/>
+      <node ref="JP1" pin="S2"/>
+      <node ref="JP1" pin="S1"/>
+      <node ref="JP1" pin="GND"/>
+      <node ref="C35" pin="2"/>
+      <node ref="C60" pin="2"/>
+      <node ref="C36" pin="2"/>
+      <node ref="OUTPUT1" pin="3"/>
+      <node ref="C24" pin="2"/>
+      <node ref="C23" pin="2"/>
+      <node ref="C22" pin="2"/>
+      <node ref="C78" pin="2"/>
+      <node ref="C71" pin="2"/>
+      <node ref="C21" pin="2"/>
+      <node ref="C72" pin="2"/>
+    </net>
+    <net code="6" name="/SerialCLK">
+      <node ref="U7" pin="11"/>
+      <node ref="U8" pin="11"/>
+      <node ref="U9" pin="11"/>
+      <node ref="U6" pin="11"/>
+      <node ref="U5" pin="11"/>
+      <node ref="U2" pin="11"/>
+      <node ref="RN34" pin="7"/>
+      <node ref="OUTPUT1" pin="4"/>
+      <node ref="U4" pin="11"/>
+      <node ref="INPUT1" pin="4"/>
+      <node ref="U1" pin="13"/>
+      <node ref="U3" pin="11"/>
+    </net>
+    <net code="7" name="/InRegLoad">
+      <node ref="U5" pin="12"/>
+      <node ref="U8" pin="13"/>
+      <node ref="U5" pin="13"/>
+      <node ref="INPUT1" pin="6"/>
+      <node ref="U1" pin="12"/>
+      <node ref="U9" pin="12"/>
+      <node ref="U9" pin="13"/>
+      <node ref="U8" pin="12"/>
+      <node ref="RN34" pin="8"/>
+      <node ref="U4" pin="12"/>
+      <node ref="U4" pin="13"/>
+      <node ref="OUTPUT1" pin="6"/>
+      <node ref="U3" pin="13"/>
+      <node ref="U3" pin="12"/>
+      <node ref="U6" pin="12"/>
+      <node ref="U6" pin="13"/>
+      <node ref="U7" pin="13"/>
+      <node ref="U7" pin="12"/>
+      <node ref="U2" pin="12"/>
+      <node ref="U2" pin="13"/>
+    </net>
+    <net code="8" name="/nRST">
+      <node ref="U2" pin="10"/>
+      <node ref="U1" pin="20"/>
+      <node ref="OUTPUT1" pin="7"/>
+      <node ref="RN34" pin="6"/>
+      <node ref="U6" pin="10"/>
+      <node ref="U7" pin="10"/>
+      <node ref="U5" pin="10"/>
+      <node ref="U8" pin="10"/>
+      <node ref="U3" pin="10"/>
+      <node ref="U9" pin="10"/>
+      <node ref="U4" pin="10"/>
+      <node ref="INPUT1" pin="7"/>
+    </net>
+    <net code="9" name="/OUT48">
+      <node ref="J8" pin="1"/>
+      <node ref="RN30" pin="8"/>
+    </net>
+    <net code="10" name="/OUT49">
+      <node ref="RN30" pin="7"/>
+      <node ref="J8" pin="2"/>
+    </net>
+    <net code="11" name="Net-(J2-Pad7)">
+      <node ref="U1" pin="47"/>
+      <node ref="J2" pin="7"/>
+    </net>
+    <net code="12" name="Net-(J2-Pad6)">
+      <node ref="J2" pin="6"/>
+      <node ref="U1" pin="42"/>
+    </net>
+    <net code="13" name="Net-(D1-Pad-)">
+      <node ref="R4" pin="1"/>
+      <node ref="D1" pin="-"/>
+    </net>
+    <net code="14" name="/LPWM">
+      <node ref="U1" pin="27"/>
+      <node ref="D1" pin="+"/>
+    </net>
+    <net code="15" name="/X2PIN1">
+      <node ref="U1" pin="8"/>
+      <node ref="J5" pin="1"/>
+    </net>
+    <net code="16" name="/X2PIN8">
+      <node ref="U1" pin="7"/>
+      <node ref="J5" pin="8"/>
+    </net>
+    <net code="17" name="Net-(RN34-Pad4)">
+      <node ref="RN34" pin="4"/>
+    </net>
+    <net code="18" name="Net-(INPUT1-Pad8)">
+      <node ref="J4" pin="2"/>
+      <node ref="INPUT1" pin="8"/>
+    </net>
+    <net code="19" name="Net-(RN34-Pad5)">
+      <node ref="RN34" pin="5"/>
+    </net>
+    <net code="20" name="/X2LOAD">
+      <node ref="RN34" pin="1"/>
+      <node ref="J5" pin="6"/>
+    </net>
+    <net code="21" name="/X2CLK">
+      <node ref="RN34" pin="2"/>
+      <node ref="J5" pin="4"/>
+    </net>
+    <net code="22" name="/X2RST">
+      <node ref="J5" pin="7"/>
+      <node ref="RN34" pin="3"/>
+    </net>
+    <net code="23" name="/EXT1PIN8">
+      <node ref="U1" pin="11"/>
+      <node ref="J4" pin="1"/>
+    </net>
+    <net code="24" name="/EXT1PIN1">
+      <node ref="INPUT1" pin="1"/>
+      <node ref="U1" pin="10"/>
+    </net>
+    <net code="25" name="/ChainIn">
+      <node ref="J4" pin="3"/>
+      <node ref="U4" pin="14"/>
+      <node ref="U1" pin="9"/>
+    </net>
+    <net code="26" name="/SEROut0">
+      <node ref="U2" pin="14"/>
+      <node ref="R9" pin="2"/>
+      <node ref="U5" pin="9"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="27" name="/Ports33_48/SERIn2">
+      <node ref="U3" pin="9"/>
+      <node ref="R2" pin="1"/>
+      <node ref="R7" pin="2"/>
+      <node ref="U6" pin="14"/>
+    </net>
+    <net code="28" name="VCC">
+      <node ref="C56" pin="1"/>
+      <node ref="U3" pin="16"/>
+      <node ref="U7" pin="16"/>
+      <node ref="U2" pin="16"/>
+      <node ref="C14" pin="1"/>
+      <node ref="C73" pin="1"/>
+      <node ref="C75" pin="1"/>
+      <node ref="U8" pin="16"/>
+      <node ref="C15" pin="1"/>
+      <node ref="U5" pin="16"/>
+      <node ref="U4" pin="16"/>
+      <node ref="C35" pin="1"/>
+      <node ref="C53" pin="1"/>
+      <node ref="C16" pin="1"/>
+      <node ref="C36" pin="1"/>
+      <node ref="U9" pin="16"/>
+      <node ref="J3" pin="4"/>
+      <node ref="J5" pin="2"/>
+      <node ref="J3" pin="3"/>
+      <node ref="J3" pin="2"/>
+      <node ref="INPUT1" pin="2"/>
+      <node ref="OUTPUT1" pin="2"/>
+      <node ref="J1" pin="7"/>
+      <node ref="J3" pin="1"/>
+      <node ref="U6" pin="16"/>
+      <node ref="J12" pin="1"/>
+    </net>
+    <net code="29" name="Net-(J20-Pad1)">
+      <node ref="JP1" pin="VBUS"/>
+      <node ref="J20" pin="1"/>
+    </net>
+    <net code="30" name="Net-(J20-Pad2)">
+      <node ref="JP1" pin="D-"/>
+      <node ref="J20" pin="2"/>
+    </net>
+    <net code="31" name="Net-(J20-Pad3)">
+      <node ref="JP1" pin="D+"/>
+      <node ref="J20" pin="3"/>
+    </net>
+    <net code="32" name="Net-(OUTPUT1-Pad1)">
+      <node ref="OUTPUT1" pin="1"/>
+    </net>
+    <net code="33" name="Net-(J3-Pad5)">
+      <node ref="U1" pin="34"/>
+      <node ref="J3" pin="5"/>
+    </net>
+    <net code="34" name="Net-(J3-Pad6)">
+      <node ref="U1" pin="33"/>
+      <node ref="J3" pin="6"/>
+    </net>
+    <net code="35" name="/OUT0">
+      <node ref="RN14" pin="8"/>
+      <node ref="J6" pin="1"/>
+    </net>
+    <net code="36" name="/OUT1">
+      <node ref="J6" pin="2"/>
+      <node ref="RN14" pin="7"/>
+    </net>
+    <net code="37" name="Net-(J1-Pad5)">
+      <node ref="J1" pin="5"/>
+      <node ref="U1" pin="25"/>
+    </net>
+    <net code="38" name="Net-(J1-Pad6)">
+      <node ref="U1" pin="26"/>
+      <node ref="J1" pin="6"/>
+    </net>
+    <net code="39" name="/OUT2">
+      <node ref="J6" pin="3"/>
+      <node ref="RN14" pin="6"/>
+    </net>
+    <net code="40" name="Net-(J3-Pad7)">
+      <node ref="U1" pin="31"/>
+      <node ref="J3" pin="7"/>
+    </net>
+    <net code="41" name="/OUT9">
+      <node ref="J6" pin="10"/>
+      <node ref="RN12" pin="7"/>
+    </net>
+    <net code="42" name="/OUT10">
+      <node ref="RN12" pin="6"/>
+      <node ref="J6" pin="11"/>
+    </net>
+    <net code="43" name="/OUT11">
+      <node ref="RN12" pin="5"/>
+      <node ref="J6" pin="12"/>
+    </net>
+    <net code="44" name="/OUT5">
+      <node ref="J6" pin="6"/>
+      <node ref="RN13" pin="7"/>
+    </net>
+    <net code="45" name="/OUT3">
+      <node ref="J6" pin="4"/>
+      <node ref="RN14" pin="5"/>
+    </net>
+    <net code="46" name="/OUT4">
+      <node ref="J6" pin="5"/>
+      <node ref="RN13" pin="8"/>
+    </net>
+    <net code="47" name="/OUT6">
+      <node ref="J6" pin="7"/>
+      <node ref="RN13" pin="6"/>
+    </net>
+    <net code="48" name="/OUT7">
+      <node ref="J6" pin="8"/>
+      <node ref="RN13" pin="5"/>
+    </net>
+    <net code="49" name="/OUT8">
+      <node ref="RN12" pin="8"/>
+      <node ref="J6" pin="9"/>
+    </net>
+    <net code="50" name="Net-(U1-Pad36)">
+      <node ref="U1" pin="36"/>
+    </net>
+    <net code="51" name="Net-(U1-Pad28)">
+      <node ref="U1" pin="28"/>
+    </net>
+    <net code="52" name="Net-(U1-Pad29)">
+      <node ref="U1" pin="29"/>
+    </net>
+    <net code="53" name="Net-(J2-Pad2)">
+      <node ref="J2" pin="2"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="54" name="Net-(U1-Pad30)">
+      <node ref="U1" pin="30"/>
+    </net>
+    <net code="55" name="Net-(U1-Pad35)">
+      <node ref="U1" pin="35"/>
+    </net>
+    <net code="56" name="Net-(U1-Pad37)">
+      <node ref="U1" pin="37"/>
+    </net>
+    <net code="57" name="Net-(U1-Pad38)">
+      <node ref="U1" pin="38"/>
+    </net>
+    <net code="58" name="Net-(U1-Pad39)">
+      <node ref="U1" pin="39"/>
+    </net>
+    <net code="59" name="Net-(J2-Pad3)">
+      <node ref="U1" pin="4"/>
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="60" name="Net-(U1-Pad40)">
+      <node ref="U1" pin="40"/>
+    </net>
+    <net code="61" name="Net-(U1-Pad41)">
+      <node ref="U1" pin="41"/>
+    </net>
+    <net code="62" name="Net-(U1-Pad43)">
+      <node ref="U1" pin="43"/>
+    </net>
+    <net code="63" name="Net-(U1-Pad44)">
+      <node ref="U1" pin="44"/>
+    </net>
+    <net code="64" name="Net-(U1-Pad45)">
+      <node ref="U1" pin="45"/>
+    </net>
+    <net code="65" name="Net-(U1-Pad46)">
+      <node ref="U1" pin="46"/>
+    </net>
+    <net code="66" name="CHAINOUT">
+      <node ref="R12" pin="1"/>
+      <node ref="R7" pin="1"/>
+      <node ref="R11" pin="1"/>
+      <node ref="R10" pin="1"/>
+      <node ref="U9" pin="9"/>
+      <node ref="OUTPUT1" pin="8"/>
+      <node ref="R8" pin="1"/>
+      <node ref="R9" pin="1"/>
+      <node ref="U1" pin="14"/>
+      <node ref="R6" pin="1"/>
+    </net>
+    <net code="67" name="Net-(U1-Pad15)">
+      <node ref="U1" pin="15"/>
+    </net>
+    <net code="68" name="Net-(U1-Pad18)">
+      <node ref="U1" pin="18"/>
+    </net>
+    <net code="69" name="Net-(U1-Pad19)">
+      <node ref="U1" pin="19"/>
+    </net>
+    <net code="70" name="Net-(J2-Pad1)">
+      <node ref="J2" pin="1"/>
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="71" name="Net-(J1-Pad1)">
+      <node ref="U1" pin="21"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="72" name="Net-(J2-Pad4)">
+      <node ref="J2" pin="4"/>
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="73" name="Net-(J2-Pad5)">
+      <node ref="U1" pin="6"/>
+      <node ref="J2" pin="5"/>
+    </net>
+    <net code="74" name="Net-(J1-Pad2)">
+      <node ref="J1" pin="2"/>
+      <node ref="U1" pin="22"/>
+    </net>
+    <net code="75" name="Net-(J1-Pad3)">
+      <node ref="J1" pin="3"/>
+      <node ref="U1" pin="23"/>
+    </net>
+    <net code="76" name="Net-(J1-Pad4)">
+      <node ref="U1" pin="24"/>
+      <node ref="J1" pin="4"/>
+    </net>
+    <net code="77" name="Net-(U1-Pad48)">
+      <node ref="U1" pin="48"/>
+    </net>
+    <net code="78" name="Net-(U1-Pad49)">
+      <node ref="U1" pin="49"/>
+    </net>
+    <net code="79" name="Net-(U1-Pad50)">
+      <node ref="U1" pin="50"/>
+    </net>
+    <net code="80" name="Net-(U1-Pad51)">
+      <node ref="U1" pin="51"/>
+    </net>
+    <net code="81" name="Net-(U1-Pad52)">
+      <node ref="U1" pin="52"/>
+    </net>
+    <net code="82" name="Net-(U1-Pad53)">
+      <node ref="U1" pin="53"/>
+    </net>
+    <net code="83" name="Net-(U1-Pad54)">
+      <node ref="U1" pin="54"/>
+    </net>
+    <net code="84" name="/OUT24">
+      <node ref="RN4" pin="8"/>
+      <node ref="J9" pin="1"/>
+    </net>
+    <net code="85" name="/OUT31">
+      <node ref="J9" pin="8"/>
+      <node ref="RN8" pin="5"/>
+    </net>
+    <net code="86" name="/OUT30">
+      <node ref="RN8" pin="6"/>
+      <node ref="J9" pin="7"/>
+    </net>
+    <net code="87" name="/OUT29">
+      <node ref="J9" pin="6"/>
+      <node ref="RN8" pin="7"/>
+    </net>
+    <net code="88" name="/OUT28">
+      <node ref="RN8" pin="8"/>
+      <node ref="J9" pin="5"/>
+    </net>
+    <net code="89" name="/OUT27">
+      <node ref="RN4" pin="5"/>
+      <node ref="J9" pin="4"/>
+    </net>
+    <net code="90" name="/OUT26">
+      <node ref="RN4" pin="6"/>
+      <node ref="J9" pin="3"/>
+    </net>
+    <net code="91" name="/OUT25">
+      <node ref="RN4" pin="7"/>
+      <node ref="J9" pin="2"/>
+    </net>
+    <net code="92" name="/OUT23">
+      <node ref="RN5" pin="5"/>
+      <node ref="J7" pin="12"/>
+    </net>
+    <net code="93" name="/OUT17">
+      <node ref="J7" pin="6"/>
+      <node ref="RN6" pin="7"/>
+    </net>
+    <net code="94" name="/OUT21">
+      <node ref="J7" pin="10"/>
+      <node ref="RN5" pin="7"/>
+    </net>
+    <net code="95" name="/OUT22">
+      <node ref="J7" pin="11"/>
+      <node ref="RN5" pin="6"/>
+    </net>
+    <net code="96" name="/OUT16">
+      <node ref="J7" pin="5"/>
+      <node ref="RN6" pin="8"/>
+    </net>
+    <net code="97" name="/OUT18">
+      <node ref="J7" pin="7"/>
+      <node ref="RN6" pin="6"/>
+    </net>
+    <net code="98" name="/OUT19">
+      <node ref="RN6" pin="5"/>
+      <node ref="J7" pin="8"/>
+    </net>
+    <net code="99" name="/OUT20">
+      <node ref="RN5" pin="8"/>
+      <node ref="J7" pin="9"/>
+    </net>
+    <net code="100" name="Net-(M1-Pad1)">
+      <node ref="M1" pin="1"/>
+    </net>
+    <net code="101" name="Net-(M8-Pad1)">
+      <node ref="M8" pin="1"/>
+    </net>
+    <net code="102" name="Net-(M7-Pad1)">
+      <node ref="M7" pin="1"/>
+    </net>
+    <net code="103" name="Net-(M6-Pad1)">
+      <node ref="M6" pin="1"/>
+    </net>
+    <net code="104" name="Net-(M4-Pad1)">
+      <node ref="M4" pin="1"/>
+    </net>
+    <net code="105" name="Net-(M2-Pad1)">
+      <node ref="M2" pin="1"/>
+    </net>
+    <net code="106" name="Net-(M5-Pad1)">
+      <node ref="M5" pin="1"/>
+    </net>
+    <net code="107" name="Net-(C51-Pad1)">
+      <node ref="U7" pin="2"/>
+      <node ref="C51" pin="1"/>
+      <node ref="RN17" pin="2"/>
+      <node ref="RN20" pin="3"/>
+    </net>
+    <net code="108" name="Net-(C57-Pad1)">
+      <node ref="C57" pin="1"/>
+      <node ref="RN23" pin="1"/>
+      <node ref="U7" pin="7"/>
+      <node ref="RN24" pin="4"/>
+    </net>
+    <net code="109" name="Net-(C58-Pad1)">
+      <node ref="C58" pin="1"/>
+      <node ref="RN23" pin="2"/>
+      <node ref="RN24" pin="3"/>
+      <node ref="U7" pin="6"/>
+    </net>
+    <net code="110" name="Net-(C60-Pad1)">
+      <node ref="U7" pin="4"/>
+      <node ref="RN23" pin="4"/>
+      <node ref="C60" pin="1"/>
+      <node ref="RN24" pin="1"/>
+    </net>
+    <net code="111" name="Net-(C59-Pad1)">
+      <node ref="C59" pin="1"/>
+      <node ref="RN23" pin="3"/>
+      <node ref="U7" pin="5"/>
+      <node ref="RN24" pin="2"/>
+    </net>
+    <net code="112" name="Net-(C43-Pad1)">
+      <node ref="RN22" pin="3"/>
+      <node ref="C43" pin="1"/>
+      <node ref="RN19" pin="2"/>
+      <node ref="U6" pin="2"/>
+    </net>
+    <net code="113" name="Net-(C49-Pad1)">
+      <node ref="RN20" pin="1"/>
+      <node ref="U7" pin="15"/>
+      <node ref="RN17" pin="4"/>
+      <node ref="C49" pin="1"/>
+    </net>
+    <net code="114" name="Net-(C50-Pad1)">
+      <node ref="U7" pin="1"/>
+      <node ref="RN17" pin="3"/>
+      <node ref="C50" pin="1"/>
+      <node ref="RN20" pin="2"/>
+    </net>
+    <net code="115" name="Net-(C52-Pad1)">
+      <node ref="U7" pin="3"/>
+      <node ref="RN17" pin="1"/>
+      <node ref="RN20" pin="4"/>
+      <node ref="C52" pin="1"/>
+    </net>
+    <net code="116" name="Net-(C42-Pad1)">
+      <node ref="RN19" pin="3"/>
+      <node ref="C42" pin="1"/>
+      <node ref="RN22" pin="2"/>
+      <node ref="U6" pin="1"/>
+    </net>
+    <net code="117" name="Net-(R10-Pad2)">
+      <node ref="U6" pin="9"/>
+      <node ref="R10" pin="2"/>
+      <node ref="U7" pin="14"/>
+    </net>
+    <net code="118" name="Net-(C45-Pad1)">
+      <node ref="RN21" pin="1"/>
+      <node ref="U6" pin="4"/>
+      <node ref="C45" pin="1"/>
+      <node ref="RN18" pin="4"/>
+    </net>
+    <net code="119" name="Net-(C46-Pad1)">
+      <node ref="RN21" pin="2"/>
+      <node ref="C46" pin="1"/>
+      <node ref="U6" pin="5"/>
+      <node ref="RN18" pin="3"/>
+    </net>
+    <net code="120" name="Net-(C47-Pad1)">
+      <node ref="C47" pin="1"/>
+      <node ref="RN18" pin="2"/>
+      <node ref="U6" pin="6"/>
+      <node ref="RN21" pin="3"/>
+    </net>
+    <net code="121" name="Net-(C48-Pad1)">
+      <node ref="C48" pin="1"/>
+      <node ref="RN18" pin="1"/>
+      <node ref="U6" pin="7"/>
+      <node ref="RN21" pin="4"/>
+    </net>
+    <net code="122" name="Net-(C41-Pad1)">
+      <node ref="RN22" pin="1"/>
+      <node ref="U6" pin="15"/>
+      <node ref="C41" pin="1"/>
+      <node ref="RN19" pin="4"/>
+    </net>
+    <net code="123" name="Net-(C44-Pad1)">
+      <node ref="C44" pin="1"/>
+      <node ref="RN22" pin="4"/>
+      <node ref="RN19" pin="1"/>
+      <node ref="U6" pin="3"/>
+    </net>
+    <net code="124" name="Net-(C71-Pad1)">
+      <node ref="C71" pin="1"/>
+      <node ref="RN28" pin="3"/>
+      <node ref="RN25" pin="2"/>
+      <node ref="U9" pin="2"/>
+    </net>
+    <net code="125" name="Net-(C77-Pad1)">
+      <node ref="RN32" pin="4"/>
+      <node ref="U9" pin="7"/>
+      <node ref="RN31" pin="1"/>
+      <node ref="C77" pin="1"/>
+    </net>
+    <net code="126" name="Net-(C78-Pad1)">
+      <node ref="RN31" pin="2"/>
+      <node ref="C78" pin="1"/>
+      <node ref="U9" pin="6"/>
+      <node ref="RN32" pin="3"/>
+    </net>
+    <net code="127" name="Net-(C80-Pad1)">
+      <node ref="C80" pin="1"/>
+      <node ref="U9" pin="4"/>
+      <node ref="RN32" pin="1"/>
+      <node ref="RN31" pin="4"/>
+    </net>
+    <net code="128" name="Net-(C79-Pad1)">
+      <node ref="RN31" pin="3"/>
+      <node ref="U9" pin="5"/>
+      <node ref="RN32" pin="2"/>
+      <node ref="C79" pin="1"/>
+    </net>
+    <net code="129" name="Net-(C70-Pad1)">
+      <node ref="C70" pin="1"/>
+      <node ref="U9" pin="1"/>
+      <node ref="RN25" pin="3"/>
+      <node ref="RN28" pin="2"/>
+    </net>
+    <net code="130" name="Net-(C63-Pad1)">
+      <node ref="C63" pin="1"/>
+      <node ref="U8" pin="2"/>
+      <node ref="RN30" pin="3"/>
+      <node ref="RN27" pin="2"/>
+    </net>
+    <net code="131" name="Net-(C69-Pad1)">
+      <node ref="RN28" pin="1"/>
+      <node ref="RN25" pin="4"/>
+      <node ref="U9" pin="15"/>
+      <node ref="C69" pin="1"/>
+    </net>
+    <net code="132" name="Net-(C72-Pad1)">
+      <node ref="C72" pin="1"/>
+      <node ref="U9" pin="3"/>
+      <node ref="RN25" pin="1"/>
+      <node ref="RN28" pin="4"/>
+    </net>
+    <net code="133" name="Net-(C62-Pad1)">
+      <node ref="U8" pin="1"/>
+      <node ref="C62" pin="1"/>
+      <node ref="RN30" pin="2"/>
+      <node ref="RN27" pin="3"/>
+    </net>
+    <net code="134" name="Net-(R12-Pad2)">
+      <node ref="U9" pin="14"/>
+      <node ref="R12" pin="2"/>
+      <node ref="U8" pin="9"/>
+    </net>
+    <net code="135" name="Net-(C65-Pad1)">
+      <node ref="RN29" pin="1"/>
+      <node ref="U8" pin="4"/>
+      <node ref="C65" pin="1"/>
+      <node ref="RN26" pin="4"/>
+    </net>
+    <net code="136" name="Net-(C66-Pad1)">
+      <node ref="U8" pin="5"/>
+      <node ref="C66" pin="1"/>
+      <node ref="RN29" pin="2"/>
+      <node ref="RN26" pin="3"/>
+    </net>
+    <net code="137" name="Net-(C67-Pad1)">
+      <node ref="C67" pin="1"/>
+      <node ref="RN26" pin="2"/>
+      <node ref="U8" pin="6"/>
+      <node ref="RN29" pin="3"/>
+    </net>
+    <net code="138" name="Net-(C68-Pad1)">
+      <node ref="C68" pin="1"/>
+      <node ref="U8" pin="7"/>
+      <node ref="RN26" pin="1"/>
+      <node ref="RN29" pin="4"/>
+    </net>
+    <net code="139" name="Net-(C61-Pad1)">
+      <node ref="RN27" pin="4"/>
+      <node ref="C61" pin="1"/>
+      <node ref="RN30" pin="1"/>
+      <node ref="U8" pin="15"/>
+    </net>
+    <net code="140" name="Net-(C64-Pad1)">
+      <node ref="C64" pin="1"/>
+      <node ref="U8" pin="3"/>
+      <node ref="RN30" pin="4"/>
+      <node ref="RN27" pin="1"/>
+    </net>
+    <net code="141" name="Net-(C20-Pad1)">
+      <node ref="C20" pin="1"/>
+      <node ref="U3" pin="4"/>
+      <node ref="RN7" pin="4"/>
+      <node ref="RN8" pin="1"/>
+    </net>
+    <net code="142" name="Net-(C10-Pad1)">
+      <node ref="RN1" pin="3"/>
+      <node ref="U3" pin="1"/>
+      <node ref="C10" pin="1"/>
+      <node ref="RN4" pin="2"/>
+    </net>
+    <net code="143" name="Net-(C11-Pad1)">
+      <node ref="RN1" pin="2"/>
+      <node ref="U3" pin="2"/>
+      <node ref="RN4" pin="3"/>
+      <node ref="C11" pin="1"/>
+    </net>
+    <net code="144" name="Net-(C17-Pad1)">
+      <node ref="RN7" pin="1"/>
+      <node ref="U3" pin="7"/>
+      <node ref="C17" pin="1"/>
+      <node ref="RN8" pin="4"/>
+    </net>
+    <net code="145" name="Net-(C18-Pad1)">
+      <node ref="C18" pin="1"/>
+      <node ref="RN8" pin="3"/>
+      <node ref="U3" pin="6"/>
+      <node ref="RN7" pin="2"/>
+    </net>
+    <net code="146" name="Net-(C19-Pad1)">
+      <node ref="RN7" pin="3"/>
+      <node ref="RN8" pin="2"/>
+      <node ref="U3" pin="5"/>
+      <node ref="C19" pin="1"/>
+    </net>
+    <net code="147" name="Net-(C3-Pad1)">
+      <node ref="C3" pin="1"/>
+      <node ref="U2" pin="2"/>
+      <node ref="RN6" pin="3"/>
+      <node ref="RN3" pin="2"/>
+    </net>
+    <net code="148" name="Net-(C12-Pad1)">
+      <node ref="C12" pin="1"/>
+      <node ref="RN4" pin="4"/>
+      <node ref="RN1" pin="1"/>
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="149" name="Net-(C9-Pad1)">
+      <node ref="U3" pin="15"/>
+      <node ref="RN4" pin="1"/>
+      <node ref="C9" pin="1"/>
+      <node ref="RN1" pin="4"/>
+    </net>
+    <net code="150" name="Net-(C2-Pad1)">
+      <node ref="C2" pin="1"/>
+      <node ref="RN6" pin="2"/>
+      <node ref="RN3" pin="3"/>
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="151" name="Net-(R6-Pad2)">
+      <node ref="U2" pin="9"/>
+      <node ref="U3" pin="14"/>
+      <node ref="R6" pin="2"/>
+    </net>
+    <net code="152" name="Net-(C5-Pad1)">
+      <node ref="RN5" pin="1"/>
+      <node ref="RN2" pin="4"/>
+      <node ref="U2" pin="4"/>
+      <node ref="C5" pin="1"/>
+    </net>
+    <net code="153" name="Net-(C6-Pad1)">
+      <node ref="U2" pin="5"/>
+      <node ref="RN5" pin="2"/>
+      <node ref="C6" pin="1"/>
+      <node ref="RN2" pin="3"/>
+    </net>
+    <net code="154" name="Net-(C7-Pad1)">
+      <node ref="RN5" pin="3"/>
+      <node ref="C7" pin="1"/>
+      <node ref="U2" pin="6"/>
+      <node ref="RN2" pin="2"/>
+    </net>
+    <net code="155" name="Net-(C8-Pad1)">
+      <node ref="C8" pin="1"/>
+      <node ref="RN2" pin="1"/>
+      <node ref="U2" pin="7"/>
+      <node ref="RN5" pin="4"/>
+    </net>
+    <net code="156" name="Net-(C1-Pad1)">
+      <node ref="RN6" pin="1"/>
+      <node ref="RN3" pin="4"/>
+      <node ref="U2" pin="15"/>
+      <node ref="C1" pin="1"/>
+    </net>
+    <net code="157" name="Net-(C4-Pad1)">
+      <node ref="RN3" pin="1"/>
+      <node ref="U2" pin="3"/>
+      <node ref="C4" pin="1"/>
+      <node ref="RN6" pin="4"/>
+    </net>
+    <net code="158" name="Net-(C23-Pad1)">
+      <node ref="U4" pin="2"/>
+      <node ref="C23" pin="1"/>
+      <node ref="RN11" pin="2"/>
+      <node ref="RN14" pin="3"/>
+    </net>
+    <net code="159" name="Net-(C39-Pad1)">
+      <node ref="C39" pin="1"/>
+      <node ref="U5" pin="5"/>
+      <node ref="RN15" pin="3"/>
+      <node ref="RN16" pin="2"/>
+    </net>
+    <net code="160" name="Net-(C40-Pad1)">
+      <node ref="RN16" pin="1"/>
+      <node ref="U5" pin="4"/>
+      <node ref="RN15" pin="4"/>
+      <node ref="C40" pin="1"/>
+    </net>
+    <net code="161" name="Net-(C38-Pad1)">
+      <node ref="U5" pin="6"/>
+      <node ref="C38" pin="1"/>
+      <node ref="RN15" pin="2"/>
+      <node ref="RN16" pin="3"/>
+    </net>
+    <net code="162" name="Net-(C37-Pad1)">
+      <node ref="RN16" pin="4"/>
+      <node ref="C37" pin="1"/>
+      <node ref="RN15" pin="1"/>
+      <node ref="U5" pin="7"/>
+    </net>
+    <net code="163" name="Net-(C29-Pad1)">
+      <node ref="U5" pin="15"/>
+      <node ref="C29" pin="1"/>
+      <node ref="RN9" pin="4"/>
+      <node ref="RN12" pin="1"/>
+    </net>
+    <net code="164" name="Net-(C21-Pad1)">
+      <node ref="U4" pin="15"/>
+      <node ref="RN11" pin="4"/>
+      <node ref="RN14" pin="1"/>
+      <node ref="C21" pin="1"/>
+    </net>
+    <net code="165" name="Net-(C24-Pad1)">
+      <node ref="RN11" pin="1"/>
+      <node ref="C24" pin="1"/>
+      <node ref="RN14" pin="4"/>
+      <node ref="U4" pin="3"/>
+    </net>
+    <net code="166" name="Net-(C22-Pad1)">
+      <node ref="U4" pin="1"/>
+      <node ref="RN14" pin="2"/>
+      <node ref="RN11" pin="3"/>
+      <node ref="C22" pin="1"/>
+    </net>
+    <net code="167" name="Net-(C32-Pad1)">
+      <node ref="RN9" pin="1"/>
+      <node ref="U5" pin="3"/>
+      <node ref="C32" pin="1"/>
+      <node ref="RN12" pin="4"/>
+    </net>
+    <net code="168" name="Net-(C31-Pad1)">
+      <node ref="RN12" pin="3"/>
+      <node ref="U5" pin="2"/>
+      <node ref="C31" pin="1"/>
+      <node ref="RN9" pin="2"/>
+    </net>
+    <net code="169" name="Net-(R8-Pad2)">
+      <node ref="U5" pin="14"/>
+      <node ref="U4" pin="9"/>
+      <node ref="R8" pin="2"/>
+    </net>
+    <net code="170" name="Net-(C30-Pad1)">
+      <node ref="RN12" pin="2"/>
+      <node ref="U5" pin="1"/>
+      <node ref="C30" pin="1"/>
+      <node ref="RN9" pin="3"/>
+    </net>
+    <net code="171" name="Net-(C28-Pad1)">
+      <node ref="RN13" pin="4"/>
+      <node ref="U4" pin="7"/>
+      <node ref="C28" pin="1"/>
+      <node ref="RN10" pin="1"/>
+    </net>
+    <net code="172" name="Net-(C27-Pad1)">
+      <node ref="RN10" pin="2"/>
+      <node ref="RN13" pin="3"/>
+      <node ref="C27" pin="1"/>
+      <node ref="U4" pin="6"/>
+    </net>
+    <net code="173" name="Net-(C26-Pad1)">
+      <node ref="U4" pin="5"/>
+      <node ref="RN13" pin="2"/>
+      <node ref="C26" pin="1"/>
+      <node ref="RN10" pin="3"/>
+    </net>
+    <net code="174" name="Net-(C25-Pad1)">
+      <node ref="U4" pin="4"/>
+      <node ref="RN13" pin="1"/>
+      <node ref="RN10" pin="4"/>
+      <node ref="C25" pin="1"/>
+    </net>
+    <net code="175" name="/OUT62">
+      <node ref="RN32" pin="6"/>
+      <node ref="J18" pin="2"/>
+    </net>
+    <net code="176" name="/OUT51">
+      <node ref="J8" pin="4"/>
+      <node ref="RN30" pin="5"/>
+    </net>
+    <net code="177" name="/OUT52">
+      <node ref="J8" pin="5"/>
+      <node ref="RN29" pin="8"/>
+    </net>
+    <net code="178" name="/OUT53">
+      <node ref="J8" pin="6"/>
+      <node ref="RN29" pin="7"/>
+    </net>
+    <net code="179" name="/OUT54">
+      <node ref="RN29" pin="6"/>
+      <node ref="J8" pin="7"/>
+    </net>
+    <net code="180" name="/OUT55">
+      <node ref="J8" pin="8"/>
+      <node ref="RN29" pin="5"/>
+    </net>
+    <net code="181" name="/OUT56">
+      <node ref="RN28" pin="8"/>
+      <node ref="J8" pin="9"/>
+    </net>
+    <net code="182" name="/OUT57">
+      <node ref="J8" pin="10"/>
+      <node ref="RN28" pin="7"/>
+    </net>
+    <net code="183" name="/OUT58">
+      <node ref="RN28" pin="6"/>
+      <node ref="J8" pin="11"/>
+    </net>
+    <net code="184" name="/OUT59">
+      <node ref="RN28" pin="5"/>
+      <node ref="J8" pin="12"/>
+    </net>
+    <net code="185" name="/OUT61">
+      <node ref="RN32" pin="7"/>
+      <node ref="J18" pin="1"/>
+    </net>
+    <net code="186" name="/OUT63">
+      <node ref="RN32" pin="5"/>
+      <node ref="J18" pin="3"/>
+    </net>
+    <net code="187" name="/OUT50">
+      <node ref="J8" pin="3"/>
+      <node ref="RN30" pin="6"/>
+    </net>
+    <net code="188" name="/OUT42">
+      <node ref="J10" pin="7"/>
+      <node ref="RN20" pin="6"/>
+    </net>
+    <net code="189" name="/OUT32">
+      <node ref="RN22" pin="8"/>
+      <node ref="J9" pin="9"/>
+    </net>
+    <net code="190" name="/OUT33">
+      <node ref="J9" pin="10"/>
+      <node ref="RN22" pin="7"/>
+    </net>
+    <net code="191" name="/OUT34">
+      <node ref="J9" pin="11"/>
+      <node ref="RN22" pin="6"/>
+    </net>
+    <net code="192" name="/OUT35">
+      <node ref="J9" pin="12"/>
+      <node ref="RN22" pin="5"/>
+    </net>
+    <net code="193" name="/OUT36">
+      <node ref="RN21" pin="8"/>
+      <node ref="J10" pin="1"/>
+    </net>
+    <net code="194" name="/OUT37">
+      <node ref="RN21" pin="7"/>
+      <node ref="J10" pin="2"/>
+    </net>
+    <net code="195" name="/OUT38">
+      <node ref="J10" pin="3"/>
+      <node ref="RN21" pin="6"/>
+    </net>
+    <net code="196" name="/OUT39">
+      <node ref="J10" pin="4"/>
+      <node ref="RN21" pin="5"/>
+    </net>
+    <net code="197" name="/OUT40">
+      <node ref="RN20" pin="8"/>
+      <node ref="J10" pin="5"/>
+    </net>
+    <net code="198" name="/OUT41">
+      <node ref="RN20" pin="7"/>
+      <node ref="J10" pin="6"/>
+    </net>
+    <net code="199" name="/OUT43">
+      <node ref="J10" pin="8"/>
+      <node ref="RN20" pin="5"/>
+    </net>
+    <net code="200" name="/OUT44">
+      <node ref="RN24" pin="8"/>
+      <node ref="J10" pin="9"/>
+    </net>
+    <net code="201" name="/OUT45">
+      <node ref="RN24" pin="7"/>
+      <node ref="J10" pin="10"/>
+    </net>
+    <net code="202" name="/OUT46">
+      <node ref="J10" pin="11"/>
+      <node ref="RN24" pin="6"/>
+    </net>
+    <net code="203" name="/OUT47">
+      <node ref="RN24" pin="5"/>
+      <node ref="J10" pin="12"/>
+    </net>
+    <net code="204" name="/OUT12">
+      <node ref="J7" pin="1"/>
+      <node ref="RN16" pin="8"/>
+    </net>
+    <net code="205" name="/OUT13">
+      <node ref="J7" pin="2"/>
+      <node ref="RN16" pin="7"/>
+    </net>
+    <net code="206" name="/OUT14">
+      <node ref="RN16" pin="6"/>
+      <node ref="J7" pin="3"/>
+    </net>
+    <net code="207" name="/OUT15">
+      <node ref="RN16" pin="5"/>
+      <node ref="J7" pin="4"/>
+    </net>
+  </nets>
+</export>

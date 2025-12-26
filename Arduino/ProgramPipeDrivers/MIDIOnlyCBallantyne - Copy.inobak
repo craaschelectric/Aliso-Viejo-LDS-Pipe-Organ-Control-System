@@ -1,0 +1,998 @@
+#include <Adafruit_MCP23017.h>
+
+
+
+
+/* USB MIDI Custom Name Example
+ *  
+ * This example demonstrates how to change the USB MIDI 
+ * device name on Teensy LC and 3.x.  When creating more
+ * that one MIDI device, custom names are much easier to
+ * use when selecting each device in MIDI software on
+ * your PC or Mac.  The custom name is in the "name.c" tab.
+ *
+ * Windows and Macintosh systems often cache USB info.
+ * After changing the name, you may need to test on a
+ * different computer to observe the new name, or take
+ * steps to get your operating system to "forget" the
+ * cached info.  (TODO: wanted... can anyone contribute
+ * instructions for these systems)
+ * 
+ * You must select MIDI from the "Tools > USB Type" menu
+ * 
+ * This example code is in the public domain.
+ */
+
+ /* This structure accepts and reports MIDI messages. All vagaries relating to LED vs SAM are taken care of by microprocessors local to the LED or SAM.
+  * The stop action interface is a 10 pin multi-drop bus. The pinout is as follows:
+*1- PeriphOut  2- MasterOut
+*3-VCC   4-nRESET
+*5-GND   6-SYNC_LOAD
+*7-CLK   8-GND
+*9-SAMPWR  10-SAMPWR
+*PERIPHOUT - Output from peripheral to master. Pulled up hard (470 ohm). Peripheral uses open collector driver to indicate a 0, no drive or drive and release to indicate a 1. Multiple peripherals share this output.
+*MASTEROUT - Output from master to peripheral. Always drive from master (SAMMidiProc
+*SYNC/LOAD- A high to low transition indicates to every to reset counters. The next clock after Sync/Load goes to 0 is  the start of the read.write chain. Clock must be low on SYNC.
+*CLOCK – Peripherals and master change data on rising edge, read data on falling edge. This clock will be no faster than 100KHz, high will be at least 5ms, low at least 5ms. Peripheral should respond within 3ms.
+
+*There are 256 data bit slots. Bit 0 (least significant bit) is on the closest clock to the SYNC signal.
+*
+*This software instance provides the same timing on two different chains. The results are reported on different MIDI channels.
+*The MIDI notes are spread across 2 channels.  So for chain 1, it's MIDIChannel and MIDIChannel+1;  For chain 2, it's MIDIChannel+2 and MIDIChannel+3
+*
+*The key action is an 8 pin daisy-chain interface.  It drives a shift register chain. There are 2 separate interfaces., each capable of 256 keys (4 manuals, or 3 manuals and pedal will fit in one interface).
+*Pinout of the 8 pin interface is
+*1 – Input to shift chain (SER) 2- Output from shift chain (nQH)
+*3 – VCC (3.3V)      4- nRST (SRCLR)
+*5 – GND     6 – LOAD (RCLK and G/OutputEnable)
+*7 – CLK (SRCLK)     8 – GND
+*Operation of the signals is governed by the component used: 74HC597 serial shift register, parallel input, serial output.
+* The key channel 1 is MIDIChannel+4 and MIDIChannel+5
+* The key channel 2 is MIDIChannel+6 and MIDIChannel+7
+* 
+* 
+
+
+  * INITIAL INSTANCE - ONLY SUPPORT 64bits
+  */
+#include <MIDI.h>
+#include <EEPROM.h>
+/*TODO I2C*/
+#include <LCD_I2C_Teensy36.h>
+LCD_I2C_Teensy36 lcd(0x27,16,2);
+#include <TimerOne.h>
+//#include <Wire.h>
+
+
+const int VersionNumberMajor=0;
+const int VersionNumberMinor=0;
+int LEDStatus=22;
+int MIDIChannel=5; //Must be 7 or less. Stored at EEPROM address 1.  EEPROM 0 validates write.  If 0xA5 then the EEPROM address is good.  EEPROM 2 stores PWM value. Flags stored EEPROM 3.
+char Flags=0;
+const char MIDILED=0;
+// bit 0 - if 1, then LEDs are only controlled via MIDI commands (TODO)
+// bit 1 - if 1, then initial LED state is not flashed
+const int NoteBase=0;
+// up const int NoteBase=51; // up
+
+//HARDWARE CONFIG - For rev B board
+//Input chain
+const int SAMSense[2]={1,6};//Input from peripherals
+const int SAMRst[2]={4,12};// Active low, pulled high
+const int SAMSync[2]={2,10};// high to low resets for everyone
+const int SAMCLK[2]={3,11};// 100KHz or less. clock high and then change data.  Read data after clock low.
+const int SAMDrive[2]={0,5};//Output from this master
+
+const int KeyIn[2]={25,36};
+const int KeyOut[2]={24,35};
+const int KeyRst[2]={29,39};
+const int KeyLoad[2]={26,21};
+const int KeyCLK[2]={28,20};
+
+// Analog
+bool EnableAnalog=true;
+const int SwitchInputs[]={A21,A22,A0,A1,A2,A3};
+bool EnableSwitchExpression=false;
+const int numAnalogChannels=3;
+const int PedalCCValue[]={0x7,0x10, 0x11, 0x12, 0x13};
+int PedalCurrentState[]={0,0,0,0,0};
+int PedalAnalogChannel[]={A21,A22,A0,A1,A2,A3};
+const int BarI2CAddr[]={0x40,0x41,0x42,0x43,0x44};
+const int numBars=3;
+const int AnalogChannelSegments[]={10,10,10,10,10};
+const int AnalogDivisor=3;// number of shifts to the right (divs/2) to determine number of stages. 
+int PedAveraging[8][5]={
+  {0,0,0,0,0},
+  {0,0,0,0,0},
+  {0,0,0,0,0},
+  {0,0,0,0,0},
+  {0,0,0,0,0},
+  {0,0,0,0,0},
+  {0,0,0,0,0},
+  {0,0,0,0,0}
+};
+int PedAvgCtr=0;
+int AllSwells=0xFFFF; //if not FFFF, indicates control bit number which is the all swells to swell control, and if on, same data is sent on AllSwellsChannel
+int AllSwellsChannel=0; //
+bool AllSwellsChanged=false;
+
+// End Analog
+
+
+
+
+
+
+const int LEDPin=22;
+unsigned char LoopCounter=0;
+bool LoopDone=false;
+int keystate=0;
+int EEValue;
+bool HighConfigOn;
+bool LowConfigOn;
+bool ConfigState=false;
+
+// The system supports 2 chains for SAMs and 2 chains for keys. Chains 0 and 1 are SAM chains (10 pin), and chains 2 and 3 are key chains (8 pin).
+// In this implementation we will only implement one SAM chain (0) and one key chain (2).
+unsigned int CurrentState[4][16]={
+  {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}, {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+  {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}, {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+  }; //each scan chain is 256 bits, 4 unsigned chars per scan chain. Even high byte, odd low byte
+unsigned int PreviousState[4][16]={
+  {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}, {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+  {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}, {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+} ; //each scan chain is 64 bits, 4 unsigned chars per scan chain. Even high byte, odd low byte. 4 chains supported
+unsigned int ChangedState[4][16]={
+  {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}, {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+  {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}, {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+}; // if a bit is set here, then the switch changed state
+bool ChangedFlag=false;
+unsigned int t32temp=0;
+unsigned int tTempArray[4][16]={
+  {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}, {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+  {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}, {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+  };
+int BitCounter[]={0,0,0,0};
+int WordCounter[]={0,0,0,0};
+
+String tTempString="0000000000000000000000000000000000000000000000000000000000000000";
+int ProcIndex=0;
+int ProcBit=0;
+
+
+int LoopDelay=100;
+int test = 0;
+const int MaxSAMChannels=0;
+const int MaxKeyboards=0;// 4 keyboards = 256 bits.  max 8 keyboards = 512 bits.
+
+
+bool EnablePowerupLED=false;
+bool PCMessageReceived=false;
+const int PCMessageChannel = 1;
+const int PCMessageNote=23;
+int PCMessageLEDPort=6;
+int PCMessageShutdownSwitch=5;
+bool PCMessageShutdownSwitchPrevState=1;
+bool PCMessageCurrentState=1; 
+int SendNoteValue=0;
+
+
+///////////////////////////Setup///////////////////////////
+
+void setup() {
+  usbMIDI.setHandleNoteOn(myNoteOn);
+  usbMIDI.setHandleNoteOff(myNoteOff);
+
+  
+  lcd.begin();
+//  lcd.backlight();
+  lcd.cursor();
+  lcd.setCursor(1,0);
+  lcd.print("CR Control");
+  lcd.setCursor(1,1);
+  lcd.print("CBallantyne0000");
+  
+  Serial.begin(115200);
+
+  Serial.println("Setup1...");
+  
+  
+  Serial.println("Setup scan chains...");
+  for (int i=0;i<=1;i++){
+    pinMode(SAMSense[i],INPUT_PULLUP);
+    pinMode(SAMRst[i],INPUT_PULLUP);
+    pinMode(SAMSync[i],OUTPUT);
+    digitalWrite(SAMSync[i],LOW);
+    pinMode(SAMCLK[i],OUTPUT);
+    digitalWrite(SAMCLK[i],LOW);
+    pinMode(SAMDrive[i],OUTPUT);
+    digitalWrite(SAMDrive[i],LOW);
+    
+    pinMode(KeyIn[i],INPUT_PULLUP);
+    pinMode(KeyOut[i],OUTPUT);
+    digitalWrite(KeyOut[i],LOW);
+    pinMode(KeyRst[i],OUTPUT);
+    digitalWrite(KeyRst[i],HIGH);
+    delay(1);
+    digitalWrite(KeyRst[i],LOW);
+    delay(1);
+    digitalWrite(KeyRst[i],HIGH);
+    pinMode(KeyLoad[i],OUTPUT);
+    digitalWrite(KeyLoad[i],LOW);
+    pinMode(KeyCLK[i],OUTPUT);
+    digitalWrite(KeyCLK[i],LOW);
+ 
+  }// for i
+
+  Serial.println("Setup Expression...");
+
+Wire.begin();
+if (EnableSwitchExpression){
+  for (int i=0;i<=5;i++){
+    pinMode(SwitchInputs[i],INPUT_PULLUP);
+  }
+  Serial.println("Switch pullups set");
+  int j=0;
+  for (int i=0; i<=5;i++){
+    if (digitalRead(SwitchInputs[i])==0) j+=0x10;
+  }
+  PedalCurrentState[0]=j;
+}//switch expression
+
+mcp.begin();
+
+if (numBars>=1){
+  for (int i=0;i<numBars; i++){
+    barSetup(BarI2CAddr[i],0);
+    for (int j=0; j<=AnalogChannelSegments[i]; j++){
+      barOut(BarI2CAddr[i],j);
+      delay(50);
+    }
+    for (int j=AnalogChannelSegments[i]; j>=0; j--){
+      barOut(BarI2CAddr[i],j);
+      delay(50);
+    }
+  }
+}
+
+if (EnableAnalog){
+  for (int i=0;i<numAnalogChannels;i++){
+    pinMode(PedalAnalogChannel[i],INPUT);
+    PedalCurrentState[i]=0;
+    int j=analogRead(PedalAnalogChannel[i])>>AnalogDivisor;
+    if (j!=PedalCurrentState[i])
+    {
+      if (PedalCurrentState[i]>=j)
+      {
+        for (int k=PedalCurrentState[i]-1; k>=j; k--)
+        {
+          usbMIDI.sendControlChange(PedalCCValue[i],k,MIDIChannel);
+    Serial.print("AnalogValue");
+    Serial.println(j);
+        }
+      }
+      else
+      {
+        for (int k=PedalCurrentState[i]+1; k<=j; k++)
+        {
+          usbMIDI.sendControlChange(PedalCCValue[i],k,MIDIChannel);
+    Serial.print("AnalogValue");
+    Serial.println(j);
+        }
+      }
+      PedalCurrentState[i]=j;
+      Serial.print("Current State ");
+      Serial.print(i);
+      Serial.print(": ");
+      Serial.println(PedalCurrentState[i]);
+      float BarValueF=(j/0x3FF)*AnalogChannelSegments[i];
+      barOut(BarI2CAddr[i],(int) BarValueF);
+    }
+  }//  for i, each analog channel
+}
+/* PCMessage setup  
+  pinMode(PCMessageLEDPort,OUTPUT);
+  pinMode(PCMessageShutdownSwitch,INPUT_PULLUP);
+*/
+  pinMode(LEDStatus,OUTPUT);
+  digitalWrite(LEDStatus,HIGH);
+
+  Serial.println("End Setup...");
+  Serial.print("Version..");
+  Serial.print(VersionNumberMajor,DEC);
+  Serial.print(".");
+  Serial.println(VersionNumberMinor,DEC);
+  Timer1.initialize(10000); // 10ms loop time
+  Timer1.attachInterrupt(restartLoop);
+  Timer1.start();
+
+
+
+
+
+}//setup
+
+
+///////////////////////////////////main////////////////////////////
+
+void loop() {
+  LoopCounter++;
+  digitalWrite(22,bitRead(LoopCounter,3));
+  
+Serial.print(".");
+
+
+
+
+
+//////////Scan data in
+/*
+  digitalWrite(InLatchRegister,HIGH);
+  delayMicroseconds(1);
+  digitalWrite(InLatchRegister,LOW); // latch data into the output register
+  delayMicroseconds(1);
+  digitalWrite(InLatchRegister,HIGH);
+  ChangedFlag=false;	
+  for (int i=0;i<=15;i++) for (int j=0;j<=3;j++) CurrentState[j][i]=0;
+    for (int j=0;j<=3;j++)// 4 ints per channel
+    {
+      for (int k=0;k<=15;k++)// 16 bits per int
+      {
+		int m=0;
+        //for (int m=0; m<=MaxChannels; m++)// 8 channels
+        {
+          if (digitalRead(ScanChainChannel[m])==1)//inverse logic, 0 is on.  
+            CurrentState[j+m*4]=CurrentState[j+m*4]&0xFFFFFFFE;
+          else  
+            CurrentState[j+m*4]=CurrentState[j+m*4]|0x01;
+          if (k<=14) CurrentState[j+m*4]= CurrentState[j+m*4]<<1;
+        }// for m - channels
+        digitalWrite(InSerialClockPin,HIGH);
+        delayMicroseconds(1);
+        digitalWrite(InSerialClockPin,LOW);
+        delayMicroseconds(1);
+      }// for k - 16 bits
+    }// for j - ints per channel
+*/
+/////////////At this point CurrentState[] is a 256 bit array of the current state of the switches
+//////////////////////Check for change in bits
+/*
+  int i=0;
+  //for (int i=0;i<=MaxChannels; i++)//channels
+//  {
+    for (int j=0;j<=3;j++)//4 ints per channel (16*4=64 bits)
+    {
+      ChangedState[i*2+j]=0;
+      test=(CurrentState[i*2+j]^PreviousState[i*2+j]);
+      if (test !=0){
+	  
+      for  (int k=0;k<=15;k++)// 16 bits per int
+      {
+         if (bitRead(CurrentState[i*2+j],k)!=bitRead(PreviousState[i*2+j],k)){
+            bitWrite(ChangedState[i*2+j],k,1);
+			ChangedFlag=true;
+            SendNoteValue=16*(1-j)+NoteBase+k-ScanChannelOffset[i];  
+            if(bitRead(CurrentState[i*2+j],k)==1) 
+              usbMIDI.sendNoteOn(SendNoteValue,0x7F,MIDIChannel+i);
+//              usbMIDI.sendNoteOn(128-((31-k)+32*j)+NoteBase,0x7F,MIDIChannel+i);
+            else 
+              usbMIDI.sendNoteOff(SendNoteValue,0x7F,MIDIChannel+i);
+//              usbMIDI.sendNoteOff(128-((31-k)+32*j)+NoteBase,0x7F,MIDIChannel+i);
+                  
+        }//if current state changed
+      }//k
+    }// if xor  
+    PreviousState[i*2+j]=CurrentState[i*2+j];
+    }//j
+//  }//i
+*/
+
+
+/////////end data scan in.  CurrentState[] is a 256 bit array of 16 16 bit ints containing the current state of the input array.  ChangedState[] is a 256 bit array telling what changed from the last loop
+// index in ChangedState and CurrentState is int(controlnumber/16) or controlnumber>>4.  Bit number is controlnumber-((controlnumber>>4)*16)
+/*if(ChangedFlag){
+	Serial.print("CurrentState: ");
+	for (int testi=0;testi<=15;testi++) printint16(CurrentState[testi]);
+	Serial.println("");
+	Serial.print("ChangedState: ");
+	for (int testi=0;testi<=15;testi++) printint16(ChangedState[testi]);
+	Serial.println("");
+	ChangedFlag=false;
+}
+*/
+
+//////////////////////////////////// ANALOG CHANNELS ///////////////////////////////////////////////////////
+
+/* Switch Expression
+if (EnableSwitchExpression){
+  int i=0;
+  int j=0;
+  for (int k=0; k<=5;k++){
+    //debug
+    pinMode(SwitchInputs[i],INPUT_PULLUP);
+  //!debug
+    if (digitalRead(SwitchInputs[k])==0) {j+=0x10; Serial.print("Switch number: ");Serial.println(k);}
+  }
+  if (j!=PedalCurrentState[i])
+    {
+      if (PedalCurrentState[i]>=j)
+      {
+        for (int k=PedalCurrentState[i]-1; k>=j; k--)
+        {
+          usbMIDI.sendControlChange(PedalCCValue[i],k,MIDIChannel);
+    Serial.print("SwitchValue");
+    Serial.println(j,HEX);
+        }
+      }
+      else
+      {
+        for (int k=PedalCurrentState[i]+1; k<=j; k++)
+        {
+          usbMIDI.sendControlChange(PedalCCValue[i],k,MIDIChannel);
+    Serial.print("SwitchValue");
+    Serial.println(j);
+        }
+      }
+      PedalCurrentState[i]=j;
+      Serial.print("Current State ");
+      Serial.print(i);
+      Serial.print(": ");
+      Serial.println(PedalCurrentState[i]);
+    }
+} //switch expression
+*/
+
+
+
+
+/*///////////////////////// Scan analog channels /////////////////////////////
+
+if (EnableAnalog&&!EnableSwitchExpression){
+
+  for (int i=1;i<=numAnalogChannels;i++)
+  {
+    
+    int j=analogRead(PedalAnalogChannel[i]);
+
+//////// Averaging routine    
+    PedAveraging[PedAvgCtr&7][i]=j;
+    j=0;
+    for (int k=0;k<=7;k++){
+      j+=PedAveraging[k][i];
+    }
+    j=j>>4;
+/////////////
+
+////////////linear/nonlinear routine
+
+
+
+////////
+    
+    if (j!=PedalCurrentState[i])
+    {
+      if (PedalCurrentState[i]>=j)
+      {
+        for (int k=PedalCurrentState[i]-1; k>=j; k--)
+        {
+          usbMIDI.sendControlChange(PedalCCValue[i],k,MIDIChannel);
+    Serial.print("AnalogValue");
+    Serial.println(j);
+
+        }
+      }
+      else
+      {
+        for (int k=PedalCurrentState[i]+1; k<=j; k++)
+        {
+          usbMIDI.sendControlChange(PedalCCValue[i],k,MIDIChannel);
+    Serial.print("AnalogValue");
+    Serial.println(j);
+
+        }
+      }
+      PedalCurrentState[i]=j;
+      Serial.print("Current State ");
+      Serial.print(i);
+      Serial.print(": ");
+      Serial.println(PedalCurrentState[i]);
+
+    }
+  }// for i - each analog channel/
+
+} //enableanalog
+////////////////////////////////analog channel/*/
+
+
+
+/*  COMBINATION ACTION MEMORY STUFF
+ *   
+// if changed and mem+==0, memorylevel++ to 255
+if ((bitRead(ChangedState[MemPlusButton>>4],MemPlusButton-(MemPlusButton>>4)*16)==1)&&(bitRead(CurrentState[MemPlusButton>>4],MemPlusButton-(MemPlusButton>>4)*16)==1)){
+  if (CurrentMemoryNumber<=0xFE) CurrentMemoryNumber++;
+}
+// if changed and mem-==0, memorylevel-- to 0
+if ((bitRead(ChangedState[MemMinusButton>>4],MemMinusButton-(MemMinusButton>>4)*16)==1)&&(bitRead(CurrentState[MemMinusButton>>4],MemMinusButton-(MemMinusButton>>4)*16)==1)){
+  if (CurrentMemoryNumber>=1) CurrentMemoryNumber--;
+}
+
+// Note for Wicks, mem levels are absolute inputs
+if ((bitRead(CurrentState[WicksLevel1>>4],WicksLevel1-(WicksLevel1>>4)*16)==1)) {CurrentMemoryNumber=0;}//Serial.println("Memory0");Serial.println(WicksLevel1>>4,HEX);Serial.println(WicksLevel1-(WicksLevel1>>4)*16,HEX);printint16(CurrentState[WicksLevel1>>4]);Serial.println("");}
+if ((bitRead(CurrentState[WicksLevel2>>4],WicksLevel2-(WicksLevel2>>4)*16)==1)) {CurrentMemoryNumber=1;}//Serial.println("Memory1");}
+if ((bitRead(CurrentState[WicksLevel3>>4],WicksLevel3-(WicksLevel3>>4)*16)==1)) {CurrentMemoryNumber=2;}//Serial.println("Memory2");}
+if ((bitRead(CurrentState[WicksLevel4>>4],WicksLevel4-(WicksLevel4>>4)*16)==1)) {CurrentMemoryNumber=3;}//Serial.println("Memory3");}
+
+
+// if changed and Piston[i], if set then write sense array & mask ELSE if exist read from memory and write to SAM
+if ((bitRead(CurrentState[SetButton>>4],SetButton-(SetButton>>4)*16)==1)) {SetStatus=true;Serial.println("set");} else SetStatus=false; ///Note: SET is level, not edge sensitive
+
+
+for (int i=0;i<=39;i++){
+  if (Piston[i]!=0){
+    ProcIndex=Piston[i]>>4;
+    ProcBit=Piston[i]-(Piston[i]>>4)*16;
+    if ((bitRead(ChangedState[ProcIndex],ProcBit)==1)&&(bitRead(CurrentState[ProcIndex],ProcBit)==1)){
+      // generate filename
+      Serial.print("pushed Piston ");Serial.println(i);
+      String PistonFilename = "A00";//A for piston, 00 reserved.  
+      if (CurrentMemoryNumber<=0xFF) PistonFilename=PistonFilename+"0";
+      if (CurrentMemoryNumber<=0xF) PistonFilename=PistonFilename+"0";
+      PistonFilename=PistonFilename+String(CurrentMemoryNumber,HEX);
+	  Serial.print("Memory Level: ");Serial.println(CurrentMemoryNumber,HEX);
+      if (i<=0xF) PistonFilename=PistonFilename+"0";
+      PistonFilename=PistonFilename+String(i,HEX);
+      Serial.print("PistonFilename: ");
+      Serial.println(PistonFilename);
+      
+      // Create file if it doesn't exist
+      if (!SD.exists(PistonFilename.c_str())){
+        Serial.print("Create File "); Serial.println(PistonFilename);
+        pistonFile=SD.open(PistonFilename.c_str(),FILE_WRITE);
+        pistonFile.close();
+        pistonFile=SD.open(PistonFilename.c_str(),FILE_WRITE);
+//        pistonFile.print("0000000000000000000000000000000000000000000000000000000000000000");
+        pistonFile.print("0000000000000000");
+        pistonFile.close();
+      }
+
+      for (int j=0;j<=15;j++) OutputArray[j]=0;
+      if (SetStatus){
+        SD.remove(PistonFilename.c_str());
+    		pistonFile=SD.open(PistonFilename.c_str(),FILE_WRITE);
+        pistonFile.close();
+        pistonFile=SD.open(PistonFilename.c_str(),FILE_WRITE);
+		  
+		// for 256,change to j<=7
+        for (int j=0;j<=3;j++){
+            Serial.print("BuildOutputArray " );Serial.print(i);Serial.println(j);printint16(CurrentState[j]);Serial.print("&");printint16(BitMask[i][j]);Serial.println("");
+            OutputArray[j]=(CurrentState[j])&(BitMask[i][j]);//Stores 0's, which are active, as 1's 
+            switch (OutputArray[j]){
+              case 0:
+                pistonFile.print("0000");Serial.print("0000");
+                break;
+              case 1 ... 0xF:
+                pistonFile.print("000");pistonFile.print(OutputArray[j],HEX);Serial.print("000");Serial.print(OutputArray[j],HEX);
+                break;
+              case 0x10 ... 0xFF:
+                pistonFile.print("00");pistonFile.print(OutputArray[j],HEX);Serial.print("00");Serial.print(OutputArray[j],HEX);
+                break;
+              case 0x100 ... 0xFFF:
+                pistonFile.print("0");pistonFile.print(OutputArray[j],HEX);Serial.print("0");Serial.print(OutputArray[j],HEX);
+                break;
+              case 0x1000 ... 0xFFFF:
+                pistonFile.print(OutputArray[j],HEX);Serial.print(OutputArray[j],HEX);
+                break;
+            }
+            
+            
+//            pistonFile.print(OutputArray[j],HEX);
+        }
+        Serial.print("Set Piston[");Serial.print(i,DEC);Serial.print("]: ");for(int testi=0;testi<=7;testi++) printint16(OutputArray[testi]);Serial.println("");
+
+       } //SetStatus
+        else{
+    			pistonFile=SD.open(PistonFilename.c_str());
+
+		// read file, convert HEX to numbers and write to tTempArray[].  Build OutputArray[] and fire SAMs.
+          tTempString="";
+          while (pistonFile.available()) {
+            switch (pistonFile.read()){
+            case 48:
+              tTempString=tTempString+"0";
+              break;
+            case 49:
+              tTempString=tTempString+"1";
+              break;
+            case 50:
+              tTempString=tTempString+"2";
+              break;
+            case 51:
+              tTempString=tTempString+"3";
+              break;
+            case 52:
+              tTempString=tTempString+"4";
+              break;
+            case 53:
+              tTempString=tTempString+"5";
+              break;
+            case 54:
+              tTempString=tTempString+"6";
+              break;
+            case 55:
+              tTempString=tTempString+"7";
+              break;
+            case 56:
+              tTempString=tTempString+"8";
+              break;
+            case 57:
+              tTempString=tTempString+"9";
+              break;
+            case 65:
+              tTempString=tTempString+"A";
+              break;
+            case 66:
+              tTempString=tTempString+"B";
+              break;
+            case 67:
+              tTempString=tTempString+"C";
+              break;
+            case 68:
+              tTempString=tTempString+"D";
+              break;
+            case 69:
+              tTempString=tTempString+"E";
+              break;
+            case 70:
+              tTempString=tTempString+"F";
+              break;
+          }//switch
+//          Serial.println(tTempString);
+          }//while file
+          Serial.print("String Read from ");Serial.print(pistonFile);Serial.print(": ");Serial.println(tTempString);
+          for (int j=0;j<=3;j++) OutputArray[j]=0;
+          for (int j=0;j<=3;j++){Serial.print("j=");Serial.print(j);Serial.print("::");
+            tTempArray[j]=t16Stringtoint(tTempString.substring(j*4,j*4+4));
+            Serial.print("tTempArray[");Serial.print(j,DEC);Serial.print("]: ");Serial.println(tTempArray[j],HEX);
+            for (int k=0;k<=15;k++){
+              // look for 16*j+k (the bit number) in sense array.  If it exists, and it is in the read piston string, use that index for ControlOn and ControlOff
+              for (int m=0;m<=63;m++){
+                if ((Sense[m]==(16*j+k))&&!(Sense[m]==0)) {
+                  Serial.print("Sense[");Serial.print(m);Serial.print("] found ");Serial.print(Sense[m],HEX);//    
+                  if (
+				      (bitRead(tTempArray[Sense[m]>>4],(Sense[m]-((Sense[m]>>4)*16)))==1)
+					  &&!(Piston[i]==GCButton)
+					  )
+                     {
+                      bitWrite(OutputArray[ControlOn[m]>>4],(ControlOn[m])-(ControlOn[m]>>4)*16,1);
+                     Serial.print(" On : ");Serial.println(ControlOn[m],HEX);
+//                     Serial.print("writeHigh ControlOn[");Serial.print((16*j+k));Serial.print("]=");Serial.print(ControlOn[(16*j+k)]);Serial.print(" bit ");Serial.println((ControlOn[(16*j+k)]>>4)-(ControlOn[(16*j+k)]>>4)*16);
+                     }  
+                  else{
+                    if(Piston[i]==GCButton) Serial.print("GC;");
+                     bitWrite(OutputArray[ControlOff[m]>>4],(ControlOff[m])-(ControlOff[m]>>4)*16,1);
+                     Serial.print(" Off: ");Serial.println(ControlOff[m],HEX);
+//                     Serial.println("writeLow");
+                  }
+
+                }// if sense
+               
+              }// for m
+                
+              
+            }// for k
+          }// for J
+          Serial.print("FireSAM Read Piston[");Serial.print(i,DEC);Serial.print("] OutputArray: ");for(int testi=3;testi>=0;testi--) printint16(OutputArray[testi]);Serial.println("");
+
+          // fire SAMs
+          pinMode(OutputSerialData,OUTPUT);
+      		for (int j=0;j<=3;j++){
+      			for (int k=15;k>=0;k--){
+              if(bitRead(OutputArray[j],k)==1){
+                digitalWrite(OutputSerialData,HIGH);
+                Serial.print("1");
+              }
+                else {
+                  digitalWrite(OutputSerialData,LOW);
+                  Serial.print("0");
+              }
+              delayMicroseconds(1);
+              digitalWrite(OutSerialClockPin,HIGH);
+              delayMicroseconds(1);
+              digitalWrite(OutSerialClockPin,LOW);
+			      }// for k
+		      }// for j
+         Serial.println("");
+         pinMode(OutLatchRegister,OUTPUT);
+          digitalWrite(OutLatchRegister,HIGH);
+          delayMicroseconds(2);
+          digitalWrite(OutLatchRegister,LOW); // latch data into the output register
+
+          
+          delay(SAMDelay);
+
+          Serial.println("Clear SAM");
+          // clear everything 
+          digitalWrite(OutputSerialData,LOW);
+          for (int j=0;j<=3;j++){
+            for (int k=0;k<=15;k++){
+              delayMicroseconds(1);
+              digitalWrite(OutSerialClockPin,HIGH);
+              delayMicroseconds(1);
+              digitalWrite(OutSerialClockPin,LOW);
+            }// for k
+          }// for j
+          digitalWrite(OutLatchRegister,HIGH);
+          delayMicroseconds(2);
+          digitalWrite(OutLatchRegister,LOW); // latch data into the output register
+         Serial.println("Cleared");
+
+
+
+          
+        
+          // Light up LED pistons. This means doing the process again, but for Control On only, and when ControlLED=0
+
+          for (int j=0;j<=3;j++){
+            for (int k=0;k<=15;k++){
+              // look for 16*j+k in sense array.  If it exists, use that index for ControlOn and ControlOff
+              for (int m=0;m<=63;m++){
+                if ((Sense[m]==16*j+k)&&!(Sense[m]==0)) {
+                  if (bitRead(tTempArray[j],k)==1 && ControlLED[m]==true){
+                     bitWrite(OutputArray[ControlOn[(16*j+k)>>4]],ControlOn[(16*j+k)>>4]-ControlOn[(16*j+k)>>4]*16,1);
+                  }
+                }// if sense
+               
+              }// for m
+                
+              
+            }// for k
+          }// for j          
+          // At this point, OutputArray should only have 1's for LED outputs that are on.          
+          for (int j=0;j<=3;j++){
+            for (int k=0;k<=15;k++){
+              if(bitRead(OutputArray[j],k)==1) digitalWrite(OutputSerialData,HIGH); else digitalWrite(OutputSerialData,LOW);
+              digitalWrite(SerialClockPin,HIGH);
+              delayMicroseconds(1);
+              digitalWrite(SerialClockPin,LOW);
+              delayMicroseconds(1);
+            }// for k
+          }// for j
+          digitalWrite(OutLatchRegister,HIGH);
+          delayMicroseconds(1);
+          digitalWrite(OutLatchRegister,LOW); // latch data into the output register
+          delayMicroseconds(1);
+          digitalWrite(OutLatchRegister,HIGH);
+
+          
+        }//else set status
+        pistonFile.close();
+
+        
+        
+      }//if piston changed
+    }//if piston !=0
+  }//for i
+
+*/ 
+// END COMBINATION ACTION
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    
+//////////////////////////PCSwitch
+
+  PCMessageCurrentState=digitalRead(PCMessageShutdownSwitch);   
+  if (PCMessageCurrentState!=PCMessageShutdownSwitchPrevState){
+    if (PCMessageCurrentState==0) usbMIDI.sendNoteOn(PCMessageNote,0x7F,PCMessageChannel); else usbMIDI.sendNoteOff(PCMessageNote,0x7F,PCMessageChannel);
+    PCMessageShutdownSwitchPrevState=PCMessageCurrentState;
+  }
+
+  if(EnablePowerupLED){
+    if(!PCMessageReceived)
+      digitalWrite(PCMessageLEDPort,bitRead(LoopCounter,6));
+    else
+      digitalWrite(PCMessageLEDPort,1);
+  
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////// Check for MIDI in
+
+
+  
+  usbMIDI.read(); //Look for note on or off on our channel
+//  delay(LoopDelay);
+  LoopDone=true;
+  while(LoopDone){
+//    delay(LoopDelay);
+//    Serial.print("W");
+    }
+//    Serial.println("Loop");
+  
+}// void loop()
+
+
+
+void printint16(unsigned int printvalue){
+  if (printvalue<0xF) {Serial.print("000");Serial.print(printvalue,HEX);Serial.print(" ");return;}
+  if (printvalue<0xFF) {Serial.print("00");Serial.print(printvalue,HEX);Serial.print(" ");return;}
+  if (printvalue<0xFFF) {Serial.print("0");Serial.print(printvalue,HEX);Serial.print(" ");return;}
+  Serial.print(printvalue,HEX); Serial.print(" ");
+  return;
+  
+}
+
+void barOut(int address,int numsegments){
+  int sendval=1;
+  if (numsegments==0) {
+    barSetup(address,0);
+    return;
+  }
+  if (numsegments==1) 
+    barSetup(address,1);
+  else{
+    for (int i=0;i<(numsegments-1);i++){
+      sendval=(sendval<<1)|1;
+    }
+    barSetup(address,sendval);
+  }
+}
+
+void barSetup(int address, int GPValue){
+  I2CWrite(address,0x15,0);// IOCON=0, Bank 0
+  I2CWrite(address,0,GPValue&0xFF);// IODIR Bank0 = 0 -> all outputs
+  I2CWrite(address,9,0);// GPIO value = 0
+  I2CWrite(address,0x15,0x80);// IOCON=0, Bank 1
+  I2CWrite(address,9,(GPValue&0xFF00>>8));// GPIO Bank0 = 0xFC -> Bits 0 and 1 outputs
+  I2CWrite(address,3,0);// DEFVAL default value = 0
+}
+
+void I2CWrite(int I2CAddress, int RegAddress, int Data){
+  Wire.beginTransmission(I2CAddress);
+  Wire.write(RegAddress); // IOCON
+  Wire.write(Data); //IOCON=0
+  Wire.endTransmission();
+  
+}
+
+unsigned int t16Stringtoint(String inString){
+  unsigned int ReturnValue=0;
+  unsigned int AddValue=0;
+  Serial.print("inString = ");Serial.println(inString);
+  for (int qi=0; qi<=3; qi++){
+    switch (inString.charAt(qi)){
+      case '0':
+        AddValue=0;
+        break;
+      case '1':
+        AddValue=1;
+        break;
+      case '2':
+        AddValue=2;
+        break;
+      case '3':
+        AddValue=3;
+        break;
+      case '4':
+        AddValue=4;
+        break;
+      case '5':
+        AddValue=5;
+        break;
+      case '6':
+        AddValue=6;
+        break;
+      case '7':
+        AddValue=7;
+        break;
+      case '8':
+        AddValue=8;
+        break;
+      case '9':
+        AddValue=9;
+        break;
+      case 'A':
+        AddValue=10;
+        break;
+      case 'B':
+        AddValue=11;
+        break;
+      case 'C':
+        AddValue=12;
+        break;
+      case 'D':
+        AddValue=13;
+        break;
+      case 'E':
+        AddValue=14;
+        break;
+      case 'F':
+        AddValue=15;
+        break;
+        
+    }//switch
+    AddValue=AddValue<<(4*(3-qi));
+    ReturnValue=ReturnValue|AddValue;
+//    Serial.print(inString.charAt(qi));Serial.print(" ");Serial.print(qi);Serial.print(" "); Serial.println(ReturnValue,HEX);    
+  }//for
+  return ReturnValue;
+}//function
+
+
+void myNoteOn(byte channel, byte note, byte velocity) {
+  Serial.print("ExternalNote On, ch=");
+  Serial.print(channel, DEC);
+  Serial.print(", note=");
+  Serial.print(note, DEC);
+  Serial.print(", velocity=");
+  Serial.println(velocity, DEC);
+  
+  if(channel==MIDIChannel)
+  {
+    Serial.println("Message for me...");
+//    int i = int(note/8);
+//    int j = note-i*8;
+//    bitSet(CurrentState[i],j);
+//    bitSet(LEDArrayState[i],j);
+//    Serial.print("CurrentState ");
+//    Serial.println(CurrentState[i],BIN);
+  }
+  if(channel==PCMessageChannel){
+    if (note==PCMessageNote) {PCMessageReceived=true;}  
+  }
+}
+
+void restartLoop(){
+  LoopDone=false;
+}
+  
+void myNoteOff(byte channel, byte note, byte velocity)
+{
+  Serial.print("External Note Off, ch=");
+  Serial.print(channel, DEC);
+  Serial.print(", note=");
+  Serial.print(note, DEC);
+  Serial.print(", velocity=");
+  Serial.println(velocity, DEC);
+  if(channel==MIDIChannel)
+  {
+    Serial.println("Message for me...");
+//    int i = int(note/8);
+//    int j = note-i*8;
+//    bitClear(CurrentState[i],j);
+//    bitClear(LEDArrayState[i],j);
+//    Serial.print("CurrentState ");
+//    Serial.println(CurrentState[i],BIN);
+  }
+
+}

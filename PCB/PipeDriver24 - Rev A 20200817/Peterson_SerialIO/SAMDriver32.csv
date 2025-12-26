@@ -1,0 +1,387 @@
+Source:,C:\Users\CharlesRaasch\Dropbox\Electronic Projects\CRControlSystems\SAMdriver32\Peterson_SerialIO\SAMDriver32.sch,,,,,,,
+Date:,8/27/2019 9:47,,,,,,,
+Tool:,Eeschema (5.0.2)-1,,,,,,,
+Generator:,C:\Program Files\KiCad\bin\scripting\plugins/bom_csv_grouped_by_value.py,,,,,,,
+Component Count:,343,,,,,,,
+,,,,,,,,
+Individual Components:,,,,,,,,
+,,,,,,,,
+Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet,MPN,SKU
+,,C1,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C2,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C3,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C4,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C5,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C6,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C7,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C8,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C9,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C10,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C11,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C12,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C13,302010138,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C14,302010138,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C15,302010138,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C16,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C17,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C18,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C19,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C20,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C21,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C22,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C23,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C24,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C25,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C26,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C27,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C28,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C29,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C30,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C31,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C32,302010138,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C33,302010138,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C34,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C35,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C36,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C37,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C38,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C39,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C40,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C41,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C42,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C43,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C44,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C45,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C46,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C47,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C48,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C49,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C50,302010138,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C51,302010138,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C52,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C53,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C54,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C55,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C56,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C57,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C58,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C59,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C60,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C61,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C62,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C63,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C64,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C65,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C66,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C67,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C68,302010138,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C69,302010138,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C70,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C71,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C72,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C73,1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C74,302010138,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C75,302010138,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C76,302010138,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C77,302010138,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C78,CERAMIC-100NF-50V-10%-X7R_0603_,OPL_Capacitor:CERAMIC-100NF-50V-10%-X7R_0603_,Capacitor_SMD:C_0603_1608Metric,,CC0603KRX7R9BB104,302010138
+,,C79,302010138,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C80,302010138,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C81,302010138,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,
+,,C82,100uF 25V,Device:C_Small,Capacitors_THT:CP_Radial_D10.0mm_P2.50mm_P5.00mm,~,,
+,,C83,100uF 25V,Device:C_Small,Capacitors_THT:CP_Radial_D10.0mm_P2.50mm_P5.00mm,~,,
+,,C84,100uF 25V,Device:C_Small,Capacitors_THT:CP_Radial_D10.0mm_P2.50mm_P5.00mm,~,,
+,,C85,100uF 25V,Device:C_Small,Capacitors_THT:CP_Radial_D10.0mm_P2.50mm_P5.00mm,~,,
+,,C86,CERAMIC-100NF-50V-10%-X7R_0603_,OPL_Capacitor:CERAMIC-100NF-50V-10%-X7R_0603_,Capacitor_SMD:C_0603_1608Metric,,CC0603KRX7R9BB104,302010138
+,,D1,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D2,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D3,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D4,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D5,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D6,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D7,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D8,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D9,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D10,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D11,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D12,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D13,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D14,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D15,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D16,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D17,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D18,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D19,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D20,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D21,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D22,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D23,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D24,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D25,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D26,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D27,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D28,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D29,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D30,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D31,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D32,BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+,,D33,SMD-LED-CLEAR-GREEN_0805_,OPL_Optoelectronics:SMD-LED-CLEAR-GREEN_0805_,Resistor_SMD:R_0805_2012Metric,,17-215SYGC_S530-E2_TR8,304090057
+,,InChIn1,Conn_02x04_Counter_Clockwise,SerialIOProc-rescue:Conn_02x04_Counter_Clockwise-conn,SeeedOPL-Connector-2016:H2X4-2.54,,,320030087
+,,InChOut1,Conn_02x04_Counter_Clockwise,SerialIOProc-rescue:Conn_02x04_Counter_Clockwise-conn,SeeedOPL-Connector-2016:H2X4-2.54,,,320030087
+,,J1,JACK-DC-005,SeeedOPL-Connector-2016:JACK-DC-005,OPL_Connector:DCJ3P-14.2X11.0X9.0MM,,,320120003
+,,J2,Conn_02x04_Counter_Clockwise,SerialIOProc-rescue:Conn_02x04_Counter_Clockwise-conn,SeeedOPL-Connector-2016:H2X4-2.54,,,320030087
+,,J3,DIP-BLACK-MALE-HEADER-VERT_4P-2.54_,OPL_Connector:DIP-BLACK-MALE-HEADER-VERT_4P-2.54_,Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Vertical,,P125-1104A0BS116A1,320020017
+,,J4,Conn_01x03,SerialIOProc-rescue:Conn_01x03-conn,CLRConnector:H3-2.54,~,,
+,,J5,Conn_01x01,SerialIOProc-rescue:Conn_01x01-conn,CLRConnector:KK156-1,~,,
+,,J6,Conn_01x01,SerialIOProc-rescue:Conn_01x01-conn,CLRConnector:KK156-1,~,,
+,,J7,Conn_01x01,SerialIOProc-rescue:Conn_01x01-conn,CLRConnector:KK156-1,~,,
+,,J8,Conn_01x01,SerialIOProc-rescue:Conn_01x01-conn,CLRConnector:KK156-1,~,,
+,,J9,Conn_01x01,SerialIOProc-rescue:Conn_01x01-conn,CLRConnector:KK156-1,~,,
+,,J10,Conn_01x01,SerialIOProc-rescue:Conn_01x01-conn,CLRConnector:KK156-1,~,,
+,,J11,Conn_01x01,SerialIOProc-rescue:Conn_01x01-conn,CLRConnector:KK156-1,~,,
+,,J12,Conn_01x08_Male,Connector:Conn_01x08_Male,CLRLibraryParts:KK156-8,~,,
+,,J13,Conn_01x08_Male,Connector:Conn_01x08_Male,CLRLibraryParts:KK156-8,~,,
+,,J14,Conn_01x08_Male,Connector:Conn_01x08_Male,CLRLibraryParts:KK156-8,~,,
+,,J15,Conn_01x08_Male,Connector:Conn_01x08_Male,CLRLibraryParts:KK156-8,~,,
+,,J16,Conn_01x08_Male,Connector:Conn_01x08_Male,CLRLibraryParts:KK156-8,~,,
+,,J17,Conn_01x08_Male,Connector:Conn_01x08_Male,CLRLibraryParts:KK156-8,~,,
+,,J18,Conn_01x08_Male,Connector:Conn_01x08_Male,CLRLibraryParts:KK156-8,~,,
+,,J19,Conn_01x08_Male,Connector:Conn_01x08_Male,CLRLibraryParts:KK156-8,~,,
+,,J20,Conn_01x08_Male,Connector:Conn_01x08_Male,CLRLibraryParts:KK156-8,~,,
+,,J21,Conn_01x08_Male,Connector:Conn_01x08_Male,CLRLibraryParts:KK156-8,~,,
+,,J22,Conn_01x08_Male,Connector:Conn_01x08_Male,CLRLibraryParts:KK156-8,~,,
+,,J23,Conn_01x08_Male,Connector:Conn_01x08_Male,CLRLibraryParts:KK156-8,~,,
+,,J24,Conn_01x08_Male,Connector:Conn_01x08_Male,CLRLibraryParts:KK156-8,~,,
+,,J25,Conn_01x08_Male,Connector:Conn_01x08_Male,CLRLibraryParts:KK156-8,~,,
+,,J26,Conn_01x08_Male,Connector:Conn_01x08_Male,CLRLibraryParts:KK156-8,~,,
+,,J27,Conn_01x08_Male,Connector:Conn_01x08_Male,CLRLibraryParts:KK156-8,~,,
+,,J28,Conn_01x02_Female,Connector:Conn_01x02_Female,TerminalBlock:TerminalBlock_Wuerth_691311400102_P7.62mm,~,,
+,,J29,Conn_01x01,SerialIOProc-rescue:Conn_01x01-conn,CLRConnector:KK156-1,~,,
+,,J30,Conn_01x01,SerialIOProc-rescue:Conn_01x01-conn,CLRConnector:KK156-1,~,,
+,,J31,DIP-BLACK-MALE-HEADER_2X3P-2.54),OPL_Connector:DIP-BLACK-MALE-HEADER_2X3P-2.54),OPL_Connector:H2X3-2.54,,P125-12A1BS116A1,320020077
+,,J32,DIP-BLACK-MALE-HEADER_2X3P-2.54),OPL_Connector:DIP-BLACK-MALE-HEADER_2X3P-2.54),OPL_Connector:H2X3-2.54,,P125-12A1BS116A1,320020077
+,,JP1,DIP-USB-B-TYPE-FMAL_4+2P-2.0-90D_,SeeedOPL-Connector-2016:DIP-USB-B-TYPE-FMAL_4+2P-2.0-90D_,SeeedOPL-Connector-2016:USB4+2-2.5-90D-15.8X12MM,,,320010018
+,,KCH0,Conn_02x04_Counter_Clockwise,SerialIOProc-rescue:Conn_02x04_Counter_Clockwise-conn,SeeedOPL-Connector-2016:H2X4-2.54,,,320030087
+,,KCH1,Conn_02x04_Counter_Clockwise,SerialIOProc-rescue:Conn_02x04_Counter_Clockwise-conn,SeeedOPL-Connector-2016:H2X4-2.54,,,320030087
+,,M1,Conn_01x01,SerialIOProc-rescue:Conn_01x01-conn,CLRConnector:Mounting#4,,,
+,,M2,Conn_01x01,SerialIOProc-rescue:Conn_01x01-conn,CLRConnector:Mounting#4,,,
+,,M3,Conn_01x01,SerialIOProc-rescue:Conn_01x01-conn,CLRConnector:Mounting#4,,,
+,,M4,Conn_01x01,SerialIOProc-rescue:Conn_01x01-conn,CLRConnector:Mounting#4,,,
+,,M5,Conn_01x01,SerialIOProc-rescue:Conn_01x01-conn,CLRConnector:Mounting#4,,,
+,,M6,Conn_01x01,SerialIOProc-rescue:Conn_01x01-conn,CLRConnector:Mounting#4,,,
+,,M7,Conn_01x01,SerialIOProc-rescue:Conn_01x01-conn,CLRConnector:Mounting#4,,,
+,,M9,Conn_01x01,SerialIOProc-rescue:Conn_01x01-conn,CLRConnector:Mounting#4,,,
+,,M10,Conn_01x01,SerialIOProc-rescue:Conn_01x01-conn,CLRConnector:Mounting#4,,,
+,,OutChIn2,Conn_02x04_Counter_Clockwise,SerialIOProc-rescue:Conn_02x04_Counter_Clockwise-conn,SeeedOPL-Connector-2016:H2X4-2.54,,,320030087
+,,OutChOUT2,Conn_02x04_Counter_Clockwise,SerialIOProc-rescue:Conn_02x04_Counter_Clockwise-conn,SeeedOPL-Connector-2016:H2X4-2.54,,,320030087
+,,Q1,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q2,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q3,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q4,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q5,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q6,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q7,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q8,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q9,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q10,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q11,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q12,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q13,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q14,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q15,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q16,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q17,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q18,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q19,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q20,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q21,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q22,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q23,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q24,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q25,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q26,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q27,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q28,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q29,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q30,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q31,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q32,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q33,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q34,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q35,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q36,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q37,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q38,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q39,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q40,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q41,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q42,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q43,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q44,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q45,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q46,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q47,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q48,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q49,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q50,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q51,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q52,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q53,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q54,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q55,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q56,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q57,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q58,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q59,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q60,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q61,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q62,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q63,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q64,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q65,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q66,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q67,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q68,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q69,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q70,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q71,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q72,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q73,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q74,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q75,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q76,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q77,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q78,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q79,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q80,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q81,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q82,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q83,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q84,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q85,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q86,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q87,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q88,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q89,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q90,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q91,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q92,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q93,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q94,SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+,,Q95,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,Q96,2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,,,
+,,R1,DNP,Device:R,SeeedOPL-Resistor-2016:R0603,~,,
+,,R2,DNP,Device:R,SeeedOPL-Resistor-2016:R0603,~,,
+,,R3,DNP,Device:R,SeeedOPL-Resistor-2016:R0603,~,,
+,,R4,DNP,Device:R,SeeedOPL-Resistor-2016:R0603,~,,
+,,R5,DNP,Device:R,SeeedOPL-Resistor-2016:R0603,~,,
+,,R6,DNP,Device:R,SeeedOPL-Resistor-2016:R0603,~,,
+,,R7,DNP,Device:R,SeeedOPL-Resistor-2016:R0603,~,,
+,,R8,DNP,Device:R,SeeedOPL-Resistor-2016:R0603,~,,
+,,R9,R,Device:R,SeeedOPL-Resistor-2016:R0603,~,,
+,,R10,R,Device:R,SeeedOPL-Resistor-2016:R0603,~,,
+,,R11,DNP,Device:R,OPL_Resistor:R0603,~,,
+,,RN1,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN2,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN3,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN4,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN5,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN6,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN7,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN8,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN9,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN10,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN11,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN12,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN13,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN14,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN15,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN16,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN17,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN18,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN19,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN20,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN21,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN22,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN23,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN24,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN25,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN26,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN27,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN28,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN29,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN30,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN31,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN32,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN33,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN34,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN35,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN36,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN37,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN38,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN39,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN40,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN41,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN42,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN43,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN44,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN45,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN46,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN47,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,RN48,R_Pack04,Device:R_Pack04,CLRConnector:2012-8,,,
+,,SD1,MICRO-SD-CARD-SOCKET-9P_ST-TF-003A_,OPL_Connector:MICRO-SD-CARD-SOCKET-9P_ST-TF-003A_,OPL_Connector:MICRO-SD9+4P-SMD-16.1X14.5X1.85MM,,ST-TF-003A,320090000
+,,Ser0,Conn_02x04_Counter_Clockwise,SerialIOProc-rescue:Conn_02x04_Counter_Clockwise-conn,SeeedOPL-Connector-2016:H2X4-2.54,,,
+,,Ser1,Conn_02x04_Counter_Clockwise,SerialIOProc-rescue:Conn_02x04_Counter_Clockwise-conn,SeeedOPL-Connector-2016:H2X4-2.54,,,
+,,U1,Teensy3.6,teensy:Teensy3.6,CLRLibraryParts:Teensy35_36,,,
+,,U2,74HC597,SerialIOProc-rescue:74HC595,SMD_Packages:SO-16-N,,,
+,,U3,74HC597,SerialIOProc-rescue:74HC595,SMD_Packages:SO-16-N,,,
+,,U4,74HC597,SerialIOProc-rescue:74HC595,SMD_Packages:SO-16-N,,,
+,,U5,74HC597,SerialIOProc-rescue:74HC595,SMD_Packages:SO-16-N,,,
+,,U6,74HC597,SerialIOProc-rescue:74HC595,SMD_Packages:SO-16-N,,,
+,,U7,74HC597,SerialIOProc-rescue:74HC595,SMD_Packages:SO-16-N,,,
+,,U8,74HC597,SerialIOProc-rescue:74HC595,SMD_Packages:SO-16-N,,,
+,,U9,74HC597,SerialIOProc-rescue:74HC595,SMD_Packages:SO-16-N,,,
+,,U10,"74HC595D,118",SerialIOProc-rescue:74HC595,SMD_Packages:SO-16-N,,,
+,,U11,"74HC595D,118",SerialIOProc-rescue:74HC595,SMD_Packages:SO-16-N,,,
+,,U12,"74HC595D,118",SerialIOProc-rescue:74HC595,SMD_Packages:SO-16-N,,,
+,,U13,"74HC595D,118",SerialIOProc-rescue:74HC595,SMD_Packages:SO-16-N,,,
+,,U14,"74HC595D,118",SerialIOProc-rescue:74HC595,SMD_Packages:SO-16-N,,,
+,,U15,"74HC595D,118",SerialIOProc-rescue:74HC595,SMD_Packages:SO-16-N,,,
+,,U16,"74HC595D,118",SerialIOProc-rescue:74HC595,SMD_Packages:SO-16-N,,,
+,,U17,"74HC595D,118",SerialIOProc-rescue:74HC595,SMD_Packages:SO-16-N,,,
+,,U18,AP1117-33,Regulator_Linear:AP1117-33,Package_TO_SOT_SMD:SOT-223-3_TabPin2,http://www.diodes.com/datasheets/AP1117.pdf,,310030097
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Collated Components:,,,,,,,,
+,,,,,,,,
+Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet,MPN,SKU
+1,64,"C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C16, C17, C18, C19, C20, C21, C22, C23, C24, C25, C26, C27, C28, C29, C30, C31, C34, C35, C36, C37, C38, C39, C40, C41, C42, C43, C44, C45, C46, C47, C48, C49, C52, C53, C54, C55, C56, C57, C58, C59, C60, C61, C62, C63, C64, C65, C66, C67, C70, C71, C72, C73",1nf 302010138 or ESD,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,ON;ESD9B3.3ST5G,304050025
+2,16,"C13, C14, C15, C32, C33, C50, C51, C68, C69, C74, C75, C76, C77, C79, C80, C81",302010138,Device:C,Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J,,,302010138
+3,2,"C78, C86",CERAMIC-100NF-50V-10%-X7R_0603_,OPL_Capacitor:CERAMIC-100NF-50V-10%-X7R_0603_,Capacitor_SMD:C_0603_1608Metric,,CC0603KRX7R9BB104,302010138
+4,4,"C82, C83, C84, C85",100uF 25V,Device:C_Small,Capacitors_THT:CP_Radial_D10.0mm_P2.50mm_P5.00mm,https://www.seeedstudio.com/opl.html,KF471M025G125A ,
+5,32,"D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, D12, D13, D14, D15, D16, D17, D18, D19, D20, D21, D22, D23, D24, D25, D26, D27, D28, D29, D30, D31, D32",BAV23A/Q,Device:D_Schottky_x2_ACom_KKA,SeeedOPL-Diode-2016:SOT-23,~,,
+6,1,D33,SMD-LED-CLEAR-GREEN_0805_,OPL_Optoelectronics:SMD-LED-CLEAR-GREEN_0805_,Resistor_SMD:R_0805_2012Metric,,17-215SYGC_S530-E2_TR8,304090057
+7,9,"InChIn1, InChOut1, J2, KCH0, KCH1, OutChIn2, OutChOUT2, Ser0, Ser1",Conn_02x04_Counter_Clockwise,SerialIOProc-rescue:Conn_02x04_Counter_Clockwise-conn,SeeedOPL-Connector-2016:H2X4-2.54,,,320030087
+8,1,J1,JACK-DC-005,SeeedOPL-Connector-2016:JACK-DC-005,OPL_Connector:DCJ3P-14.2X11.0X9.0MM,,,320120003
+9,1,J3,DIP-BLACK-MALE-HEADER-VERT_4P-2.54_,OPL_Connector:DIP-BLACK-MALE-HEADER-VERT_4P-2.54_,Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Vertical,,P125-1104A0BS116A1,320020017
+10,1,J4,Conn_01x03,SerialIOProc-rescue:Conn_01x03-conn,CLRConnector:H3-2.54,~,,
+11,9,"J5, J6, J7, J8, J9, J10, J11, J29, J30",Conn_01x01,SerialIOProc-rescue:Conn_01x01-conn,CLRConnector:KK156-1,~,,
+12,16,"J12, J13, J14, J15, J16, J17, J18, J19, J20, J21, J22, J23, J24, J25, J26, J27",Conn_01x08_Male,Connector:Conn_01x08_Male,CLRLibraryParts:KK156-8,https://www.arrow.com/en/products/0026481081/molex,Molex 0026481081,
+13,1,J28,Conn_01x02_Female,Connector:Conn_01x02_Female,TerminalBlock:TerminalBlock_Wuerth_691311400102_P7.62mm,~,,
+14,2,"J31, J32",DIP-BLACK-MALE-HEADER_2X3P-2.54),OPL_Connector:DIP-BLACK-MALE-HEADER_2X3P-2.54),OPL_Connector:H2X3-2.54,,P125-12A1BS116A1,320020077
+15,1,JP1,DIP-USB-B-TYPE-FMAL_4+2P-2.0-90D_,SeeedOPL-Connector-2016:DIP-USB-B-TYPE-FMAL_4+2P-2.0-90D_,SeeedOPL-Connector-2016:USB4+2-2.5-90D-15.8X12MM,,,320010018
+16,9,"M1, M2, M3, M4, M5, M6, M7, M9, M10",Conn_01x01,SerialIOProc-rescue:Conn_01x01-conn,CLRConnector:Mounting#4,,,
+17,32,"Q1, Q2, Q3, Q4, Q13, Q14, Q15, Q16, Q25, Q26, Q27, Q28, Q37, Q38, Q39, Q40, Q49, Q50, Q51, Q52, Q61, Q62, Q63, Q64, Q73, Q74, Q83, Q84, Q85, Q86, Q95, Q96",2N7002DW-7-F,CLRLibrary:6N7002,Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering,https://www.arrow.com/en/products/bav23a-7-f/diodes-incorporated,BAV23-A-7-F,
+18,64,"Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q17, Q18, Q19, Q20, Q21, Q22, Q23, Q24, Q29, Q30, Q31, Q32, Q33, Q34, Q35, Q36, Q41, Q42, Q43, Q44, Q45, Q46, Q47, Q48, Q53, Q54, Q55, Q56, Q57, Q58, Q59, Q60, Q65, Q66, Q67, Q68, Q69, Q70, Q71, Q72, Q75, Q76, Q77, Q78, Q79, Q80, Q81, Q82, Q87, Q88, Q89, Q90, Q91, Q92, Q93, Q94",SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_,SerialIOProc-rescue:SMD-MOSFET-P-CH-VDC=30V-ID=4.3A-NCE3407A_SOT-23_-OPL_Discrete_Semiconductor,OPL_Discrete_Semiconductor:SOT-23,,NCE3407A,305030010
+19,8,"R1, R2, R3, R4, R5, R6, R7, R8",DNP,Device:R,SeeedOPL-Resistor-2016:R0603,~,,
+20,2,"R9, R10",R,Device:R,SeeedOPL-Resistor-2016:R0603,~,,
+21,1,R11,DNP,Device:R,OPL_Resistor:R0603,~,,
+23,1,SD1,MICRO-SD-CARD-SOCKET-9P_ST-TF-003A_,OPL_Connector:MICRO-SD-CARD-SOCKET-9P_ST-TF-003A_,OPL_Connector:MICRO-SD9+4P-SMD-16.1X14.5X1.85MM,,ST-TF-003A,320090000
+24,1,U1,Teensy3.6,teensy:Teensy3.6,CLRLibraryParts:Teensy35_36,,,
+25,8,"U2, U3, U4, U5, U6, U7, U8, U9",74HC597,SerialIOProc-rescue:74HC595,SMD_Packages:SO-16-N,https://www.arrow.com/en/products/74hc597d652/nexperia,,
+26,8,"U10, U11, U12, U13, U14, U15, U16, U17","74HC595D,118",SerialIOProc-rescue:74HC595,SMD_Packages:SO-16-N,https://www.seeedstudio.com/opl.html,,
+27,1,U18,AP1117-33,Regulator_Linear:AP1117-33,Package_TO_SOT_SMD:SOT-223-3_TabPin2,http://www.diodes.com/datasheets/AP1117.pdf,,310030097
+,,"RN33,RN34,RN35,RN36,RN37,RN38,RN39,RN40,RN41,RN42,RN43,RN44,RN45,RN46,RN47,RN48",,,,,744C083103JP,
+,,"RN12,RN13,RN14,RN16,RN20,RN21,RN22,RN24,RN28,RN29,RN30,RN32,RN4,RN5,RN6,RN8",,,,,744C083331JP,
+,,"RN1,rn10,RN11,RN15,RN17,RN18,RN19,RN2,RN23,RN25,RN26,RN27,RN3,RN31,RN7,RN9",,,,,744C083332JP,

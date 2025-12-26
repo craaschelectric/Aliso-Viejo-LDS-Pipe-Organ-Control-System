@@ -1,0 +1,19 @@
+Support Teensy 3.6 - Add direct connect to USB.  Extend PCB.
+Move silk to be visible THROUGHOUT
+Move SMT out from under 156 components
+Add protection 3.3V
+Add 3.3V power supply source
+Add protection - outputs
+Add serial port in and out
+More IO
+Add LED
+
+
+
+
+REWORK
+* Outchain InRegLoad is accidentally separated.  Cut trace to OutChIn2 pin 6, OutChIn1 pin 6.  Add wire J3/1 to OutChIn2/6 (D0), OutChIn2/6 to U17/12&13, U14/12&13 to OutChin1/6
+* Outchain nRST is accidentally separated.  Add wire OutChIn2/7 to U17/10
+* Add wire from Teensy 3.3V to VCC J5/2
+* Add R8 short
+

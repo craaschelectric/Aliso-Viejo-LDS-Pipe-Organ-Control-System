@@ -1,0 +1,237 @@
+EESchema Schematic File Version 4
+LIBS:PipeDriver-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:DIN-5 J?
+U 1 1 5CD18EFB
+P 4850 2850
+F 0 "J?" V 4896 2621 50  0000 R CNN
+F 1 "DIN-5" V 4805 2621 50  0000 R CNN
+F 2 "CLRLibrary:DIN5_KCDX-5S-S2" H 4850 2850 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 4850 2850 50  0001 C CNN
+	1    4850 2850
+	0    -1   1    0   
+$EndComp
+$Comp
+L Isolator:6N138 U?
+U 1 1 5CD1902B
+P 6950 2650
+F 0 "U?" H 6950 3117 50  0000 C CNN
+F 1 "6N138" H 6950 3026 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm" H 7240 2350 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/HCPL2731-D.pdf" H 7240 2350 50  0001 C CNN
+	1    6950 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CD19228
+P 5700 2400
+F 0 "R?" V 5493 2400 50  0000 C CNN
+F 1 "220" V 5584 2400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5630 2400 50  0001 C CNN
+F 3 "~" H 5700 2400 50  0001 C CNN
+	1    5700 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 2550 4750 2400
+Wire Wire Line
+	6650 2400 6650 2550
+Wire Wire Line
+	6650 2750 6650 3300
+Wire Wire Line
+	4750 3300 4750 3150
+Wire Wire Line
+	7700 1600 7700 1700
+$Comp
+L Device:R R?
+U 1 1 5CD2370B
+P 7700 1850
+F 0 "R?" V 7493 1850 50  0000 C CNN
+F 1 "1K" V 7584 1850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7630 1850 50  0001 C CNN
+F 3 "~" H 7700 1850 50  0001 C CNN
+	1    7700 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CD23779
+P 8050 1850
+F 0 "R?" V 7843 1850 50  0000 C CNN
+F 1 "220" V 7934 1850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7980 1850 50  0001 C CNN
+F 3 "~" H 8050 1850 50  0001 C CNN
+	1    8050 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8050 1600 8050 1700
+Wire Wire Line
+	7700 2000 7700 2450
+Wire Wire Line
+	7700 2450 7250 2450
+Wire Wire Line
+	8050 2000 8050 2750
+Wire Wire Line
+	8050 2750 7250 2750
+Text Label 7550 2750 0    50   ~ 0
+MIDIIN
+$Comp
+L Connector:DIN-5 J?
+U 1 1 5CD302E5
+P 4650 4650
+F 0 "J?" V 4696 4421 50  0000 R CNN
+F 1 "DIN-5" V 4605 4421 50  0000 R CNN
+F 2 "CLRLibrary:DIN5_KCDX-5S-S2" H 4650 4650 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 4650 4650 50  0001 C CNN
+	1    4650 4650
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CD302EC
+P 4550 4150
+F 0 "R?" V 4343 4150 50  0000 C CNN
+F 1 "220" V 4434 4150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4480 4150 50  0001 C CNN
+F 3 "~" H 4550 4150 50  0001 C CNN
+	1    4550 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CD302FA
+P 4350 5200
+F 0 "R?" V 4143 5200 50  0000 C CNN
+F 1 "220" V 4234 5200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4280 5200 50  0001 C CNN
+F 3 "~" H 4350 5200 50  0001 C CNN
+	1    4350 5200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4500 5200 4550 5200
+Wire Wire Line
+	4550 4300 4550 4350
+Wire Wire Line
+	4550 4000 2850 4000
+Text Label 2850 4000 0    50   ~ 0
+VCC
+Text Label 2600 5200 0    50   ~ 0
+MIDIOUT
+Text Label 3900 4650 0    50   ~ 0
+GND
+Wire Wire Line
+	4350 4650 3600 4650
+$Comp
+L power:GND #PWR?
+U 1 1 5CD36A3D
+P 7250 3550
+F 0 "#PWR?" H 7250 3300 50  0001 C CNN
+F 1 "GND" H 7255 3377 50  0000 C CNN
+F 2 "" H 7250 3550 50  0001 C CNN
+F 3 "" H 7250 3550 50  0001 C CNN
+	1    7250 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2400 6650 2400
+Text Label 4150 5200 0    50   ~ 0
+M2
+Wire Wire Line
+	4750 3300 6650 3300
+Wire Wire Line
+	4750 2400 5550 2400
+Wire Wire Line
+	7250 2850 7250 3550
+Text HLabel 2850 4000 0    50   Input ~ 0
+VCC
+Text HLabel 2600 5200 0    50   Input ~ 0
+MIDIOUT
+Text HLabel 8050 2750 2    50   Input ~ 0
+MIDIIN
+Text Label 8050 1600 0    50   ~ 0
+VCC
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 5EAADD82
+P 3350 5700
+F 0 "J?" V 3503 5513 50  0000 R CNN
+F 1 "Conn_01x03_Male" V 3412 5513 50  0000 R CNN
+F 2 "CLRConnector:H3-2.54" H 3350 5700 50  0001 C CNN
+F 3 "~" H 3350 5700 50  0001 C CNN
+	1    3350 5700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2600 5200 3350 5200
+Wire Wire Line
+	3350 5200 3350 5500
+Wire Wire Line
+	3250 5500 3250 5100
+Wire Wire Line
+	3250 5100 3800 5100
+Wire Wire Line
+	4000 5100 4000 5200
+Wire Wire Line
+	4000 5200 4200 5200
+Wire Wire Line
+	4550 4950 4550 5200
+$Comp
+L power:GND #PWR?
+U 1 1 5EAAF3B1
+P 3600 4650
+F 0 "#PWR?" H 3600 4400 50  0001 C CNN
+F 1 "GND" H 3605 4477 50  0000 C CNN
+F 2 "" H 3600 4650 50  0001 C CNN
+F 3 "" H 3600 4650 50  0001 C CNN
+	1    3600 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 5EAAF554
+P 3700 5300
+F 0 "Q?" H 3905 5346 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 3905 5255 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3900 5400 50  0001 C CNN
+F 3 "~" H 3700 5300 50  0001 C CNN
+	1    3700 5300
+	1    0    0    -1  
+$EndComp
+Connection ~ 3800 5100
+Wire Wire Line
+	3800 5100 4000 5100
+Wire Wire Line
+	3450 5500 3450 5300
+Wire Wire Line
+	3450 5300 3500 5300
+$Comp
+L power:GND #PWR?
+U 1 1 5EAAFA0C
+P 3800 5500
+F 0 "#PWR?" H 3800 5250 50  0001 C CNN
+F 1 "GND" H 3805 5327 50  0000 C CNN
+F 2 "" H 3800 5500 50  0001 C CNN
+F 3 "" H 3800 5500 50  0001 C CNN
+	1    3800 5500
+	1    0    0    -1  
+$EndComp
+Text HLabel 7700 1600 0    50   Input ~ 0
+VBUS
+$EndSCHEMATC

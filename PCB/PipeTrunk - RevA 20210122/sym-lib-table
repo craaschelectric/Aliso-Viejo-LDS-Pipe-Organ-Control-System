@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name teensy)(type Legacy)(uri ${LOCAL}/teensy_library-939e4983fb3d6744c6b0c02031d23fa85a38781a/teensy.lib)(options "")(descr ""))
+  (lib (name MIDIRepeater-rescue)(type Legacy)(uri ${KIPRJMOD}/MIDIRepeater-rescue.lib)(options "")(descr ""))
+  (lib (name MIDIExtender-rescue)(type Legacy)(uri ${KIPRJMOD}/MIDIExtender-rescue.lib)(options "")(descr ""))
+)

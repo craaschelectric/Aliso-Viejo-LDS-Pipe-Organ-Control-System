@@ -1,0 +1,288 @@
+EESchema Schematic File Version 4
+LIBS:PipeDriver24-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SerialIOProc-rescue:Conn_01x01-conn M?
+U 1 1 5AC0BC23
+P 2700 1200
+AR Path="/5AC0BC23" Ref="M?"  Part="1" 
+AR Path="/5BA655A7/5AC0BC23" Ref="M3"  Part="1" 
+AR Path="/5EE3FE63/5DDB5971/5AC0BC23" Ref="M16"  Part="1" 
+F 0 "M16" H 2700 1300 50  0000 C CNN
+F 1 "Conn_01x01" H 2700 1100 50  0000 C CNN
+F 2 "CLRConnector:Mounting#4" H 2700 1200 50  0001 C CNN
+F 3 "" H 2700 1200 50  0001 C CNN
+	1    2700 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L SerialIOProc-rescue:Conn_01x01-conn M?
+U 1 1 5AC0BCD6
+P 2700 1500
+AR Path="/5AC0BCD6" Ref="M?"  Part="1" 
+AR Path="/5BA655A7/5AC0BCD6" Ref="M4"  Part="1" 
+AR Path="/5EE3FE63/5DDB5971/5AC0BCD6" Ref="M17"  Part="1" 
+F 0 "M17" H 2700 1600 50  0000 C CNN
+F 1 "Conn_01x01" H 2700 1400 50  0000 C CNN
+F 2 "CLRConnector:Mounting#4" H 2700 1500 50  0001 C CNN
+F 3 "" H 2700 1500 50  0001 C CNN
+	1    2700 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L SerialIOProc-rescue:Conn_01x01-conn M?
+U 1 1 5CF04EB7
+P 2700 2150
+AR Path="/5CF04EB7" Ref="M?"  Part="1" 
+AR Path="/5BA655A7/5CF04EB7" Ref="M5"  Part="1" 
+AR Path="/5EE3FE63/5DDB5971/5CF04EB7" Ref="M18"  Part="1" 
+F 0 "M18" H 2700 2250 50  0000 C CNN
+F 1 "Conn_01x01" H 2700 2050 50  0000 C CNN
+F 2 "CLRConnector:Mounting#4" H 2700 2150 50  0001 C CNN
+F 3 "" H 2700 2150 50  0001 C CNN
+	1    2700 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L SerialIOProc-rescue:Conn_01x01-conn M?
+U 1 1 5CF04F11
+P 3450 1200
+AR Path="/5CF04F11" Ref="M?"  Part="1" 
+AR Path="/5BA655A7/5CF04F11" Ref="M6"  Part="1" 
+AR Path="/5EE3FE63/5DDB5971/5CF04F11" Ref="M19"  Part="1" 
+F 0 "M19" H 3450 1300 50  0000 C CNN
+F 1 "Conn_01x01" H 3450 1100 50  0000 C CNN
+F 2 "CLRConnector:Mounting#4" H 3450 1200 50  0001 C CNN
+F 3 "" H 3450 1200 50  0001 C CNN
+	1    3450 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L SerialIOProc-rescue:Conn_01x01-conn M?
+U 1 1 5CF04F17
+P 3450 1500
+AR Path="/5CF04F17" Ref="M?"  Part="1" 
+AR Path="/5BA655A7/5CF04F17" Ref="M7"  Part="1" 
+AR Path="/5EE3FE63/5DDB5971/5CF04F17" Ref="M20"  Part="1" 
+F 0 "M20" H 3450 1600 50  0000 C CNN
+F 1 "Conn_01x01" H 3450 1400 50  0000 C CNN
+F 2 "CLRConnector:Mounting#4" H 3450 1500 50  0001 C CNN
+F 3 "" H 3450 1500 50  0001 C CNN
+	1    3450 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L SerialIOProc-rescue:Conn_01x01-conn M?
+U 1 1 5CF04F1D
+P 3450 1850
+AR Path="/5CF04F1D" Ref="M?"  Part="1" 
+AR Path="/5BA655A7/5CF04F1D" Ref="M8"  Part="1" 
+AR Path="/5EE3FE63/5DDB5971/5CF04F1D" Ref="M21"  Part="1" 
+F 0 "M21" H 3450 1950 50  0000 C CNN
+F 1 "Conn_01x01" H 3450 1750 50  0000 C CNN
+F 2 "CLRConnector:Mounting#4" H 3450 1850 50  0001 C CNN
+F 3 "" H 3450 1850 50  0001 C CNN
+	1    3450 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L SerialIOProc-rescue:Conn_01x01-conn M?
+U 1 1 5CF04F23
+P 3450 2150
+AR Path="/5CF04F23" Ref="M?"  Part="1" 
+AR Path="/5BA655A7/5CF04F23" Ref="M9"  Part="1" 
+AR Path="/5EE3FE63/5DDB5971/5CF04F23" Ref="M22"  Part="1" 
+F 0 "M22" H 3450 2250 50  0000 C CNN
+F 1 "Conn_01x01" H 3450 2050 50  0000 C CNN
+F 2 "CLRConnector:Mounting#4" H 3450 2150 50  0001 C CNN
+F 3 "" H 3450 2150 50  0001 C CNN
+	1    3450 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L SerialIOProc-rescue:Conn_01x01-conn M?
+U 1 1 5D080160
+P 1950 1500
+AR Path="/5D080160" Ref="M?"  Part="1" 
+AR Path="/5BA655A7/5D080160" Ref="M1"  Part="1" 
+AR Path="/5EE3FE63/5DDB5971/5D080160" Ref="M14"  Part="1" 
+F 0 "M14" H 1950 1600 50  0000 C CNN
+F 1 "Conn_01x01" H 1950 1400 50  0000 C CNN
+F 2 "CLRConnector:Mounting#4" H 1950 1500 50  0001 C CNN
+F 3 "" H 1950 1500 50  0001 C CNN
+	1    1950 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L SerialIOProc-rescue:Conn_01x01-conn M?
+U 1 1 5D080167
+P 1950 2150
+AR Path="/5D080167" Ref="M?"  Part="1" 
+AR Path="/5BA655A7/5D080167" Ref="M2"  Part="1" 
+AR Path="/5EE3FE63/5DDB5971/5D080167" Ref="M15"  Part="1" 
+F 0 "M15" H 1950 2250 50  0000 C CNN
+F 1 "Conn_01x01" H 1950 2050 50  0000 C CNN
+F 2 "CLRConnector:Mounting#4" H 1950 2150 50  0001 C CNN
+F 3 "" H 1950 2150 50  0001 C CNN
+	1    1950 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L SerialIOProc-rescue:Conn_01x01-conn M?
+U 1 1 5EB83745
+P 4350 1200
+AR Path="/5EB83745" Ref="M?"  Part="1" 
+AR Path="/5BA655A7/5EB83745" Ref="M10"  Part="1" 
+AR Path="/5EE3FE63/5DDB5971/5EB83745" Ref="M23"  Part="1" 
+F 0 "M23" H 4350 1300 50  0000 C CNN
+F 1 "Conn_01x01" H 4350 1100 50  0000 C CNN
+F 2 "CLRConnector:Mounting#4" H 4350 1200 50  0001 C CNN
+F 3 "" H 4350 1200 50  0001 C CNN
+	1    4350 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L SerialIOProc-rescue:Conn_01x01-conn M?
+U 1 1 5EB8374B
+P 4350 1500
+AR Path="/5EB8374B" Ref="M?"  Part="1" 
+AR Path="/5BA655A7/5EB8374B" Ref="M11"  Part="1" 
+AR Path="/5EE3FE63/5DDB5971/5EB8374B" Ref="M24"  Part="1" 
+F 0 "M24" H 4350 1600 50  0000 C CNN
+F 1 "Conn_01x01" H 4350 1400 50  0000 C CNN
+F 2 "CLRConnector:Mounting#4" H 4350 1500 50  0001 C CNN
+F 3 "" H 4350 1500 50  0001 C CNN
+	1    4350 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L SerialIOProc-rescue:Conn_01x01-conn M?
+U 1 1 5EB83751
+P 4350 1850
+AR Path="/5EB83751" Ref="M?"  Part="1" 
+AR Path="/5BA655A7/5EB83751" Ref="M12"  Part="1" 
+AR Path="/5EE3FE63/5DDB5971/5EB83751" Ref="M25"  Part="1" 
+F 0 "M25" H 4350 1950 50  0000 C CNN
+F 1 "Conn_01x01" H 4350 1750 50  0000 C CNN
+F 2 "CLRConnector:Mounting#4" H 4350 1850 50  0001 C CNN
+F 3 "" H 4350 1850 50  0001 C CNN
+	1    4350 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L SerialIOProc-rescue:Conn_01x01-conn M?
+U 1 1 5EB83757
+P 4350 2150
+AR Path="/5EB83757" Ref="M?"  Part="1" 
+AR Path="/5BA655A7/5EB83757" Ref="M13"  Part="1" 
+AR Path="/5EE3FE63/5DDB5971/5EB83757" Ref="M26"  Part="1" 
+F 0 "M26" H 4350 2250 50  0000 C CNN
+F 1 "Conn_01x01" H 4350 2050 50  0000 C CNN
+F 2 "CLRConnector:Mounting#4" H 4350 2150 50  0001 C CNN
+F 3 "" H 4350 2150 50  0001 C CNN
+	1    4350 2150
+	1    0    0    -1  
+$EndComp
+Text GLabel 1750 2150 0    50   Input ~ 0
+SAMPWR
+$Comp
+L power:GND #PWR0108
+U 1 1 5F3DE6BF
+P 2500 2150
+AR Path="/5EE3FE63/5DDB5971/5F3DE6BF" Ref="#PWR0108"  Part="1" 
+AR Path="/5BA655A7/5F3DE6BF" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0108" H 2500 1900 50  0001 C CNN
+F 1 "GND" H 2505 1977 50  0000 C CNN
+F 2 "" H 2500 2150 50  0001 C CNN
+F 3 "" H 2500 2150 50  0001 C CNN
+	1    2500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5F3DE6F2
+P 1750 1500
+AR Path="/5EE3FE63/5DDB5971/5F3DE6F2" Ref="#PWR0109"  Part="1" 
+AR Path="/5BA655A7/5F3DE6F2" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0109" H 1750 1250 50  0001 C CNN
+F 1 "GND" H 1755 1327 50  0000 C CNN
+F 2 "" H 1750 1500 50  0001 C CNN
+F 3 "" H 1750 1500 50  0001 C CNN
+	1    1750 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5F3DE73E
+P 2500 1200
+AR Path="/5EE3FE63/5DDB5971/5F3DE73E" Ref="#PWR0110"  Part="1" 
+AR Path="/5BA655A7/5F3DE73E" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0110" H 2500 950 50  0001 C CNN
+F 1 "GND" H 2505 1027 50  0000 C CNN
+F 2 "" H 2500 1200 50  0001 C CNN
+F 3 "" H 2500 1200 50  0001 C CNN
+	1    2500 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5F3DE763
+P 3250 2350
+AR Path="/5EE3FE63/5DDB5971/5F3DE763" Ref="#PWR0111"  Part="1" 
+AR Path="/5BA655A7/5F3DE763" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0111" H 3250 2100 50  0001 C CNN
+F 1 "GND" H 3255 2177 50  0000 C CNN
+F 2 "" H 3250 2350 50  0001 C CNN
+F 3 "" H 3250 2350 50  0001 C CNN
+	1    3250 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5F3DE788
+P 4150 2350
+AR Path="/5EE3FE63/5DDB5971/5F3DE788" Ref="#PWR0112"  Part="1" 
+AR Path="/5BA655A7/5F3DE788" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0112" H 4150 2100 50  0001 C CNN
+F 1 "GND" H 4155 2177 50  0000 C CNN
+F 2 "" H 4150 2350 50  0001 C CNN
+F 3 "" H 4150 2350 50  0001 C CNN
+	1    4150 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2350 3250 2150
+Connection ~ 3250 1500
+Wire Wire Line
+	3250 1500 3250 1200
+Connection ~ 3250 1850
+Wire Wire Line
+	3250 1850 3250 1500
+Connection ~ 3250 2150
+Wire Wire Line
+	3250 2150 3250 1850
+Wire Wire Line
+	4150 2350 4150 2150
+Connection ~ 4150 1500
+Wire Wire Line
+	4150 1500 4150 1200
+Connection ~ 4150 1850
+Wire Wire Line
+	4150 1850 4150 1500
+Connection ~ 4150 2150
+Wire Wire Line
+	4150 2150 4150 1850
+$EndSCHEMATC
